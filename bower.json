@@ -1,0 +1,28 @@
+{
+  "name": "tasche.ru",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "dmitryPHC"
+  ],
+  "license": "ISC",
+  "homepage": "http://taptab.ru",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.1"
+  },
+  "overrides": {
+    "jquery": {
+      "main": [
+        "./dist/jquery.min.js"
+      ]
+    }
+  }
+}

@@ -1710,8 +1710,8 @@ h5
 	+w768
 		font-size: 9px
 		top: 20px
-		padding-left: 16px
-		padding-right: 16px
+		//padding-left: 16px
+		//padding-right: 16px
 	i
 		display: inline-block
 		margin: 0 10px
@@ -1734,8 +1734,8 @@ h5
 			flex-direction: column
 		+w768
 			padding-top: 44px
-			padding-left: 16px
-			padding-right: 16px
+			//padding-left: 16px
+			//padding-right: 16px
 	&__left-col
 		width: calc(100% - 1030px)
 		@include w1840
@@ -1847,7 +1847,7 @@ h5
 				+img-block-fit
 		.owl-dots
 			display: none
-			+w768
+			+w753
 				display: table
 				margin: 0 auto
 				z-index: 3
@@ -2324,7 +2324,7 @@ h5
 	border: none
 
 .pp
-	.container
+	div.container
 
 		@include w1840
 			max-width: 1840px
@@ -2337,9 +2337,14 @@ h5
 			max-width: 1024px
 			width: 100%
 		+w992
-			padding: 0 30px
+			max-width: 713px
+			padding: 0
+
 		+w768
 			padding: 0px
+		+w753
+			max-width: 100%
+			width: 90%
 .pid__wrap
 	.pid__left-col
 		.pid__general_info
@@ -2356,8 +2361,8 @@ h5
 	+w1346
 		margin-bottom: 106px
 	+w768
-		padding-left: 16px
-		padding-right: 16px
+		//padding-left: 16px
+		//padding-right: 16px
 		+flexbox()
 		+flex-direction(column-reverse)
 		margin-bottom: 54px
@@ -2571,7 +2576,7 @@ h5
 		margin-bottom: 63px
 		letter-spacing: -0.005em
 		+w768
-			padding-left: 16px
+			//padding-left: 16px
 			font-size: 15px
 			letter-spacing: -0.3px
 			margin-bottom: 29px
@@ -2724,7 +2729,7 @@ h5
 		margin-bottom: 105px
 
 		+w768
-			padding-left: 16px
+			//padding-left: 16px
 			padding-right: 16px
 			margin-bottom: 54px
 			.ranking-stars__icon
@@ -2958,7 +2963,7 @@ h5
 		margin-bottom: 63px
 		letter-spacing: -.005em
 		+w768
-			padding-left: 9px
+			//padding-left: 9px
 			font-size: 15px
 			letter-spacing: -.3px
 			margin-bottom: 29px
@@ -2970,6 +2975,10 @@ h5
 		+w1450
 			max-width: 1306px
 		+w992
+			max-width: 713px
+		@media (max-width: 767px)
+			max-width: 697px
+		+w753
 			max-width: 713px
 	&__slider-block
 		padding: 0 85px
@@ -3018,7 +3027,7 @@ h5
 						height: 100%
 						right: 0
 						top: 0
-						width: 6%
+						pointer-events: none
 						position: absolute
 						z-index: 3
 						background: linear-gradient(to right, rgba(255,255,255,0.01) 0%,rgba(255,255,255,1) 100%)
@@ -3096,7 +3105,7 @@ h5
 		margin-bottom: 58px
 		letter-spacing: -0.005em
 		+w768
-			padding-left: 15px
+			//padding-left: 15px
 			font-size: 15px
 			letter-spacing: -.5px
 			margin-bottom: 35px
@@ -3244,6 +3253,24 @@ h5
 	display: none
 	@media only screen and (max-width: 991px)
 		display: block
+@media (max-width: 767px) and (orientation: landscape)
+	.pid__desc_nlist_last
+		display: block
+		margin-left: 20px
+	.psg__slider-wrap .products-wrap
+		padding-right: 29px
+		padding-left: 32px
+
+.psg__slider-block, .pml__block,.prv__slider-wrap
+	+w753
+		margin-left: -5%
+		margin-right: -5%
+.pml__wrap.another__color
+	.pml__item:nth-child(1),.pml__item:nth-child(2),.pml__item:nth-child(3)
+		+w753
+			border-bottom: none
+
+
 
 // Media Queries
 @import ../css/media-queries/media.sass

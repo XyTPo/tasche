@@ -1,1 +1,40 @@
-node_modules
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.ftpquota
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ignore log files and databases
+*.log
+
+# ignore IDE files
+/.idea
+
+/circle.yml
+/wp-config.php
+
+### Sass ###
+.sass-cache/
+*.css.map
+
+### Gulp ###
+node_modules/
+
+.htaccess
+vendor/
+
+/logs/*
+!/logs/.htaccess

@@ -95,7 +95,17 @@ $(function(){
 
 	$('.region__city').click(function(e){
 		e.preventDefault;
-		$('.city-window').toggleClass('city-open');
+		var citiesPopup = $('.city-window');
+		if (citiesPopup.hasClass('city-open')) {
+			citiesPopup.removeClass('city-open');
+		} else {
+			if(!$(this).parent().hasClass('region')){
+				citiesPopup.css('top', $(window).scrollTop() + 120);
+			} else {
+				citiesPopup.removeAttr("style");
+			}
+			citiesPopup.addClass('city-open');
+		}
 		$('.overley').toggleClass('overley-open');
 
 	});
@@ -307,5 +317,42 @@ $(function(){
         });
     }
 
-
+	$('.itmc__inc, .itmc__dec').click(function(){
+		var amountBlock = $(this).siblings('.itmc__amount');
+		var amount = parseInt(amountBlock.text());
+		var maxAmount = $(this).parent().data('max-value');
+		if($(this).hasClass('itmc__inc')){
+			if (amount < maxAmount) amount++;
+		} else {
+			if (amount > 1) amount--;
+		}
+		amountBlock.text(amount);
+		if($(this).parents('.gcb-table').length) {
+			$(this).parents('.gcb-table').trigger('cart:recount')
+		}
+	});
+	function addGapToString(number){
+		var num = number.toString();
+		var result = "";
+		var gap_size = 3; //Desired distance between spaces
+		console.log(result, num)
+		while (num.length > 0) // Loop through string
+		{
+			result = result + " " + num.substring(0,gap_size); // Insert space character
+			num = num.substring(gap_size);  // Trim String
+		}
+		console.log(result)
+		return(result) 
+	}
+	$('.gcb-table').on('cart:recount', function () {
+		console.log('cart:recount');
+		/*var cartRow = $(this).find('.gcb-item');
+		cartRow.each(function(){
+			var amount = parseInt($(this).find('.itmc__amount').text());
+			var singlePrice = parseInt($(this).find('.gcb-item__price-regular .digits').text().replace(/\s/g,''));
+			var totalPrice = singlePrice * amount;
+			var totalPriceGap = addGapToString(totalPrice);
+			//console.log(addGapToString(totalPrice));
+		});*/
+	});
 });

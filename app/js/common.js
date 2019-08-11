@@ -331,28 +331,22 @@ $(function(){
 			$(this).parents('.gcb-table').trigger('cart:recount')
 		}
 	});
-	function addGapToString(number){
-		var num = number.toString();
-		var result = "";
-		var gap_size = 3; //Desired distance between spaces
-		console.log(result, num)
-		while (num.length > 0) // Loop through string
-		{
-			result = result + " " + num.substring(0,gap_size); // Insert space character
-			num = num.substring(gap_size);  // Trim String
+	function addGapToNumber(num){		
+		if (num % 1 != 0) {
+			num = num.toFixed(2);
 		}
-		console.log(result)
-		return(result) 
+		return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 ')
 	}
 	$('.gcb-table').on('cart:recount', function () {
-		console.log('cart:recount');
-		/*var cartRow = $(this).find('.gcb-item');
+		var cartTotalPrice = 0;
+		var cartRow = $(this).find('.gcb-item');
 		cartRow.each(function(){
 			var amount = parseInt($(this).find('.itmc__amount').text());
-			var singlePrice = parseInt($(this).find('.gcb-item__price-regular .digits').text().replace(/\s/g,''));
-			var totalPrice = singlePrice * amount;
-			var totalPriceGap = addGapToString(totalPrice);
-			//console.log(addGapToString(totalPrice));
-		});*/
+			var singlePrice = parseFloat($(this).find('.gcb-item__price-regular .digits').text().replace(/\s+/g,''));
+			var rowTotalPrice = singlePrice * amount;
+			$(this).find('.gcb-item__price-total .digits').text(addGapToNumber(rowTotalPrice));
+			cartTotalPrice += rowTotalPrice;
+		});
+		$(this).find('.gcb-total__price-value .digits').text(addGapToNumber(cartTotalPrice));
 	});
 });

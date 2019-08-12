@@ -3503,5 +3503,151 @@ h5
 			line-height: 28px
 			text-align: center
 
+.gob
+	padding-top: 105px
+	padding-bottom: 110px
+	display: flex
+	&__col-left
+		width: 50%
+		padding-right: 3.3%
+		flex-grow: 0
+		flex-shrink: 0
+	&__col-right
+		width: 50%
+		padding-left: 3%
+		flex-grow: 0
+		flex-shrink: 0
+	&__title
+		font-size: 22px
+		text-transform: uppercase
+		font-weight: 700
+		margin-bottom: 47px
+		letter-spacing: -.005em
+	&i
+		&__row
+			display: flex
+			margin-bottom: 32px
+			&_ms
+				margin-bottom: 16px
+		&__col-left
+			width: 29.7%
+			flex-grow: 0
+			flex-shrink: 0
+			padding-right: 10px
+			padding-top: 3px
+			&_pt
+				padding-top: 10px
+		&__col-right
+			width: 70.3%
+			flex-grow: 0
+			flex-shrink: 0
+		&__title
+			max-width: 200px
+			margin-bottom: 3px
+		&__subtitle
+			font-size: 12px
+			color: #6d6d6d
+		&__city
+			display: flex
+			&-label
+				flex-grow: 1
+				border: 1px solid $grey-3
+				border-right: 0
+				text-transform: uppercase
+				font-size: 16px
+				line-height: 18px
+				padding: 11px 35px 12px
+				letter-spacing: .03em
+			&-trigger
+				width: 119px
+				max-width: 119px
+				border: 1px solid $grey-3
+				text-align: center
+				font-size: 16px
+				letter-spacing: 0
+				font-weight: 500
+				line-height: 18px
+				padding: 10px 10px
+				background: $light-grey
+				cursor: pointer
+				text-transform: none
+				&:hover
+					color: $hover-1
+					border-color: $hover-1
+		&__radio
+			$this: ''
+			&-item
+				$this: &
+				position: relative
+				margin-left: 46px
+				margin-bottom: 18px
+				&:not(.active)
+					cursor: pointer
+			&-icon
+				position: absolute
+				left: -46px
+				top: 50%
+				transform: translate(0, -50%)
+				padding-right: 16px
+				&-inner
+					border: 1px solid $grey-3
+					background: $light-grey
+					width: 30px
+					height: 30px
+					position: relative
+					#{$this}:not(.active):hover &
+						border: 1px solid $hover-1
+					#{$this}.active &::before
+						content: ''
+						position: absolute
+						width: 5px
+						height: 11px
+						border-right: 2px solid $grey-2
+						border-bottom: 2px solid $grey-2
+						top: 6px
+						left: 10px
+						transform: rotate(45deg)
+			&-content
+				border: 1px solid $grey-3
+				#{$this}:not(.active):hover &
+					border: 1px solid $hover-1
+			&-dl
+				padding: 26px 30px 26px 35px
+				&-cols
+					display: flex
+				&-col-left
+					width: 44%
+					flex-grow: 0
+					flex-shrink: 0
+					padding-right: 10px
+				&-col-right
+					width: 56%
+					flex-grow: 0
+					flex-shrink: 0
+				&-title
+					font-size: 14px
+					color: #6d6d6d
+					font-weight: bold
+					margin-bottom: 16px
+				&-descr
+					font-size: 12px
+					color: $grey-2
+					line-height: 1.4
+				&-tech
+					display: flex
+					justify-content: space-between
+					max-width: 147px
+				&-price
+					color: $hover-1
+					font-size: 14px
+				&-time
+					font-weight: bold
+					font-size: 14px
+			&-sl
+				padding: 13px 35px 13px
+				&-title
+					color: $grey-2
+					font-size: 14px
+
 // Media Queries
 @import ../css/media-queries/media.sass

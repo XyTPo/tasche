@@ -95,7 +95,17 @@ $(function(){
 
 	$('.region__city').click(function(e){
 		e.preventDefault;
-		$('.city-window').toggleClass('city-open');
+		var citiesPopup = $('.city-window');
+		if (citiesPopup.hasClass('city-open')) {
+			citiesPopup.removeClass('city-open');
+		} else {
+			if(!$(this).parent().hasClass('region')){
+				citiesPopup.css('top', $(window).scrollTop() + 120);
+			} else {
+				citiesPopup.removeAttr("style");
+			}
+			citiesPopup.addClass('city-open');
+		}
 		$('.overley').toggleClass('overley-open');
 
 	});
@@ -307,5 +317,36 @@ $(function(){
         });
     }
 
-
+	$('.itmc__inc, .itmc__dec').click(function(){
+		var amountBlock = $(this).siblings('.itmc__amount');
+		var amount = parseInt(amountBlock.text());
+		var maxAmount = $(this).parent().data('max-value');
+		if($(this).hasClass('itmc__inc')){
+			if (amount < maxAmount) amount++;
+		} else {
+			if (amount > 1) amount--;
+		}
+		amountBlock.text(amount);
+		if($(this).parents('.gcb-table').length) {
+			$(this).parents('.gcb-table').trigger('cart:recount')
+		}
+	});
+	function addGapToNumber(num){		
+		if (num % 1 != 0) {
+			num = num.toFixed(2);
+		}
+		return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 ')
+	}
+	$('.gcb-table').on('cart:recount', function () {
+		var cartTotalPrice = 0;
+		var cartRow = $(this).find('.gcb-item');
+		cartRow.each(function(){
+			var amount = parseInt($(this).find('.itmc__amount').text());
+			var singlePrice = parseFloat($(this).find('.gcb-item__price-regular .digits').text().replace(/\s+/g,''));
+			var rowTotalPrice = singlePrice * amount;
+			$(this).find('.gcb-item__price-total .digits').text(addGapToNumber(rowTotalPrice));
+			cartTotalPrice += rowTotalPrice;
+		});
+		$(this).find('.gcb-total__price-value .digits').text(addGapToNumber(cartTotalPrice));
+	});
 });

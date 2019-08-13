@@ -319,7 +319,6 @@ $(function(){
 
     $('.itmc__inc, .itmc__dec').click(function(){
         var amountBlock = $(this).siblings('.itmc__amount');
-        var priceBlock = $('.gcb-item__price-total .digits,.gcb-total__price .digits');
         var amount = parseInt(amountBlock.text());
         var maxAmount = $(this).parent().data('max-value');
         if($(this).hasClass('itmc__inc')){
@@ -328,45 +327,26 @@ $(function(){
             if (amount > 1) amount--;
         }
         amountBlock.text(amount);
-        console.log(amount);
-        var price=amount*2455+"";
-
-        var price1=price.slice(price.length-3, price.length);
-        var price2=price.slice(0, price.length-3);
-        priceBlock.text(price);
-        console.log(price1+"fd1");
-        console.log(price2+"fd2");
-        priceBlock.text(price2 + " " +price1);
         if($(this).parents('.gcb-table').length) {
             $(this).parents('.gcb-table').trigger('cart:recount')
         }
     });
-
-
-    function addGapToString(number){
-        var num = number.toString();
-        var result = "";
-        var gap_size = 3; //Desired distance between spaces
-        console.log(result, num)
-        while (num.length > 0) // Loop through string
-        {
-            result = result + " " + num.substring(0,gap_size); // Insert space character
-            num = num.substring(gap_size);  // Trim String
+    function addGapToNumber(num){
+        if (num % 1 != 0) {
+            num = num.toFixed(2);
         }
-        console.log(result)
-        return(result)
+        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 ')
     }
     $('.gcb-table').on('cart:recount', function () {
-        console.log('cart:recount');
-
-        /*var cartRow = $(this).find('.gcb-item');
+        var cartTotalPrice = 0;
+        var cartRow = $(this).find('.gcb-item');
         cartRow.each(function(){
             var amount = parseInt($(this).find('.itmc__amount').text());
-            var singlePrice = parseInt($(this).find('.gcb-item__price-regular .digits').text().replace(/\s/g,''));
-            var totalPrice = singlePrice * amount;
-            var totalPriceGap = addGapToString(totalPrice);
-            //console.log(addGapToString(totalPrice));
-        });*/
+            var singlePrice = parseFloat($(this).find('.gcb-item__price-regular .digits').text().replace(/\s+/g,''));
+            var rowTotalPrice = singlePrice * amount;
+            $(this).find('.gcb-item__price-total .digits').text(addGapToNumber(rowTotalPrice));
+            cartTotalPrice += rowTotalPrice;
+        });
+        $(this).find('.gcb-total__price-value .digits').text(addGapToNumber(cartTotalPrice));
     });
-
 });

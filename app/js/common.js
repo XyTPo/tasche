@@ -111,9 +111,9 @@ $(function(){
 	});
 
 	$('.city-window__closed').click(function(e){
-		e.preventDefault;
 		$('.city-window').toggleClass('city-open');
 		$('.overley').toggleClass('overley-open');
+        e.preventDefault();
 	});
 
 	// Действия Чекбоксов
@@ -349,4 +349,14 @@ $(function(){
 		});
 		$(this).find('.gcb-total__price-value .digits').text(addGapToNumber(cartTotalPrice));
 	});
+    $('.gobi__radio-item').click(function(e){
+    	if(!$(this).hasClass('active')) {
+    		$(this).addClass('active').siblings().removeClass('active');
+		}
+        e.preventDefault();
+    });
+    $('.gob-terms__icon').click(function(e){
+    	$(this).parent().toggleClass('active');
+        e.preventDefault();
+    });
 });

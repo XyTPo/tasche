@@ -19,6 +19,7 @@
 *.log
 # ignore IDE files
 /.idea
+/.vscode
 /circle.yml
 /wp-config.php
 ### Sass ###

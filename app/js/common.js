@@ -355,4 +355,8 @@ $(function(){
 		}
         e.preventDefault();
     });
+    $('.gob-terms__icon').click(function(e){
+    	$(this).parent().toggleClass('active');
+        e.preventDefault();
+    });
 });

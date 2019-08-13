@@ -3505,8 +3505,10 @@ h5
 
 .gob
 	padding-top: 105px
-	padding-bottom: 110px
-	display: flex
+	padding-bottom: 115px
+	&__top
+		display: flex
+		margin-bottom: 80px
 	&__col-left
 		width: 50%
 		padding-right: 3.3%
@@ -3685,6 +3687,238 @@ h5
 					height: 87px
 		&__input
 			width: 100%
+	&-table
+		border: 1px solid #f8f8f8
+		box-shadow: 2px 2px 5px 0 #f4f4f4
+		margin-bottom: 33px
+		$cartTableCol: ''
+		&__title
+			font-size: 22px
+			text-transform: uppercase
+			font-weight: 700
+			margin-bottom: 46px
+			letter-spacing: -.005em
+		&__clear-cart
+			cursor: pointer
+			&:hover
+				color: $hover-1
+		&__col
+			$cartTableCol: &
+			flex-grow: 0
+			flex-shrink: 0
+			display: flex
+			justify-content: center
+			align-items: center
+			&-1
+				width: 53.5%
+				justify-content: flex-start
+			&-2
+				width: 11%
+			&-3
+				width: 11.5%
+			&-4
+				width: 13.5%
+			&-5
+				width: 10.5%
+				justify-content: flex-end
+		&__toprow
+			background: #f9f9f9
+			padding: 16px 28px 16px 29px
+			font-size: 16px
+			line-height: 20px
+			font-weight: bold
+			color: #6d6d6d
+			text-transform: uppercase
+			display: flex
+			#{$cartTableCol}
+				&-1
+					padding-left: 18px
+		&__toprowmob
+			display: none
+		&__content
+			padding: 45px 28px 34px 29px
+	&-item
+		border-top: 1px solid #e2e2e2
+		border-bottom: 1px solid #e2e2e2
+		margin-top: -1px
+		display: flex
+		padding: 16px 0
+		align-items: center
+		&__image
+			width: 200px
+			max-width: 200px
+			height: 169px
+			display: flex
+			align-items: center
+			justify-content: center
+			flex-grow: 0
+			margin-right: 20px
+			img
+				display: block
+				max-width: 100%
+				max-height: 100%
+				height: auto
+				width: auto
+		&__info
+			padding-top: 29px
+		&__title
+			font-size: 15px
+			font-weight: 700
+			text-transform: uppercase
+			max-width: 280px
+			line-height: 1.2
+			margin-bottom: 22px
+			letter-spacing: 0
+		&__descr
+			&-row
+				display: flex
+				font-size: 13px
+				line-height: 15px
+				margin-bottom: 5px
+			&-lcol
+				width: 104px
+				max-width: 104px
+				flex-grow: 0
+			&-label
+				color: #6d6d6d
+			&-rcol
+				display: flex
+				align-items: center
+			&-text
+				margin-right: 7px
+			&-color
+				width: 12px
+				height: 12px
+				margin-top: -1px
+		&__discount
+			font-size: 17px
+		&__price
+			padding-bottom: 18px
+			text-align: center
+			&-old
+				font-size: 17px
+				line-height: 19px
+				text-decoration: line-through
+			&-regular
+				font-size: 19px
+				line-height: 22px
+				color: $hover-1
+				padding: 6px 0
+			&-total
+				font-size: 19px
+				line-height: 22px
+				color: $hover-1
+				padding-right: 20px
+	&-itmc
+		display: flex
+		align-items: flex-start
+		&__amount
+			width: 69px
+			height: 29px
+			margin: 0 6px
+			border: 1px solid #e0e0e0
+			font-size: 17px
+			line-height: 28px
+			text-align: center
+
+	&-total
+		display: flex
+		justify-content: flex-end
+		padding: 30px 20px 0 0
+		&__delivery
+			display: flex
+			align-items: center
+			justify-content: flex-end
+			margin-bottom: 8px
+			&-label
+				font-size: 16px
+				line-height: 19px
+				text-transform: uppercase
+			&-value
+				font-size: 19px
+				line-height: 22px
+				font-weight: bold
+				width: 117px
+				text-align: right
+		&__price
+			display: flex
+			align-items: center
+			justify-content: flex-end
+			&-label
+				font-size: 16px
+				line-height: 19px
+				font-weight: bold
+				text-transform: uppercase
+			&-value
+				font-size: 19px
+				line-height: 22px
+				color: $hover-1
+				font-weight: bold
+				width: 117px
+				text-align: right
+	&-buttons
+		display: flex
+		justify-content: flex-end
+		&__block
+			display: flex
+			align-items: flex-start
+		&__to-curt
+			display: block
+			width: 330px
+			height: 60px
+			line-height: 57px
+			font-size: 16px
+			font-weight: bold
+			text-transform: uppercase
+		&__to-one-click
+			display: block
+			width: 377px
+			height: 60px
+			line-height: 57px
+			font-size: 16px
+			font-weight: bold
+			text-transform: uppercase
+			padding: 0
+			margin-right: 16px
+			text-align: center
+	&-terms
+		$this: ''
+		display: flex
+		justify-content: flex-end
+		margin-bottom: 45px
+		&__block
+			$this: &
+			display: flex
+			align-items: center
+		&__icon
+			border: 1px solid #e0e0e0
+			background: #f9f9f9
+			width: 30px
+			height: 30px
+			position: relative
+			cursor: pointer
+			margin-right: 18px
+			&:hover
+				color: $hover-1
+			#{$this}.active &::before
+				content: ''
+				position: absolute
+				width: 5px
+				height: 11px
+				border-right: 2px solid #6c6c6c
+				border-bottom: 2px solid #6c6c6c
+				top: 6px
+				left: 10px
+				transform: rotate(45deg)
+		&__label
+			font-size: 16px
+		&__link
+			color: $grey
+			text-decoration: underline
+			&:hover
+				color: $hover-1
+
+
 
 // Media Queries
 @import ../css/media-queries/media.sass

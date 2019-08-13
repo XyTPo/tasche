@@ -1,20 +1,19 @@
-	// Плавающая шапка и боковое меню
+// Плавающая шапка и боковое меню
 window.onscroll = function showHeader() {
-	var header = document.querySelector('.fixed-head');
-	var list = document.querySelector('.location');
-	
-	if(window.pageYOffset > 75){
-		header.classList.add('header-fixed');
-		list.classList.add('list-padding');	
-	} else{
-		header.classList.remove('header-fixed');
-		list.classList.remove('list-padding');
-	}
+    var header = document.querySelector('.fixed-head');
+    var list = document.querySelector('.location');
+
+    if(window.pageYOffset > 75){
+        header.classList.add('header-fixed');
+        list.classList.add('list-padding');
+    } else{
+        header.classList.remove('header-fixed');
+        list.classList.remove('list-padding');
+    }
 };
 
 
 $(function(){
-
 	// Скрытие первой сортировки по клику на любую область
 	$(document).mouseup(function (e){
 		var re = $(".sorting-sale");
@@ -186,39 +185,39 @@ $(function(){
             $(".polzunok-input-5-left").val(input_left);
             $(".polzunok-input-5-right").val(input_right);
             $(".polzunok-5").slider( "values", [ input_left, input_right ] );
-		}
-	});
+        }
+    });
 
-	// Список телефонов на моб. устройствах
-	$('.mobile-phones-icon').click(function(e){
-		e.preventDefault;
-		$('.mobile-phones-hidden').toggleClass('mobile-phones-hidden-active');
-	});
+    // Список телефонов на моб. устройствах
+    $('.mobile-phones-icon').click(function(e){
+        e.preventDefault;
+        $('.mobile-phones-hidden').toggleClass('mobile-phones-hidden-active');
+    });
 
-	$(document).mouseup(function (e) {
-		var container = $(".mobile-phones-hidden");
-		if (container.has(e.target).length === 0){
-			container.removeClass('mobile-phones-hidden-active');
-		}
-	});
+    $(document).mouseup(function (e) {
+        var container = $(".mobile-phones-hidden");
+        if (container.has(e.target).length === 0){
+            container.removeClass('mobile-phones-hidden-active');
+        }
+    });
 
-	// Активность иконки к сравнению
-	$('.products-icons__list').on('click', function (e) {
-		e.preventDefault();
-		$(this).toggleClass('products-icons__list-active');
-	});
+    // Активность иконки к сравнению
+    $('.products-icons__list').on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('products-icons__list-active');
+    });
 
-	// Активность иконки в избранное
-	$('.products-icons__heart').on('click', function (e) {
-		e.preventDefault();
-		$(this).toggleClass('products-icons__heart-active');
-	});
+    // Активность иконки в избранное
+    $('.products-icons__heart').on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('products-icons__heart-active');
+    });
 
-	// Смена фотографии и появление обводки у цвета
-	$('.colors-pic').on('click', function () {
-		$(this).closest('.products-wrap').find('.product-img').removeClass("ch-img").eq($(this).index()).addClass("ch-img");
-		$(this).closest('.products-wrap').find('.colors-pic').removeClass("colors-pic-active").eq($(this).index()).addClass("colors-pic-active");
-	});
+    // Смена фотографии и появление обводки у цвета
+    $('.colors-pic').on('click', function () {
+        $(this).closest('.products-wrap').find('.product-img').removeClass("ch-img").eq($(this).index()).addClass("ch-img");
+        $(this).closest('.products-wrap').find('.colors-pic').removeClass("colors-pic-active").eq($(this).index()).addClass("colors-pic-active");
+    });
 
 
     $('.pid__thumbnails-more').click(function(e){
@@ -278,7 +277,7 @@ $(function(){
             responsive:{
                 0:{
                     items:3,
-					nav:false
+                    nav:false
                 },
                 768:{
                     items:3
@@ -316,7 +315,6 @@ $(function(){
             e.preventDefault();
         });
     }
-
 	$('.itmc__inc, .itmc__dec').click(function(){
 		var amountBlock = $(this).siblings('.itmc__amount');
 		var amount = parseInt(amountBlock.text());

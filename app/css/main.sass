@@ -2479,6 +2479,9 @@ h5
 			height: 37px
 			font-size: 12px
 			padding: 0 18px
+		+w753
+			height: 43px
+
 	textarea
 		width: 100%
 		height: 87px
@@ -3810,6 +3813,7 @@ h5
 					display: flex
 					justify-content: center
 					align-items: center
+
 				+w992
 					width: 316px
 					height: 55px
@@ -3865,7 +3869,7 @@ h5
 				+w753
 					width: 14px
 					height: 14px
-					line-height: 1
+					line-height: initial
 					font-size: 10px
 				&:hover
 					color: $hover-1
@@ -3888,44 +3892,112 @@ h5
 					height: 14px
 					font-size: 10px
 					display: flex
-					line-height: 1
+					line-height: initial
 					justify-content: center
 					align-items: center
 					margin: 0 3px
 
 //end page cart
 
-
+//order page
+.p_order.content-wrapper .container
+	+w753
+		width: 90%
 .gob
 	padding-top: 105px
 	padding-bottom: 115px
+	+w1450
+		padding-bottom: 106px
+	+w1346
+		padding-top: 84px
+		padding-bottom: 115px
+	+w992
+		padding-top: 86px
+		padding-bottom: 109px
+	+w753
+		padding-top: 67px
+
 	&__top
 		display: flex
-		margin-bottom: 80px
+		margin-bottom: 82px
+		+w1450
+			flex-direction: column
+			margin-bottom: 62px
+		+w1346
+			margin-bottom: 67px
+		+w992
+			margin-bottom: 60px
+
 	&__col-left
 		width: 50%
 		padding-right: 3.3%
 		flex-grow: 0
 		flex-shrink: 0
+		+w1840
+			padding-right: 0
+		+w1450
+			max-width: 887px
+			width: 100%
+			margin-bottom: 68px
+			padding-right: 3.3%
+		+w1346
+			max-width: 876px
+			margin-bottom: 66px
+		+w992
+			padding-right: 0
 	&__col-right
 		width: 50%
 		padding-left: 3%
 		flex-grow: 0
 		flex-shrink: 0
+		+w1450
+			padding-left: 0
+			max-width: 843px
+			width: 100%
 	&__title
 		font-size: 22px
 		text-transform: uppercase
 		font-weight: 700
 		margin-bottom: 47px
 		letter-spacing: -.005em
+		&.add_margin_1
+			+w753
+				margin-bottom: 20px
+		+w1346
+			margin-bottom: 49px
+		+w992
+			margin-bottom: 30px
+		+w753
+			font-size: 15px
+			margin-bottom: 32px
 	&i
+		&__delivery
+			+w992
+				width: 200px
+			+w753
+				width: 100%
+
 		&:not(:last-child)
-			margin-bottom: 75px
+			margin-bottom: 71px
+			+w753
+				margin-bottom: 67px
 		&__row
 			display: flex
 			margin-bottom: 32px
+			+w992
+				flex-direction: column
+			+w753
+				margin-bottom: 26px
 			&_xs
 				margin-bottom: 16px
+				+w992
+					margin-bottom: 39px
+					margin-top: -5px
+				+w753
+					margin-bottom: 28px
+			&.add_margin
+				+w753
+					margin-top: 36px
 			&:last-child
 				margin-bottom: 0
 		&__col-left
@@ -3934,15 +4006,41 @@ h5
 			flex-shrink: 0
 			padding-right: 10px
 			padding-top: 3px
+			+w1450
+				width: 250px
+
 			&_pt
 				padding-top: 10px
 		&__col-right
 			width: 70.3%
 			flex-grow: 0
 			flex-shrink: 0
+			&.add_margin_2
+				+w753
+					margin-top: 19px
+			&.add_margin_3
+				+w753
+					margin-top: 9px
+			&.add_margin_4
+				+w753
+					margin-top: 23px
+			+w1346
+				width: calc(100% - 250px)
+			+w992
+				width: 100%
+				margin-top: 10px
+			+w753
+				margin-top: 14px
 		&__title
-			max-width: 200px
+
 			margin-bottom: 3px
+			width: 200px
+			+w992
+				margin-bottom: 3px
+				width: 200px
+			+w753
+				font-size: 14px
+				width: 100%
 		&__subtitle
 			font-size: 12px
 			color: #6d6d6d
@@ -3957,6 +4055,10 @@ h5
 				line-height: 18px
 				padding: 11px 35px 12px
 				letter-spacing: .03em
+				+w753
+					font-size: 13px
+					padding: 11px 15px 12px
+					width: 71%
 			&-trigger
 				width: 119px
 				max-width: 119px
@@ -3964,17 +4066,25 @@ h5
 				text-align: center
 				font-size: 16px
 				letter-spacing: 0
-				font-weight: 500
+				font-weight: 400
 				line-height: 18px
 				padding: 10px 10px
 				background: $light-grey
 				cursor: pointer
 				text-transform: none
+				color: $grey
+				+w753
+					font-size: 12px
+					padding: 12px 10px
+					width: 27%
 				&:hover
 					color: $hover-1
 					border-color: $hover-1
 		&__radio
 			$this: ''
+			+w992
+				margin-top: 4px
+				margin-bottom: -8px
 			&-item
 				$this: &
 				position: relative
@@ -3982,20 +4092,32 @@ h5
 				cursor: default
 				&:not(.active)
 					cursor: pointer
+					background: $white
+					.gobi__radio-icon-inner
+						background: $white
 				&:not(:last-child)
 					margin-bottom: 16px
+					+w1346
+						margin-bottom: 15px
+				+w753
+					margin-left: 30px
 			&-icon
 				position: absolute
 				left: -46px
 				top: 50%
 				transform: translate(0, -50%)
 				padding-right: 16px
+				+w753
+					left: -29px
 				&-inner
 					border: 1px solid $grey-3
 					background: $light-grey
 					width: 30px
 					height: 30px
 					position: relative
+					+w753
+						width: 20px
+						height: 20px
 					#{$this}:not(.active):hover &
 						border: 1px solid $hover-1
 					#{$this}.active &::before
@@ -4008,52 +4130,104 @@ h5
 						top: 6px
 						left: 10px
 						transform: rotate(45deg)
+						+w753
+							left: 0
+							right: 0
+							top: -2px
+							bottom: 0
+							margin: auto
+							width: 4px
+							height: 9px
 			&-content
 				border: 1px solid $grey-3
 				#{$this}:not(.active):hover &
 					border: 1px solid $hover-1
 			&-dl
 				padding: 26px 30px 26px 35px
+				+w753
+					padding: 0
+					padding-top: 17px
+					padding-left: 22px
+					padding-bottom: 12px
+
 				&-cols
 					display: flex
+					+w753
+						flex-direction: column
 				&-col-left
 					width: 44%
 					flex-grow: 0
 					flex-shrink: 0
 					padding-right: 10px
+					+w992
+						width: 209px
+					+w753
+						width: 100%
 				&-col-right
 					width: 56%
 					flex-grow: 0
 					flex-shrink: 0
+					+w992
+						width: 100%
+						max-width: 300px
+
 				&-title
 					font-size: 14px
 					color: #6d6d6d
 					font-weight: bold
 					margin-bottom: 16px
+					+w753
+						margin-bottom: 11px
 				&-descr
 					font-size: 12px
 					color: $grey-2
 					line-height: 1.4
+					+w992
+						line-height: 17px
+					+w753
+						font-size: 11px
+						line-height: 14px
 				&-tech
 					display: flex
 					justify-content: space-between
 					max-width: 147px
+					+w992
+						max-width: 150px
+					+w753
+						max-width: 147px
+						margin-bottom: 15px
+
 				&-price
 					color: $hover-1
 					font-size: 14px
+					font-weight: 500
+					+w753
+						font-size: 12px
 				&-time
 					font-weight: bold
 					font-size: 14px
+					+w753
+						font-size: 13px
 			&-sl
 				padding: 13px 35px 13px
+				+w753
+					padding: 15px 23px 13px
 				&-title
 					color: $grey-2
 					font-size: 14px
+					+w753
+						font-size: 12px
 		&__payments
 			margin-top: 26px
 			box-shadow: 1.286px 1.532px 6.58px 0.42px rgba(0,0,0,.13)
+			+w753
+				margin-top: 42px
 			&-wrap
 				margin-left: 46px
+				+w753
+					margin-left: 0
+
+
 			&-title
 				color: $grey
 				text-transform: uppercase
@@ -4063,19 +4237,39 @@ h5
 				padding-left: 43px
 				padding-bottom: 15px
 				font-weight: 700
+				+w992
+					padding-top: 19px
+					padding-bottom: 15px
+				+w753
+					padding: 0
+					padding-top: 11px
+					padding-left: 23px
+					padding-bottom: 12px
+					font-size: 13px
+					font-weight: 400
 			&-methods
 				display: flex
 				padding-left: 47px
 				height: 65px
 				align-items: center
+				+w753
+					padding-left: 25px
+					height: 63px
 			&-img
-				margin-right: 40px
+				margin-right: 38px
 				display: block
+				+w992
+					margin-right: 90px
+				+w753
+					margin-right: 24px
 		&__textarea
 			width: 100%
 			textarea
 				height: 161px
+				+w1450
+					height: 106px
 			&_xs
+
 				textarea
 					height: 87px
 		&__input
@@ -4085,12 +4279,17 @@ h5
 		box-shadow: 2px 2px 5px 0 #f4f4f4
 		margin-bottom: 33px
 		$cartTableCol: ''
+		+w1346
+			margin-bottom: 29px
 		&__title
 			font-size: 22px
 			text-transform: uppercase
 			font-weight: 700
 			margin-bottom: 46px
 			letter-spacing: -.005em
+			+w753
+				font-size: 15px
+				margin-bottom: 34px
 		&__clear-cart
 			cursor: pointer
 			&:hover
@@ -4105,15 +4304,86 @@ h5
 			&-1
 				width: 53.5%
 				justify-content: flex-start
+				+w1450
+					width: 43%
+				+w1346
+					width: 33%
+					flex-direction: column
+					align-items: start
+				+w992
+					width: 34%
+				+w753
+					flex-direction: row
+					margin-bottom: 14px
+					padding: 0 15px
+					position: relative
+					width: 100%
 			&-2
 				width: 11%
+				+w1346
+					width: 10%
+				+w992
+					width: 15%
+				+w753
+					width: 24%
+
 			&-3
 				width: 11.5%
+				+w1450
+					width: 16.5%
+				+w1346
+					width: 20.5%
+				+w992
+					width: 16.5%
+				+w753
+					width: 22%
 			&-4
 				width: 13.5%
+				+w1346
+					width: 15.5%
+				+w753
+					width: 22%
 			&-5
 				width: 10.5%
 				justify-content: flex-end
+				+w1450
+					width: 15.5%
+				+w1346
+					width: 19.5%
+				+w992
+					width: 23%
+					justify-content: center
+				+w753
+					width: 32%
+			&_content
+				&-2
+					+w1346
+						height: 170px
+						align-items: center
+					+w753
+						height: initial
+				&-3
+					+w1346
+						height: 166px
+						align-items: center
+					+w753
+						height: 52px
+				&-4
+					+w1346
+						height: 166px
+						align-items: center
+					+w992
+						height: 150px
+					+w753
+						height: initial
+				&-5
+					+w1346
+						height: 166px
+						align-items: center
+					+w753
+						height: 56px
+
+
 		&__toprow
 			background: #f9f9f9
 			padding: 16px 28px 16px 29px
@@ -4123,13 +4393,31 @@ h5
 			color: #6d6d6d
 			text-transform: uppercase
 			display: flex
+			+w992
+				font-size: 14px
+				font-weight: 400
+				padding: 17px 25px 16px 27px
+			+w753
+				width: 100%
+				font-size: 9px
+				padding: 0
+				margin-left: 0
+				padding-top: 5px
+				padding-bottom: 4px
 			#{$cartTableCol}
 				&-1
 					padding-left: 18px
+					+w992
+						padding-left: 7px
 		&__toprowmob
 			display: none
 		&__content
 			padding: 45px 28px 34px 29px
+			+w992
+				padding: 45px 25px 34px 27px
+			+w753
+				padding: 21px 0 19px 0
+
 	&-item
 		border-top: 1px solid #e2e2e2
 		border-bottom: 1px solid #e2e2e2
@@ -4137,6 +4425,39 @@ h5
 		display: flex
 		padding: 16px 0
 		align-items: center
+		+w1346
+			align-items: flex-start
+			padding-bottom: 8px
+		+w753
+			flex-wrap: wrap
+			padding-top: 16px
+			border: none
+			position: relative
+			padding-bottom: 0
+
+		&:before
+			+w753
+				content: ""
+				width: 90%
+				height: 1px
+				background: $gainsboro
+				position: absolute
+				left: 0
+				right: 0
+				margin: auto
+				top: 0
+		&:after
+			+w753
+				content: ""
+				width: 90%
+				height: 1px
+				background: $gainsboro
+				position: absolute
+				left: 0
+				right: 0
+				margin: auto
+				bottom: 0
+
 		&__image
 			width: 200px
 			max-width: 200px
@@ -4146,6 +4467,11 @@ h5
 			justify-content: center
 			flex-grow: 0
 			margin-right: 20px
+			+w753
+				width: 107px
+				max-width: 200px
+				height: 65px
+				margin-right: 16px
 			img
 				display: block
 				max-width: 100%
@@ -4154,6 +4480,13 @@ h5
 				width: auto
 		&__info
 			padding-top: 29px
+			+w1346
+				padding-top: 25px
+			+w753
+				padding-top: 3px
+				margin-right: 0
+				width: 100%
+
 		&__title
 			font-size: 15px
 			font-weight: 700
@@ -4162,16 +4495,38 @@ h5
 			line-height: 1.2
 			margin-bottom: 22px
 			letter-spacing: 0
+			+w992
+				font-size: 13px
+				line-height: 17px
+				letter-spacing: -0.03em
+			+w753
+				font-size: 9px
+				line-height: 12px
+				margin-bottom: 2px
+				margin-right: 17px
+				max-width: 163px
+				word-break: initial
+				width: 100%
 		&__descr
 			&-row
 				display: flex
 				font-size: 13px
 				line-height: 15px
 				margin-bottom: 5px
+				+w992
+					letter-spacing: -0.03em
+				+w753
+					font-size: 10px
+					line-height: 1
+					margin-bottom: 0
 			&-lcol
 				width: 104px
 				max-width: 104px
 				flex-grow: 0
+				+w992
+					width: 88px
+				+w753
+					width: 67px
 			&-label
 				color: #6d6d6d
 			&-rcol
@@ -4183,25 +4538,53 @@ h5
 				width: 12px
 				height: 12px
 				margin-top: -1px
+				+w753
+					width: 9px
+					height: 9px
 		&__discount
 			font-size: 17px
+			+w992
+				font-size: 15px
+			+w753
+				font-size: 10px
+				letter-spacing: 1px
+				line-height: 60px
 		&__price
 			padding-bottom: 18px
 			text-align: center
+			word-break: break-all
+			+w753
+				padding-bottom: 0
+
 			&-old
 				font-size: 17px
 				line-height: 19px
 				text-decoration: line-through
+				+w992
+					font-size: 15px
+				+w753
+					font-size: 10px
+					line-height: 1
 			&-regular
 				font-size: 19px
 				line-height: 22px
 				color: $hover-1
 				padding: 6px 0
+				+w992
+					font-size: 18px
+				+w753
+					font-size: 11px
+					line-height: 1
+					padding-top: 3px
 			&-total
 				font-size: 19px
 				line-height: 22px
 				color: $hover-1
 				padding-right: 20px
+				+w992
+					padding-right: 0
+				+w753
+					font-size: 11px
 	&-itmc
 		display: flex
 		align-items: flex-start
@@ -4213,26 +4596,55 @@ h5
 			font-size: 17px
 			line-height: 28px
 			text-align: center
+			+w992
+				font-size: 15px
+			+w753
+
+				width: 34px
+				height: 14px
+				display: flex
+				line-height: initial
+				justify-content: center
+				align-items: center
+				margin: 0 3px
+				font-size: 10px
+				margin-top: 18px
 
 	&-total
 		display: flex
 		justify-content: flex-end
 		padding: 30px 20px 0 0
+		+w1346
+			padding: 35px 26px 0 0
+		+w992
+			padding: 35px 19px 0 0
+		+w753
+			padding-top: 9px
+			padding-right: 21px
 		&__delivery
 			display: flex
 			align-items: center
 			justify-content: flex-end
 			margin-bottom: 8px
+			+w753
+				margin-bottom: 0
 			&-label
 				font-size: 16px
 				line-height: 19px
 				text-transform: uppercase
+				+w753
+
+					font-size: 10px
+					margin-right: 15px
 			&-value
 				font-size: 19px
 				line-height: 22px
 				font-weight: bold
 				width: 117px
 				text-align: right
+				+w753
+					font-size: 11px
+					width: 36px
 		&__price
 			display: flex
 			align-items: center
@@ -4242,6 +4654,8 @@ h5
 				line-height: 19px
 				font-weight: bold
 				text-transform: uppercase
+				+w753
+					font-size: 11px
 			&-value
 				font-size: 19px
 				line-height: 22px
@@ -4249,20 +4663,40 @@ h5
 				font-weight: bold
 				width: 117px
 				text-align: right
+				+w753
+					font-size: 12px
+					width: 66px
+					line-height: 1
 	&-buttons
 		display: flex
 		justify-content: flex-end
 		&__block
 			display: flex
 			align-items: flex-start
-		&__to-curt
+			+w992
+				width: 100%
+		&__to-curt.btn-to-curt
 			display: block
 			width: 330px
 			height: 60px
-			line-height: 57px
+			display: flex
+			align-items: center
+			justify-content: center
 			font-size: 16px
 			font-weight: bold
 			text-transform: uppercase
+			+w1346
+				width: 298px
+				height: 54px
+			+w992
+				width: 100%
+				height: 55px
+				font-size: 15px
+			+w753
+				display: flex
+				width: 100%
+				height: 49px
+				font-size: 12px
 		&__to-one-click
 			display: block
 			width: 377px
@@ -4279,18 +4713,34 @@ h5
 		display: flex
 		justify-content: flex-end
 		margin-bottom: 45px
+		+w992
+			margin-bottom: 40px
+		+w753
+			margin-bottom: 31px
+			justify-content: flex-start
 		&__block
 			$this: &
 			display: flex
 			align-items: center
+			+w753
+				align-items: center
+			&.active
+				.gob-terms__icon
+					background: $light-grey
+
 		&__icon
 			border: 1px solid #e0e0e0
-			background: #f9f9f9
+			background: $white
 			width: 30px
 			height: 30px
 			position: relative
 			cursor: pointer
 			margin-right: 18px
+			+w753
+				height: 20px
+				margin-right: 0
+				width: 20px
+				margin-top: -12px
 			&:hover
 				color: $hover-1
 			#{$this}.active &::before
@@ -4303,8 +4753,23 @@ h5
 				top: 6px
 				left: 10px
 				transform: rotate(45deg)
+				+w753
+					left: 0
+					right: 0
+					top: -2px
+					bottom: 0
+					margin: auto
+					width: 4px
+					height: 9px
 		&__label
 			font-size: 16px
+			+w753
+
+				font-size: 13px
+				font-weight: 700
+				margin-left: 11px
+				line-height: 19px
+				max-width: 240px
 		&__link
 			color: $grey
 			text-decoration: underline

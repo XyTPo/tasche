@@ -146,7 +146,7 @@ var ymapData = {
                 "</div>"     },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -228,7 +228,7 @@ var ymapData = {
                 "</div>" },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -307,7 +307,7 @@ var ymapData = {
                 "</div>" },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -379,7 +379,7 @@ var ymapData = {
                 "</div>" },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -407,7 +407,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -489,7 +489,7 @@ var ymapData = {
                 "</div>"   },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -517,7 +517,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -545,7 +545,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -573,7 +573,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -625,7 +625,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -701,7 +701,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -757,7 +757,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -785,7 +785,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -813,7 +813,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -865,7 +865,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -893,7 +893,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -921,7 +921,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -973,7 +973,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -1001,7 +1001,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -1029,7 +1029,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -1057,7 +1057,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -1085,7 +1085,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -1113,7 +1113,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -1165,7 +1165,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -1193,7 +1193,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -1341,7 +1341,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -1393,7 +1393,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -1445,7 +1445,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -1473,7 +1473,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -1549,7 +1549,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -1577,7 +1577,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -1605,7 +1605,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -1633,7 +1633,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -1685,7 +1685,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -1713,7 +1713,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -1861,7 +1861,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -1913,7 +1913,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -1989,7 +1989,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -2017,7 +2017,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -2045,7 +2045,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -2073,7 +2073,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -2101,7 +2101,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -2201,7 +2201,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -2229,7 +2229,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -2401,7 +2401,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -2429,7 +2429,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -2457,7 +2457,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -2485,7 +2485,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -2513,7 +2513,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -2589,7 +2589,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -2617,7 +2617,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -2645,7 +2645,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -2697,7 +2697,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -2773,7 +2773,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -2801,7 +2801,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -2829,7 +2829,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -2857,7 +2857,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -2885,7 +2885,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -2913,7 +2913,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -2941,7 +2941,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -3017,7 +3017,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -3045,7 +3045,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -3073,7 +3073,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -3101,7 +3101,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -3177,7 +3177,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -3205,7 +3205,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -3257,7 +3257,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -3285,7 +3285,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -3313,7 +3313,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -3341,7 +3341,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -3369,7 +3369,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -3421,7 +3421,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -3449,7 +3449,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -3525,7 +3525,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -3553,7 +3553,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -3581,7 +3581,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -3609,7 +3609,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -3661,7 +3661,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -3689,7 +3689,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -3717,7 +3717,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -3841,7 +3841,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -3869,7 +3869,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -3945,7 +3945,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -3973,7 +3973,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -4001,7 +4001,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -4077,7 +4077,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -4105,7 +4105,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -4133,7 +4133,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -4257,7 +4257,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -4285,7 +4285,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -4313,7 +4313,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -4341,7 +4341,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -4369,7 +4369,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -4397,7 +4397,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -4425,7 +4425,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -4453,7 +4453,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -4481,7 +4481,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -4509,7 +4509,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -4537,7 +4537,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -4565,7 +4565,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -4617,7 +4617,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -4669,7 +4669,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -4721,7 +4721,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -4749,7 +4749,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -4825,7 +4825,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -4853,7 +4853,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -4905,7 +4905,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -4933,7 +4933,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -4961,7 +4961,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -5037,7 +5037,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -5065,7 +5065,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -5093,7 +5093,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -5145,7 +5145,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -5173,7 +5173,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -5201,7 +5201,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -5229,7 +5229,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -5281,7 +5281,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -5357,7 +5357,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -5433,7 +5433,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -5461,7 +5461,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -5489,7 +5489,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -5637,7 +5637,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -5665,7 +5665,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -5741,7 +5741,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -5793,7 +5793,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -5845,7 +5845,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -5873,7 +5873,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -5901,7 +5901,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -5929,7 +5929,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -5981,7 +5981,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -6009,7 +6009,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -6061,7 +6061,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -6113,7 +6113,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -6141,7 +6141,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -6169,7 +6169,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -6293,7 +6293,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -6345,7 +6345,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -6373,7 +6373,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -6401,7 +6401,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -6429,7 +6429,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -6481,7 +6481,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -6509,7 +6509,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -6561,7 +6561,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -6589,7 +6589,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -6641,7 +6641,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -6669,7 +6669,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -6697,7 +6697,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -6725,7 +6725,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/boxberry.png"
+                "iconImageHref": "img/boxberry.png"
             },
             "boxberry": true,
             "sdec": false,
@@ -6753,7 +6753,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,
@@ -6901,7 +6901,7 @@ var ymapData = {
             },
             "options": {
                 "iconLayout": "default#image",
-                "iconImageHref": "../img/sdec.png"
+                "iconImageHref": "img/sdec.png"
             },
             "boxberry": false,
             "sdec": true,

@@ -989,6 +989,51 @@
     <aside class="main-sidebar">
         <i class="fas fa-times"></i>
         <div class="backgroun-sidebar"></div>
+        <div class="gdb__menu">
+            <div class="gdb__menu-group">
+                <div class="backgroun-sidebar"></div>
+                <div class="gdb__menu-title">
+                    Для клиентов
+                </div>
+                <div class="gdb__menu-list">
+                    <div class="gdb__menu-item">
+                        <a href="#" class="gdb__menu-link">Как оформить заказ</a>
+                    </div>
+                    <div class="gdb__menu-item">
+                        <a href="#" class="gdb__menu-link">Магазин в москве</a>
+                    </div>
+                    <div class="gdb__menu-item">
+                        <a href="#" class="gdb__menu-link active">Доставка и самовывоз</a>
+                    </div>
+                    <div class="gdb__menu-item">
+                        <a href="#" class="gdb__menu-link">гарантия и возврат </a>
+                    </div>
+                    <div class="gdb__menu-item">
+                        <a href="#" class="gdb__menu-link">Оптовым клиентам</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gdb__menu-group">
+                <div class="backgroun-sidebar"></div>
+                <div class="gdb__menu-title gdb__menu-title_large">
+                    Информация
+                </div>
+                <div class="gdb__menu-list">
+                    <div class="gdb__menu-item">
+                        <a href="#" class="gdb__menu-link gdb__menu-link_large">Реквизиты магазина</a>
+                    </div>
+                    <div class="gdb__menu-item">
+                        <a href="#" class="gdb__menu-link gdb__menu-link_large">Скидки и акции</a>
+                    </div>
+                    <div class="gdb__menu-item">
+                        <a href="#" class="gdb__menu-link gdb__menu-link_large active">Распродажи</a>
+                    </div>
+                    <div class="gdb__menu-item">
+                        <a href="#" class="gdb__menu-link gdb__menu-link_large">Полезная информация </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <h4 class="category-title">
             Категории
         </h4>
@@ -2109,7 +2154,7 @@
                                             <span class="gdb-map__check-label">Boxberry</span>
                                             <img class="gdb-map__check-icon" src="img/del-icon-boxberry.png">
                                         </div>
-                                        <div class="gdb-map__check-item active" data-type="returnOption">
+                                        <div class="gdb-map__check-item" data-type="returnOption">
                                             <span class="gdb-map__check-box"></span>
                                             <span class="gdb-map__check-label">Возврат от получателя</span>
                                         </div>
@@ -2142,11 +2187,11 @@
                                             </div>
                                         </div>
                                         <div class="gdb-table__content">
-                                            <div class="gdb-table__row">
+                                            <div class="gdb-table__row" data-boxberry="false" data-sdec="true" data-cardpayment="true" data-returnoption="true">
                                                 <div class="gdb-table__col gdb-table__col-1">
                                                     <div class="gdb-table__info">
                                                         <div class="gdb-table__info-title">
-                                                            <img class="gdb-table__info-title-icon" src="img/del-icon-boxberry.png">
+                                                            <img class="gdb-table__info-title-icon" src="img/del-icon-sdek.png">
                                                             <span>Москва Можайское_77701_С</span>
                                                         </div>
                                                         <div class="gdb-table__info-address">
@@ -2190,13 +2235,61 @@
                                                         </div>
                                                         <div class="gdb-table__benefits-item">
                                                             <img class="gdb-table__benefits-icon" src="img/del-icon-benefits2.png">
-                                                            <span class="gdb-table__benefits-label">
-                                                            <span class="gdb-table__benefits-label">Оплата картой</span></span>
+                                                            <span class="gdb-table__benefits-label">Оплата картой</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="gdb-table__row">
+                                            <div class="gdb-table__row" data-boxberry="true" data-sdec="false" data-cardpayment="false" data-returnoption="true">
+                                                <div class="gdb-table__col gdb-table__col-1">
+                                                    <div class="gdb-table__info">
+                                                        <div class="gdb-table__info-title">
+                                                            <img class="gdb-table__info-title-icon" src="img/del-icon-boxberry.png">
+                                                            <span>Москва Можайское_77701_С</span>
+                                                        </div>
+                                                        <div class="gdb-table__info-address">
+                                                            Москва г, Можайское ш, д.30
+                                                        </div>
+                                                        <div class="gdb-table__info-location">
+                                                            М. Славянский бульвар.
+                                                        </div>
+                                                        <div class="gdb-table__info-descr">
+                                                            Примерное расстояние от остановки до Отделения - 50 м.
+                                                            11-тиэтажный дом. Расположение входа в отделение -
+                                                            Вход со двора, под вывеской СДЭК. Этаж - цоколь.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="gdb-table__col gdb-table__col-2">
+                                                    <div class="gdb-table__time">
+                                                        <div class="gdb-table__toprow-label visible-w753">Режим работы</div>
+                                                        Пн-Пт: 10.00-20.00<br>
+                                                        Сб: 10.00-15.00
+                                                    </div>
+                                                </div>
+                                                <div class="gdb-table__col gdb-table__col-3">
+                                                    <div class="gdb-table__term">
+                                                        <div class="gdb-table__toprow-label visible-w753">Срок доставки</div>
+                                                        2-3 р.дня
+                                                    </div>
+                                                </div>
+                                                <div class="gdb-table__col gdb-table__col-4">
+                                                    <div class="gdb-table__price">
+                                                        <span class="gdb-table__toprow-label visible-w1346">Стоимость доставки</span>
+                                                        <span class="digits">0</span>
+                                                        <span class="units">₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="gdb-table__col gdb-table__col-5">
+                                                    <div class="gdb-table__benefits">
+                                                        <div class="gdb-table__benefits-item">
+                                                            <img class="gdb-table__benefits-icon" src="img/del-icon-benefits1.png">
+                                                            <span class="gdb-table__benefits-label">Возврат от получателя</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div >
+                                            <div class="gdb-table__row"  data-boxberry="true" data-sdec="false" data-cardpayment="false" data-returnoption="true">
                                                 <div class="gdb-table__col gdb-table__col-1">
                                                     <div class="gdb-table__info">
                                                         <div class="gdb-table__info-title">
@@ -2245,11 +2338,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="gdb-table__row">
+                                            <div class="gdb-table__row"  data-boxberry="false" data-sdec="true" data-cardpayment="true" data-returnoption="false">
                                                 <div class="gdb-table__col gdb-table__col-1">
                                                     <div class="gdb-table__info">
                                                         <div class="gdb-table__info-title">
-                                                            <img class="gdb-table__info-title-icon" src="img/del-icon-boxberry.png">
+                                                            <img class="gdb-table__info-title-icon"  src="img/del-icon-sdek.png">
                                                             <span>Москва Можайское_77701_С</span>
                                                         </div>
                                                         <div class="gdb-table__info-address">
@@ -2288,8 +2381,8 @@
                                                 <div class="gdb-table__col gdb-table__col-5">
                                                     <div class="gdb-table__benefits">
                                                         <div class="gdb-table__benefits-item">
-                                                            <img class="gdb-table__benefits-icon" src="img/del-icon-benefits1.png">
-                                                            <span class="gdb-table__benefits-label">Возврат от получателя</span>
+                                                            <img class="gdb-table__benefits-icon" src="img/del-icon-benefits2.png">
+                                                            <span class="gdb-table__benefits-label">Оплата картой</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2553,7 +2646,9 @@
             myMap.geoObjects.add(objectManager);
             $('.gdb-map__check-item').click(function(e){
                 $(this).toggleClass('active');
-				$(this).siblings('.soloactive').removeClass('active');
+                if($(this).hasClass('soloactive')) {
+                    $(this).siblings('.soloactive').removeClass('active');
+                }
                 var activeBoxes = $(this).parent().find('.active');
                 if (activeBoxes.length ){
                     objectManager.setFilter(function (object) {
@@ -2581,6 +2676,38 @@
                         return true;
                     });
                 }
+
+                /* List Scripts */
+				var listRow = $('.gdb-table__row');
+                if (activeBoxes.length ){		
+					listRow.each(function(){
+						var currentRow = $(this);
+						var showItem = true;
+						activeBoxes.each(function(){
+							var activeType = $(this).data('type');
+							if ( activeType == "sdec" && currentRow.data('sdec') != true) {
+								showItem = false;
+							}
+							if ( activeType == "boxberry" && currentRow.data('boxberry') != true) {
+								showItem = false;
+							}
+							if ( activeType == "returnOption" && currentRow.data('returnoption') != true) {
+								showItem = false;
+							}
+							if ( activeType == "cardPayment" && currentRow.data('cardpayment') != true) {
+								showItem = false;
+							}
+						});
+						if (!showItem) {
+                            currentRow.hide();
+                        } else {
+                            currentRow.show();
+                        }
+					});		
+                } else {
+                    listRow.show();
+                }
+
                 e.preventDefault();
             });
         }

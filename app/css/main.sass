@@ -525,7 +525,11 @@ h5
 	color: $grey
 	text-transform: uppercase
 	font-size: 12px
-
+	cursor: pointer
+.bread-crumbs span:first-child:hover
+	color: $hover-2
+.bread-crumbs span:last-child:hover
+	color: $hover-2
 .bread-crumbs__arrow
 	display: block
 	margin-left: 7px
@@ -2980,6 +2984,7 @@ h5
 			max-width: 1306px
 		+w992
 			max-width: 713px
+
 		@media (max-width: 767px)
 			max-width: 697px
 		+w753
@@ -4793,26 +4798,40 @@ h5
 		&-left
 			flex: 0 0 300px
 			max-width: 300px
+			+w1450
+				flex: 0 0 240px
+				max-width: 240px
+			+w992
+				display: none
+
 		&-right
 			flex: 1 1 auto
+			+w992
+				width: 100%
+	&__menu-group
+		position: relative
 	&__menu-title
 		background-color: #f9f9f9
 		padding: 16px 10px 16px 61px
 		text-transform: uppercase
-		font-size: 12px
+		font-size: 14px
 		line-height: 15px
+		+w1450
+			padding-left: 0
 		&_large
 			font-size: 14px
 	&__menu-list
 		padding: 20px 10px 24px 61px
+		+w1450
+			padding-left: 0
 	&__menu-item
-		margin-bottom: 20px
+		margin-bottom: 21px
 	&__menu-link
 		display: table
 		padding-left: 16px
 		position: relative
 		text-transform: uppercase
-		font-size: 12px
+		font-size: 13px
 		line-height: 15px
 		color: $grey
 		letter-spacing: 0
@@ -4834,27 +4853,66 @@ h5
 		border-left: 1px solid $header-info
 		padding: 36px 10px 110px 55px
 		max-width: 1575px
+		+w1346
+			max-width: 723px
+			padding-right: 0
+		+w992
+			border: none
+			padding: 0
+			padding-top: 31px
+			padding-bottom: 105px
+		+w753
+			padding-top: 25px
+			padding-bottom: 113px
+
 	&__title
 		font-size: 22px
 		text-transform: uppercase
 		font-weight: 700
 		margin-bottom: 47px
 		letter-spacing: -.005em
+		+w1346
+			margin-bottom: 45px
+		+w992
+			margin-bottom: 46px
+		+w753
+			font-size: 15px
+			margin-bottom: 31px
+
 	&__bread-crumbs
 		letter-spacing: -0.01em
 		margin-bottom: 44px
+		+w753
+			margin-bottom: 32px
 	&-info
 		&__row
 			display: flex
 			margin-bottom: 32px
 			max-width: 790px
+			+w1346
+				max-width: 656px
+			+w992
+				max-width: 713px
+			+w753
+				flex-direction: column
+				margin-bottom: 25px
+		&__title
+			+w753
+				font-size: 14px
+				margin-bottom: 11px
 		&__col-left
 			flex: 0 0 199px
 			max-width: 199px
 			padding-top: 3px
 			padding-right: 10px
+			+w1346
+				flex: 0 0 174px
+				max-width: 174px
+			+w753
+				flex: initial
 			&_pt
 				padding-top: 10px
+
 		&__col-right
 			flex: 1 1 auto
 		&__city
@@ -4868,6 +4926,10 @@ h5
 				line-height: 18px
 				padding: 11px 35px 12px
 				letter-spacing: .03em
+				+w753
+					font-size: 13px
+					padding: 11px 14px 12px
+					width: calc(100% - 81px)
 			&-trigger
 				width: 119px
 				max-width: 119px
@@ -4882,6 +4944,9 @@ h5
 				cursor: pointer
 				text-transform: none
 				color: $grey
+				+w753
+					font-size: 12px
+					width: 81px
 				&:hover
 					color: $hover-1
 					border-color: $hover-1
@@ -4889,18 +4954,56 @@ h5
 			border: 1px solid $grey-3
 			padding: 26px 30px 26px 35px
 			margin-bottom: 16px
+			+w1346
+				padding-bottom: 13px
+			+w992
+				padding-right: 11px
+				padding-bottom: 25px
+			+w753
+				padding-top: 17px
+				padding-left: 21px
+				padding-right: 20px
+			&:nth-child(2),&:nth-child(3)
+				.gdb-info__content-title
+					+w1346
+						margin-bottom: 0
+					+w992
+						margin-bottom: 16px
+					+w753
+						margin-bottom: 8px
+				.gdb-info__content-tech
+					+w1346
+						padding-top: 17px
+					+w992
+						padding-top: 0
+				+w1346
+					padding-bottom: 24px
+				+w753
+					padding-bottom: 17px
+
 			&-title
 				font-size: 14px
 				color: #6d6d6d
 				font-weight: 700
 				margin-bottom: 16px
 				text-transform: uppercase
+
+				+w1346
+					margin-bottom: 16px
+				+w753
+					margin-bottom: 12px
+					text-transform: initial
 			&-cols
 				display: flex
+				+w753
+					flex-direction: column
 				&-left
 					flex: 0 0 245px
 					max-width: 245px
 					padding-right: 10px
+					+w753
+						flex: initial
+						padding-bottom: 11px
 				&-right
 					flex: 1 1 auto
 			&-tech
@@ -4939,20 +5042,41 @@ h5
 						transform: rotate(45deg)
 						top: 6px
 						left: 0
+						+w753
+							left: 3px
 				p
 					padding-left: 13px
+					+w753
+						padding-left: 0
 	&-delivery__wrap
-		margin-bottom: 85px
+		margin-bottom: 66px
+		+w1346
+			margin-bottom: 71px
+		+w753
+			margin-bottom: 54px
 	&-pay
 		&__cols
 			display: flex
 			justify-content: space-between
 			margin-top: -3px
+			+w1840
+				flex-direction: column
+			+w753
+				margin-top: 34px
 			&-left
 				padding-right: 20px
 				flex: 1 1 auto
+				+w1346
+					padding-right: 0
 			&-right
 				flex: 0 0 590px
+				+w1840
+					flex: initial
+					max-width: 588px
+					width: 100%
+					margin-top: 31px
+				+w1346
+					max-width: 100%
 		&__type
 			border: 1px solid $grey-3
 			min-height: 68px
@@ -4961,8 +5085,25 @@ h5
 			align-items: center
 			max-width: 847px
 			margin-bottom: 16px
+			+w1346
+				margin-bottom: 20px
+				padding-right: 3px
+			+w992
+				padding-right: 58px
+			+w753
+				flex-direction: column
+				padding-top: 24px
+				padding-left: 22px
+				padding-right: 5px
+				padding-bottom: 25px
+				margin-bottom: 14px
+				align-items: baseline
 			&:last-child
 				margin-bottom: 0
+				.gdb-pay__type-descr
+					padding-left: 14px
+					+w753
+						padding: 0
 			&-title
 				color: $grey
 				font-size: 14px
@@ -4971,17 +5112,29 @@ h5
 				flex: 0 0 auto
 				font-weight: 700
 				position: relative
+				+w753
+					text-transform: initial
+					padding: 0
+					width: 100%
+					margin-bottom: 5px
 				&::after
 					content: '|'
 					position: absolute
 					right: 19px
 					top: 45%
 					transform: translate(0, -50%)
+					+w753
+						display: none
 			&-descr
 				color: $grey
 				font-size: 12px
-				letter-spacing: -0.03em
+				max-width: 412px
+				width: 100%
 				line-height: 1.4
+				+w1346
+					letter-spacing: -0.001em
+				+w753
+					letter-spacing: 0
 		&__systems
 			box-shadow: 1.286px 1.532px 6.58px 0.42px rgba(0,0,0,.13)
 			&-title
@@ -4993,44 +5146,84 @@ h5
 				padding-left: 43px
 				padding-bottom: 15px
 				font-weight: 700
+				+w753
+					font-size: 12px
+					padding-left: 22px
+					padding-top: 13px
+					padding-bottom: 11px
 			&-icons
 				display: flex
 				padding-left: 47px
 				height: 63px
 				align-items: center
+				+w753
+					padding-left: 22px
 			&-img
 				margin-right: 78px
 				display: block
+				+w753
+					margin-right: 25px
 	&-map
 		&__wrap
-			margin-bottom: 88px
+			margin-bottom: 80px
+			+w1450
+				margin-bottom: 87px
+				margin-right: -10px
+			+w1346
+				margin-right: 0
+			+w992
+				margin-bottom: 83px
+			+w753
+				margin-bottom: 68px
 		&__block
 			border: 1px solid #f8f8f8
 			box-shadow: 2px 2px 5px 0 #f4f4f4
+			+w753
+				margin-top: 43px
 		&__controls
 			background: $light-grey
 			display: flex
 			justify-content: space-between
 			align-items: center
 			padding: 7px 0 8px
+			+w1840
+				background: $white
+				flex-direction: column
+				align-items: flex-start
+				padding: 0
+
 		&__type-switch
 			display: flex
+			+w1840
+				background: $light-grey
+				width: 100%
+				padding-top: 10px
+				padding-bottom: 7px
+			+w1346
+				padding-top: 8px
 			&-item
 				height: 36px
 				width: 200px
 				display: flex
 				align-items: center
 				justify-content: center
+				+w753
+					width: 50%
 				&:first-child
 					width: 222px
+					+w753
+						width: 50%
 				&:not(:last-child)
 					border-right: 1px solid #d8d9d9
+
 			&-trigger
 				font-size: 16px
 				text-transform: uppercase
 				color: $grey
 				font-weight: 700
 				cursor: pointer
+				+w753
+					font-size: 12px
 				&.active
 					color: $black
 				&:hover
@@ -5041,6 +5234,16 @@ h5
 				padding-top: 3px
 				padding-right: 36px
 				display: flex
+				+w1840
+					padding-top: 12px
+					padding-left: 30px
+				+w1346
+					padding-right: 0
+					padding-left: 26px
+				+w753
+					flex-wrap: wrap
+					padding-top: 29px
+
 			&-item
 				$this: &
 				margin-left: 60px
@@ -5049,16 +5252,48 @@ h5
 				padding-left: 29px
 				color: $grey
 				cursor: pointer
+				+w1840
+					margin-right: 58px
+					margin-left: 0
+				+w1346
+					margin-left: 26px
+					margin-right: 0
+				+w992
+					margin-left: 43px
+				+w753
+					margin-left: 0
+
+
 				&:first-child
 					margin-right: 0
+					+w1840
+						margin-right: 58px
+					+w1346
+						margin-right: 0
+						margin-left: 0
+					+w753
+						margin-right: 29px
+				&:nth-child(3)
+					+w753
+						margin-top: 14px
+						margin-bottom: 14px
+						width: 100%
+
+
 				&:hover
 					color: $hover-1
 				&_icon
 					padding-right: 24px
+					+w992
+						padding-right: 27px
 
 			&-label
 				font-size: 15px
 				padding-top: 2px
+				+w1346
+					font-size: 14px
+				+w753
+					font-size: 13px
 			&-box
 				width: 20px
 				height: 20px
@@ -5084,8 +5319,21 @@ h5
 				position: absolute
 				right: 3px
 				top: -7px
+				+w753
+					width: 16px
+					right: 4px
+					top: -4px
 		&__content
 			padding: 45px 36px 45px 29px
+			padding: 45px 36px 67px 29px
+			+w1840
+				padding-top: 14px
+			+w1450
+				padding-right: 28px
+			+w753
+				padding-top: 26px
+				padding-bottom: 35px
+
 			&-item:not(.active)
 				display: none
 		&__jsmap
@@ -5098,6 +5346,9 @@ h5
 	&-table
 		margin-top: -29px
 		$cartTableCol: ''
+		+w1840
+			margin-top: 0
+			border-top: 1px solid $gainsboro
 		&__col
 			$cartTableCol: &
 			flex-grow: 0
@@ -5106,19 +5357,158 @@ h5
 			&-1
 				width: 40%
 				justify-content: flex-start
+				+w1840
+					width: 41%
+				+w1450
+					width: 42.5%
+				+w1346
+					width: 57%
+				+w753
+					width: 100%
+
+
 			&-2
 				width: 11%
+				+w1840
+					width: 18.5%
+				+w1450
+					width: 19%
+				+w1346
+					width: 24%
+				+w753
+					width: 100%
+					order: 4
+				.gdb-table__time
+					+w753
+						font-size: 11px
+						padding-left: 27px
+						color: $black
+						padding-top: 0
+						margin-bottom: 13px
+						position: relative
+					&:after
+						+w753
+							content: ''
+							position: absolute
+							width: 6px
+							height: 6px
+							background: #000
+							-webkit-transform: rotate(45deg)
+							-moz-transform: rotate(45deg)
+							-ms-transform: rotate(45deg)
+							-o-transform: rotate(45deg)
+							transform: rotate(45deg)
+							top: 6px
+							left: 6px
+				.gdb-table__toprow-label
+					+w753
+						color: $grey
+						margin-right: 9px
 
 			&-3
 				width: 15.5%
 				justify-content: center
+				+w1450
+					width: 15%
+				+w1346
+					width: 19%
+				+w753
+					width: 100%
+					order: 3
+					display: flex
+					justify-content: flex-start
+				.gdb-table__toprow-label
+					+w753
+						display: inline-flex!important
+						color: $grey
+						margin-right: 6px
+				.gdb-table__term
+					+w753
+						font-size: 11px
+						padding-left: 27px
+						color: $black
+						padding-top: 0
+						margin-bottom: 10px
+						position: relative
+					&:after
+						+w753
+							content: ''
+							position: absolute
+							width: 6px
+							height: 6px
+							background: #000
+							-webkit-transform: rotate(45deg)
+							-moz-transform: rotate(45deg)
+							-ms-transform: rotate(45deg)
+							-o-transform: rotate(45deg)
+							transform: rotate(45deg)
+							top: 4px
+							left: 6px
 
 			&-4
 				width: 16.5%
 				justify-content: center
+				+w1840
+					width: 22.5%
+					justify-content: flex-end
+				+w1450
+					width: 23.5%
+				+w1346
+					width: 100%
+					order: 2
+				.gdb-table__price
+					+w1840
+						text-align: center
+						padding-left: 67px
+						width: 100%
+
+
+					+w1450
+						padding-left: 79px
+					+w1346
+						padding-left: 0
+						padding-top: 0
+						text-align: left
+						color: $black
+						padding-left: 35px
+					+w753
+						font-size: 11px
+						padding-left: 27px
+						margin-bottom: 11px
+						position: relative
+						padding-top: 5px
+					&:after
+						+w753
+							content: ''
+							position: absolute
+							width: 6px
+							height: 6px
+							background: #000
+							-webkit-transform: rotate(45deg)
+							-moz-transform: rotate(45deg)
+							-ms-transform: rotate(45deg)
+							-o-transform: rotate(45deg)
+							transform: rotate(45deg)
+							top: 8px
+							left: 6px
+
+					.gdb-table__toprow-label
+						+w1346
+							display: inline-flex!important
+							color: $grey
+							margin-right: 7px
+
+				.gdb-table__toprow-label
+					+w1346
+						display: none
 
 			&-5
 				width: 17%
+				+w1840
+					width: 100%
+				.gdb-table__toprow-label
+					+w1840
+						display: none
 
 
 		&__toprow
@@ -5128,17 +5518,44 @@ h5
 			line-height: 20px
 			color: $black
 			display: flex
+			+w1450
+				padding: 14px 0 15px
 			#{$cartTableCol}-1
 				padding-left: 55px
+				+w1840
+					padding-left: 0
 			#{$cartTableCol}-5
 				justify-content: center
+				+w1840
+					display: none
 		&__row
 			border-bottom: 1px solid $gainsboro
 			padding: 21px 0
 			display: flex
+			+w1840
+				flex-wrap: wrap
+				padding: 20px 0
+				padding-bottom: 10px
+			+w1346
+				padding-bottom: 20px
+			+w753
+				padding-top: 26px
+				padding-bottom: 9px
 		&__info
 			padding-left: 53px
 			padding-right: 15px
+			+w1840
+				padding-left: 33px
+				padding-right: 52px
+			+w1450
+				padding-right: 60px
+			+w1346
+				padding-right: 6px
+			+w992
+				padding-right: 38px
+			+w753
+				padding-right: 0
+				padding-left: 27px
 			&-title
 				font-size: 17px
 				text-transform: uppercase
@@ -5146,46 +5563,72 @@ h5
 				margin-bottom: 12px
 				letter-spacing: 0
 				position: relative
+				+w753
+					font-size: 12px
 				&-icon
 					width: 19px
 					left: -33px
 					top: -4px
 					position: absolute
+					+w753
+						width: 15px
+						left: -29px
 			&-address
 				color: $grey
 				font-size: 15px
 				font-weight: bold
 				margin-bottom: 10px
+				+w753
+					font-size: 12px
 			&-location
 				color: $hover-1
 				font-size: 15px
 				font-weight: bold
 				margin-bottom: 3px
+				+w1346
+					margin-bottom: 6px
+				+w753
+					font-size: 12px
 			&-descr
 				color: $grey
 				font-size: 15px
 				font-weight: bold
 				max-width: 460px
 				line-height: 1.3
+				+w753
+					font-size: 12px
+					
 		&__time
 			color: $grey
 			font-size: 15px
 			font-weight: bold
 			padding-top: 40px
+			line-height: 20px
+			+w1450
+				padding-top: 45px
+			+w753
+				display: flex
 		&__term
 			color: $grey
 			font-size: 15px
 			font-weight: bold
 			padding-top: 40px
+			+w1450
+				padding-top: 45px
 		&__price
 			color: $grey
 			font-size: 15px
 			font-weight: bold
 			padding-top: 40px
 			line-height: 1.3
+			+w1450
+				padding-top: 45px
 		&__benefits
 			padding-top: 40px
 			padding-left: 30px
+			+w1840
+				padding-top: 10px
+				padding-left: 0
 			&-item
 				padding: 2px 0 2px 35px
 				margin-bottom: 10px
@@ -5194,12 +5637,22 @@ h5
 				color: $grey
 				font-size: 15px
 				font-weight: bold
+				@media (max-width: 1868px) and (min-width: 1841px)
+					font-size: 14px
+				+w753
+					font-size: 11px
+					padding-left: 27px
+					margin-bottom: 2px
 			&-icon
 				width: 22px
 				height: 22px
 				position: absolute
 				left: 0
 				top: 0
+				+w753
+					width: 18px
+					height: 18px
+					top: 2px
 
 // Media Queries
 @import ../css/media-queries/media.sass

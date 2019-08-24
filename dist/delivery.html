@@ -2097,12 +2097,12 @@
                                         </div>
                                     </div>
                                     <div class="gdb-map__check-list">
-                                        <div class="gdb-map__check-item gdb-map__check-item_icon" data-type="sdec">
+                                        <div class="gdb-map__check-item gdb-map__check-item_icon soloactive" data-type="sdec">
                                             <span class="gdb-map__check-box"></span>
                                             <span class="gdb-map__check-label">СДЭК</span>
                                             <img class="gdb-map__check-icon" src="img/del-icon-sdek.png">
                                         </div>
-                                        <div class="gdb-map__check-item gdb-map__check-item_icon" data-type="boxberry">
+                                        <div class="gdb-map__check-item gdb-map__check-item_icon soloactive" data-type="boxberry">
                                             <span class="gdb-map__check-box"></span>
                                             <span class="gdb-map__check-label">Boxberry</span>
                                             <img class="gdb-map__check-icon" src="img/del-icon-boxberry.png">
@@ -2542,6 +2542,7 @@
             myMap.geoObjects.add(objectManager);
             $('.gdb-map__check-item').click(function(e){
                 $(this).toggleClass('active');
+				$(this).siblings('.soloactive').removeClass('active');
                 var activeBoxes = $(this).parent().find('.active');
                 if (activeBoxes.length ){
                     objectManager.setFilter(function (object) {
@@ -2569,15 +2570,6 @@
                         return true;
                     });
                 }
-                /*if (activeBoxes.length ){
-                    objectManager.setFilter(function (object) {
-                        return object.courierType == "general";
-                    });
-                } else {
-                    objectManager.setFilter(function (object) {
-                        return true;
-                    });
-                }*/
                 e.preventDefault();
             });
         }

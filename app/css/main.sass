@@ -5332,7 +5332,9 @@ h5
 				padding-right: 28px
 			+w753
 				padding-top: 26px
-				padding-bottom: 35px
+				padding-bottom: 0px
+				padding-left: 0
+				padding-right: 0
 
 			&-item:not(.active)
 				display: none
@@ -5340,6 +5342,21 @@ h5
 			padding: 17px 0
 			border-top: 1px solid $gainsboro
 			border-bottom: 1px solid $gainsboro
+			+w753
+				border-bottom: 0
+				border-top: 0px
+				position: relative
+			&:after
+				+w753
+					content: ""
+					position: absolute
+					top: 0
+					left: 0
+					right: 0
+					margin: auto
+					width: 90%
+					height: 1px
+					background: $gainsboro
 			&-init
 				height: 600px
 				background-color: #f8f8f8
@@ -5349,6 +5366,9 @@ h5
 		+w1840
 			margin-top: 0
 			border-top: 1px solid $gainsboro
+		+w753
+			margin: 0 29px
+			padding-bottom: 35px
 		&__col
 			$cartTableCol: &
 			flex-grow: 0
@@ -5659,9 +5679,15 @@ h5
 	.gdb-table__toprow-label
 		display: inline-block
 		color: $black
+		+w753
+			display: block
 	.gdb-table__info-location
 		color: $grey
-		display: inline
+
+		display: flex
+		align-items: baseline
+		+w753
+			flex-direction: column
 	.gdb-table__col-1,.gdb-table__col-2,.gdb-table__col-3,.gdb-table__col-4,.gdb-table__col-5
 		width: 100%
 	.gdb-table__row
@@ -5670,11 +5696,17 @@ h5
 		padding-right: 15px
 		padding-bottom: 0
 		border-bottom: 0
+		+w753
+			padding: 0
+			padding-top: 11px
+			padding-left: 25px
 	.gdb-table__info
 		padding: 0
 	.gdb-table__info-descr
 		max-width: 800px
 		display: inline-flex
+		+w753
+			max-width: 400px
 	.gdb-table__time
 		padding-top: 0
 	.gdb-table__term,.gdb-table__price
@@ -5684,8 +5716,72 @@ h5
 		padding: 0
 		margin-left: -35px
 		margin-top: 18px
+		+w753
+			margin-left: 0
+			margin-top: 0
 	.gdb-table__benefits-item
 		color: $black
+	+w1346
+		.gdb-table__col-4 .gdb-table__price .gdb-table__toprow-label
+			color: $black
+		.gdb-table__col-4 .gdb-table__price
+			color: $grey
+		.gdb-table__col-4,.gdb-table__col-3,.gdb-table__col-2
+			order: 0
+
+		.gdb-table__col-4 .gdb-table__price:after,.gdb-table__col-2 .gdb-table__time:after,.gdb-table__col-3 .gdb-table__term:after
+			display: none
+	.gdb-table__col-2 .gdb-table__time
+		+w753
+			padding-left: 0px
+	.gdb-table__time
+		span
+			+w753
+				width: 116px
+				color: $grey
+	.gdb-table__col-3 .gdb-table__term
+		+w753
+			color: $grey
+	.gdb-table__info-title
+		+w753
+			margin-bottom: 5px
+	.gdb-table__info-title-icon
+		+w753
+			left: -18px
+			width: 12px
+			top: 2px
+	.gdb-table__info-address
+		+w753
+			margin-bottom: 0
+	.gdb-table__col-2 .gdb-table__time,.gdb-table__col-3 .gdb-table__term,.gdb-table__col-4 .gdb-table__price
+		+w753
+			margin-bottom: 0
+	.gdb-table__col-4 .gdb-table__price
+		+w1840
+			text-align: left
+
+
+.ymaps-2-1-74-balloon
+	box-shadow: none!important
+.ymaps-2-1-74-balloon_layout_panel
+	&:after
+		content: ""
+		position: absolute
+		left: 0
+		right: 0
+		top: 7px
+		width: 98%
+		height: 1px
+		background: $gainsboro
+		z-index: 1
+		margin: auto
+		+w753
+			display: none
+.ymaps-2-1-74-balloon__close+.ymaps-2-1-74-balloon__content
+	+w753
+		margin: 0!important
+		padding-right: 0
+		padding-left: 0
 
 // Media Queries
 @import ../css/media-queries/media.sass

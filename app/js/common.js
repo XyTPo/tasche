@@ -369,10 +369,4 @@ $(function(){
         }
         e.preventDefault();
     });
-    $('.gdb-map__check-item').click(function(e){
-        if(!$(this).hasClass('active')) {
-            $(this).addClass('active').siblings().removeClass('active');
-        }
-        e.preventDefault();
-    });
 });

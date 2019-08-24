@@ -2086,42 +2086,42 @@
                                 <div class="gdb-map__controls">
                                     <div class="gdb-map__type-switch">
                                         <div class="gdb-map__type-switch-item">
-                                            <div class="gdb-map__type-switch-trigger">
+                                            <div class="gdb-map__type-switch-trigger active">
                                                 Карта
                                             </div>
                                         </div>
                                         <div class="gdb-map__type-switch-item">
-                                            <div class="gdb-map__type-switch-trigger active">
+                                            <div class="gdb-map__type-switch-trigger">
                                                 Список
                                             </div>
                                         </div>
                                     </div>
                                     <div class="gdb-map__check-list">
-                                        <div class="gdb-map__check-item gdb-map__check-item_icon">
+                                        <div class="gdb-map__check-item gdb-map__check-item_icon" data-type="sdec">
                                             <span class="gdb-map__check-box"></span>
                                             <span class="gdb-map__check-label">СДЭК</span>
                                             <img class="gdb-map__check-icon" src="img/del-icon-sdek.png">
                                         </div>
-                                        <div class="gdb-map__check-item gdb-map__check-item_icon">
+                                        <div class="gdb-map__check-item gdb-map__check-item_icon" data-type="boxberry">
                                             <span class="gdb-map__check-box"></span>
                                             <span class="gdb-map__check-label">Boxberry</span>
                                             <img class="gdb-map__check-icon" src="img/del-icon-boxberry.png">
                                         </div>
-                                        <div class="gdb-map__check-item active">
+                                        <div class="gdb-map__check-item active" data-type="returnOption">
                                             <span class="gdb-map__check-box"></span>
                                             <span class="gdb-map__check-label">Возврат от получателя</span>
                                         </div>
-                                        <div class="gdb-map__check-item">
+                                        <div class="gdb-map__check-item" data-type="cardPayment">
                                             <span class="gdb-map__check-box"></span>
                                             <span class="gdb-map__check-label">Оплата картой</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="gdb-map__content">
-                                    <div class="gdb-map__content-item gdb-map__jsmap">
+                                    <div class="gdb-map__content-item gdb-map__jsmap active">
                                         <div class="gdb-map__jsmap-init" id="map"></div>
                                     </div>
-                                    <div class="gdb-map__content-item gdb-table active">
+                                    <div class="gdb-map__content-item gdb-table">
                                         <div class="gdb-table__toprow">
                                             <div class="gdb-table__col gdb-table__col-1">
                                                 <div class="gdb-table__toprow-label">Адрес и проезд</div>
@@ -2519,6 +2519,71 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/common.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=en_RU" type="text/javascript"></script>
+<script src="./js/ymap.data.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function () {
+        ymaps.ready(init);
+        function init() {
+            var myMap = new ymaps.Map('map', {
+                center: [55.76, 37.64],
+                zoom: 10,
+                controls: ['zoomControl', 'fullscreenControl', 'searchControl']
+            }, {
+                searchControlProvider: 'yandex#search',
+                balloonPanelMaxMapArea: Infinity
+            }),
+            objectManager = new ymaps.ObjectManager({
+                clusterize: true
+            });
 
+
+            objectManager.add(ymapData);
+            myMap.geoObjects.add(objectManager);
+            $('.gdb-map__check-item').click(function(e){
+                $(this).toggleClass('active');
+                var activeBoxes = $(this).parent().find('.active');
+                if (activeBoxes.length ){
+                    objectManager.setFilter(function (object) {
+                        var showItem = true;
+                        activeBoxes.each(function(){
+                            var activeType = $(this).data('type');
+                            if ( activeType == "sdec" && object.sdec != true) {
+                                showItem = false;
+                            }
+                            if ( activeType == "boxberry" && object.boxberry != true) {
+                                showItem = false;
+                            }
+                            if ( activeType == "returnOption" && object.returnOption != true) {
+                                showItem = false;
+                            }
+                            if ( activeType == "cardPayment" && object.cardPayment != true) {
+                                showItem = false;
+                            }
+                        });
+
+                        return showItem;
+                    });
+                } else {
+                    objectManager.setFilter(function (object) {
+                        return true;
+                    });
+                }
+                /*if (activeBoxes.length ){
+                    objectManager.setFilter(function (object) {
+                        return object.courierType == "general";
+                    });
+                } else {
+                    objectManager.setFilter(function (object) {
+                        return true;
+                    });
+                }*/
+                e.preventDefault();
+            });
+        }
+
+
+    })
+</script>
 </body>
 </html>

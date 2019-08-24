@@ -4120,6 +4120,8 @@ h5
 						height: 20px
 					#{$this}:not(.active):hover &
 						border: 1px solid $hover-1
+					#{$this}.active &
+						border: 1px solid $hover-1
 					#{$this}.active &::before
 						content: ''
 						position: absolute
@@ -4141,6 +4143,8 @@ h5
 			&-content
 				border: 1px solid $grey-3
 				#{$this}:not(.active):hover &
+					border: 1px solid $hover-1
+				#{$this}.active &
 					border: 1px solid $hover-1
 			&-dl
 				padding: 26px 30px 26px 35px
@@ -4743,6 +4747,8 @@ h5
 				margin-top: -12px
 			&:hover
 				color: $hover-1
+			#{$this}.active &
+				border: 1px solid $hover-1
 			#{$this}.active &::before
 				content: ''
 				position: absolute
@@ -4775,6 +4781,425 @@ h5
 			text-decoration: underline
 			&:hover
 				color: $hover-1
+
+
+.gdb
+	&__wrap
+		@media screen and (min-width: 1841px)
+			max-width: 1920px
+			width: auto
+	&__cols
+		display: flex
+		&-left
+			flex: 0 0 300px
+			max-width: 300px
+		&-right
+			flex: 1 1 auto
+	&__menu-title
+		background-color: #f9f9f9
+		padding: 16px 10px 16px 61px
+		text-transform: uppercase
+		font-size: 12px
+		line-height: 15px
+		&_large
+			font-size: 14px
+	&__menu-list
+		padding: 20px 10px 24px 61px
+	&__menu-item
+		margin-bottom: 20px
+	&__menu-link
+		display: table
+		padding-left: 16px
+		position: relative
+		text-transform: uppercase
+		font-size: 12px
+		line-height: 15px
+		color: $grey
+		letter-spacing: 0
+		&_large
+			font-size: 14px
+			letter-spacing: -.02em
+		&:hover, &.active
+			color: $hover-1
+		&::before
+			content: ''
+			border-left: 6px solid
+			border-top: 5px solid transparent
+			border-bottom: 5px solid transparent
+			position: absolute
+			left: 2px
+			top: 50%
+			transform: translate(0, -50%)
+	&__content
+		border-left: 1px solid $header-info
+		padding: 36px 10px 110px 55px
+		max-width: 1575px
+	&__title
+		font-size: 22px
+		text-transform: uppercase
+		font-weight: 700
+		margin-bottom: 47px
+		letter-spacing: -.005em
+	&__bread-crumbs
+		letter-spacing: -0.01em
+		margin-bottom: 44px
+	&-info
+		&__row
+			display: flex
+			margin-bottom: 32px
+			max-width: 790px
+		&__col-left
+			flex: 0 0 199px
+			max-width: 199px
+			padding-top: 3px
+			padding-right: 10px
+			&_pt
+				padding-top: 10px
+		&__col-right
+			flex: 1 1 auto
+		&__city
+			display: flex
+			&-label
+				flex-grow: 1
+				border: 1px solid $grey-3
+				border-right: 0
+				text-transform: uppercase
+				font-size: 16px
+				line-height: 18px
+				padding: 11px 35px 12px
+				letter-spacing: .03em
+			&-trigger
+				width: 119px
+				max-width: 119px
+				border: 1px solid $grey-3
+				text-align: center
+				font-size: 16px
+				letter-spacing: 0
+				font-weight: 400
+				line-height: 18px
+				padding: 10px 10px
+				background: $light-grey
+				cursor: pointer
+				text-transform: none
+				color: $grey
+				&:hover
+					color: $hover-1
+					border-color: $hover-1
+		&__content
+			border: 1px solid $grey-3
+			padding: 26px 30px 26px 35px
+			margin-bottom: 16px
+			&-title
+				font-size: 14px
+				color: #6d6d6d
+				font-weight: 700
+				margin-bottom: 16px
+				text-transform: uppercase
+			&-cols
+				display: flex
+				&-left
+					flex: 0 0 245px
+					max-width: 245px
+					padding-right: 10px
+				&-right
+					flex: 1 1 auto
+			&-tech
+				display: flex
+			&-price
+				flex: 0 0 65px
+				max-width: 65px
+				color: $hover-1
+				font-size: 14px
+				font-weight: 500
+			&-time
+				flex: 1 1 auto
+				font-weight: 700
+				font-size: 14px
+				letter-spacing: 0
+			&-descr
+				font-size: 12px
+				color: #6c6c6c
+				line-height: 1.4
+				letter-spacing: 0.01em
+				ul
+					margin-bottom: -10px
+				li
+					display: block
+					padding-left: 17px
+					position: relative
+					margin-bottom: 5px
+					&:last-child
+						margin-bottom: 0
+					&::before
+						content: ''
+						position: absolute
+						width: 6px
+						height: 6px
+						background: $black
+						transform: rotate(45deg)
+						top: 6px
+						left: 0
+				p
+					padding-left: 13px
+	&-delivery__wrap
+		margin-bottom: 85px
+	&-pay
+		&__cols
+			display: flex
+			justify-content: space-between
+			margin-top: -3px
+			&-left
+				padding-right: 20px
+				flex: 1 1 auto
+			&-right
+				flex: 0 0 590px
+		&__type
+			border: 1px solid $grey-3
+			min-height: 68px
+			padding: 15px 15px 15px 36px
+			display: flex
+			align-items: center
+			max-width: 847px
+			margin-bottom: 16px
+			&:last-child
+				margin-bottom: 0
+			&-title
+				color: $grey
+				font-size: 14px
+				text-transform: uppercase
+				padding-right: 40px
+				flex: 0 0 auto
+				font-weight: 700
+				position: relative
+				&::after
+					content: '|'
+					position: absolute
+					right: 19px
+					top: 45%
+					transform: translate(0, -50%)
+			&-descr
+				color: $grey
+				font-size: 12px
+				letter-spacing: -0.03em
+				line-height: 1.4
+		&__systems
+			box-shadow: 1.286px 1.532px 6.58px 0.42px rgba(0,0,0,.13)
+			&-title
+				color: #6d6d6d
+				text-transform: uppercase
+				font-size: 16px
+				background: #f9f9f9
+				padding-top: 17px
+				padding-left: 43px
+				padding-bottom: 15px
+				font-weight: 700
+			&-icons
+				display: flex
+				padding-left: 47px
+				height: 63px
+				align-items: center
+			&-img
+				margin-right: 78px
+				display: block
+	&-map
+		&__wrap
+			margin-bottom: 88px
+		&__block
+			border: 1px solid #f8f8f8
+			box-shadow: 2px 2px 5px 0 #f4f4f4
+		&__controls
+			background: $light-grey
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding: 7px 0 8px
+		&__type-switch
+			display: flex
+			&-item
+				height: 36px
+				width: 200px
+				display: flex
+				align-items: center
+				justify-content: center
+				&:first-child
+					width: 222px
+				&:not(:last-child)
+					border-right: 1px solid #d8d9d9
+			&-trigger
+				font-size: 16px
+				text-transform: uppercase
+				color: $grey
+				font-weight: 700
+				cursor: pointer
+				&.active
+					color: $black
+				&:hover
+					color: $hover-1
+		&__check
+			$this: ''
+			&-list
+				padding-top: 3px
+				padding-right: 36px
+				display: flex
+			&-item
+				$this: &
+				margin-left: 60px
+				height: 20px
+				position: relative
+				padding-left: 29px
+				color: $grey
+				cursor: pointer
+				&:first-child
+					margin-right: 0
+				&:hover
+					color: $hover-1
+				&_icon
+					padding-right: 24px
+
+			&-label
+				font-size: 15px
+				padding-top: 2px
+			&-box
+				width: 20px
+				height: 20px
+				background: $white
+				border: 1px solid $grey-3
+				position: absolute
+				left: 0
+				top: 0
+				#{$this}:hover &
+					border: 1px solid $hover-1
+				#{$this}.active &::before
+					content: ''
+					position: absolute
+					width: 3px
+					height: 8px
+					border-right: 2px solid $grey
+					border-bottom: 2px solid $grey
+					top: 3px
+					left: 7px
+					transform: rotate(45deg)
+			&-icon
+				width: 19px
+				position: absolute
+				right: 3px
+				top: -7px
+		&__content
+			padding: 45px 36px 45px 29px
+			&-item:not(.active)
+				display: none
+		&__jsmap
+			padding: 17px 0
+			border-top: 1px solid $gainsboro
+			border-bottom: 1px solid $gainsboro
+			&-init
+				height: 600px
+				background-color: #f8f8f8
+	&-table
+		margin-top: -29px
+		$cartTableCol: ''
+		&__col
+			$cartTableCol: &
+			flex-grow: 0
+			flex-shrink: 0
+			display: flex
+			&-1
+				width: 40%
+				justify-content: flex-start
+			&-2
+				width: 11%
+
+			&-3
+				width: 15.5%
+				justify-content: center
+
+			&-4
+				width: 16.5%
+				justify-content: center
+
+			&-5
+				width: 17%
+
+
+		&__toprow
+			border-bottom: 1px solid $gainsboro
+			padding: 17px 0 17px
+			font-size: 15px
+			line-height: 20px
+			color: $black
+			display: flex
+			#{$cartTableCol}-1
+				padding-left: 55px
+			#{$cartTableCol}-5
+				justify-content: center
+		&__row
+			border-bottom: 1px solid $gainsboro
+			padding: 21px 0
+			display: flex
+		&__info
+			padding-left: 53px
+			padding-right: 15px
+			&-title
+				font-size: 17px
+				text-transform: uppercase
+				font-weight: 700
+				margin-bottom: 12px
+				letter-spacing: 0
+				position: relative
+				&-icon
+					width: 19px
+					left: -33px
+					top: -4px
+					position: absolute
+			&-address
+				color: $grey
+				font-size: 15px
+				font-weight: bold
+				margin-bottom: 10px
+			&-location
+				color: $hover-1
+				font-size: 15px
+				font-weight: bold
+				margin-bottom: 3px
+			&-descr
+				color: $grey
+				font-size: 15px
+				font-weight: bold
+				max-width: 460px
+				line-height: 1.3
+		&__time
+			color: $grey
+			font-size: 15px
+			font-weight: bold
+			padding-top: 40px
+		&__term
+			color: $grey
+			font-size: 15px
+			font-weight: bold
+			padding-top: 40px
+		&__price
+			color: $grey
+			font-size: 15px
+			font-weight: bold
+			padding-top: 40px
+			line-height: 1.3
+		&__benefits
+			padding-top: 40px
+			padding-left: 30px
+			&-item
+				padding: 2px 0 2px 35px
+				margin-bottom: 10px
+				position: relative
+				line-height: 18px
+				color: $grey
+				font-size: 15px
+				font-weight: bold
+			&-icon
+				width: 22px
+				height: 22px
+				position: absolute
+				left: 0
+				top: 0
 
 // Media Queries
 @import ../css/media-queries/media.sass

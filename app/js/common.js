@@ -357,4 +357,22 @@ $(function(){
     	$(this).parent().toggleClass('active');
         e.preventDefault();
     });
+    $('.gdb-map__type-switch-trigger').click(function(e){
+        if(!$(this).hasClass('active')) {
+            var parentItem = $(this).parent();
+            var ind = parentItem.index();
+            var mapBlockContent = $('.gdb-map__content-item');
+            parentItem.siblings().find('.gdb-map__type-switch-trigger').removeClass('active');
+            mapBlockContent.removeClass('active');
+            $(this).addClass('active');
+            mapBlockContent.eq(ind).addClass('active');
+        }
+        e.preventDefault();
+    });
+    $('.gdb-map__check-item').click(function(e){
+        if(!$(this).hasClass('active')) {
+            $(this).addClass('active').siblings().removeClass('active');
+        }
+        e.preventDefault();
+    });
 });

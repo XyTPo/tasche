@@ -2141,12 +2141,12 @@
                                         </div>
                                     </div>
                                     <div class="gdb-map__check-list">
-                                        <div class="gdb-map__check-item gdb-map__check-item_icon soloactive" data-type="sdec">
+                                        <div class="gdb-map__check-item gdb-map__check-item_icon active" data-type="sdec">
                                             <span class="gdb-map__check-box"></span>
                                             <span class="gdb-map__check-label">СДЭК</span>
                                             <img class="gdb-map__check-icon" src="img/del-icon-sdek.png">
                                         </div>
-                                        <div class="gdb-map__check-item gdb-map__check-item_icon soloactive" data-type="boxberry">
+                                        <div class="gdb-map__check-item gdb-map__check-item_icon active" data-type="boxberry">
                                             <span class="gdb-map__check-box"></span>
                                             <span class="gdb-map__check-label">Boxberry</span>
                                             <img class="gdb-map__check-icon" src="img/del-icon-boxberry.png">
@@ -2643,34 +2643,40 @@
             myMap.geoObjects.add(objectManager);
             $('.gdb-map__check-item').click(function(e){
                 $(this).toggleClass('active');
-                if($(this).hasClass('soloactive')) {
+                /*if($(this).hasClass('soloactive')) {
                     $(this).siblings('.soloactive').removeClass('active');
-                }
+                }*/
                 var activeBoxes = $(this).parent().find('.active');
                 if (activeBoxes.length ){
                     objectManager.setFilter(function (object) {
-                        var showItem = true;
+                        var showItem = false;
                         activeBoxes.each(function(){
                             var activeType = $(this).data('type');
-                            if ( activeType == "sdec" && object.sdec != true) {
-                                showItem = false;
+                            if ( activeType == "sdec" && object.sdec == true) {
+                                showItem = true;
                             }
-                            if ( activeType == "boxberry" && object.boxberry != true) {
-                                showItem = false;
+
+                            if ( activeType == "boxberry" && object.boxberry == true) {
+                                showItem = true;
                             }
+
                             if ( activeType == "returnOption" && object.returnOption != true) {
                                 showItem = false;
                             }
+
                             if ( activeType == "cardPayment" && object.cardPayment != true) {
                                 showItem = false;
                             }
+
+
+
                         });
 
                         return showItem;
                     });
                 } else {
                     objectManager.setFilter(function (object) {
-                        return true;
+                        return false;
                     });
                 }
 
@@ -2679,14 +2685,14 @@
                 if (activeBoxes.length ){		
 					listRow.each(function(){
 						var currentRow = $(this);
-						var showItem = true;
+						var showItem = false;
 						activeBoxes.each(function(){
 							var activeType = $(this).data('type');
-							if ( activeType == "sdec" && currentRow.data('sdec') != true) {
-								showItem = false;
+							if ( activeType == "sdec" && currentRow.data('sdec') == true) {
+								showItem = true;
 							}
-							if ( activeType == "boxberry" && currentRow.data('boxberry') != true) {
-								showItem = false;
+							if ( activeType == "boxberry" && currentRow.data('boxberry') == true) {
+								showItem = true;
 							}
 							if ( activeType == "returnOption" && currentRow.data('returnoption') != true) {
 								showItem = false;
@@ -2702,7 +2708,7 @@
                         }
 					});		
                 } else {
-                    listRow.show();
+                    listRow.hide();
                 }
 
                 e.preventDefault();

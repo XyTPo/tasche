@@ -5226,8 +5226,10 @@ h5
 					font-size: 12px
 				&.active
 					color: $black
-				&:hover
-					color: $hover-1
+				@media (min-width: 993px)
+					&:hover
+						color: $hover-1
+
 		&__check
 			$this: ''
 			&-list
@@ -5282,6 +5284,8 @@ h5
 
 				&:hover
 					color: $hover-1
+					+w992
+						color: inherit
 				&_icon
 					padding-right: 24px
 					+w992
@@ -5304,6 +5308,8 @@ h5
 				top: 0
 				#{$this}:hover &
 					border: 1px solid $hover-1
+					+w992
+						border: 1px solid $grey-3
 				#{$this}.active &::before
 					content: ''
 					position: absolute

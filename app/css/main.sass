@@ -4790,6 +4790,7 @@ h5
 
 .gdb
 	&__wrap
+
 		@media screen and (min-width: 1841px)
 			max-width: 1920px
 			width: auto
@@ -4870,6 +4871,8 @@ h5
 		border-left: 1px solid $header-info
 		padding: 36px 10px 110px 55px
 		max-width: 1575px
+		+w1450
+			padding: 36px 10px 122px 55px
 		+w1346
 			max-width: 723px
 			padding-right: 0
@@ -4902,6 +4905,7 @@ h5
 		+w753
 			margin-bottom: 32px
 	&-info
+
 		&__row
 			display: flex
 			margin-bottom: 32px
@@ -5827,6 +5831,7 @@ h5
 			flex-direction: column
 			height: 529px
 			flex-wrap: wrap
+
 	&__steps
 		margin-bottom: 122px
 		width: 63.3%
@@ -5988,17 +5993,46 @@ h5
 			flex: 0 0 33.33%
 			margin-bottom: 27px
 			position: relative
+			+w1450
+				flex: 0 0 50%
+				max-width: 50%
+				margin-bottom: 22px
+			&:nth-child(1)
+				+w1450
+					order: 1
+			&:nth-child(2)
+				+w1450
+					order: 2
+			&:nth-child(3)
+				+w1450
+					order: 4
+			&:nth-child(4)
+				+w1450
+					order: 3
+			&:nth-child(5)
+				+w1450
+					order: 5
 			&::before
 				content: ''
 				display: block
 				padding-top: 48.804%
+				+w1346
+					padding-top: 73.804%
 			&_x2
 				max-width: 66.66%
 				flex: 0 0 66.66%
+				+w1450
+					max-width: 100%
+					flex: 0 0 100%
+
 				&::before
 					content: ''
 					display: block
 					padding-top: 34.552%
+					+w1450
+						padding-top: 24%
+					+w1346
+						padding-top: 36%
 		&-content
 			position: absolute
 			left: 14px
@@ -6022,10 +6056,32 @@ h5
 		&-wrap
 			border-top: 1px solid $white_smoke
 			margin-bottom: 80px
+			+w1450
+				margin-bottom: 73px
+
+		.main-content-border
+			+w1346
+				margin-left: -55px
+				border-left: none
+			+w992
+				margin-left: 0
+
+
+
 		.products-wrap
 			width: 25%
+			+w1450
+				width: 33.33%
+				&:nth-child(n+10)
+					display: none
+			+w1346
+				width: 50%
+				&:nth-child(n+7)
+					display: none
 		.products-title
 			margin-bottom: 5px
+			+w1450
+				margin-bottom: 10px
 	&__catalog-link
 		display: table
 		margin: 0 auto
@@ -6042,6 +6098,13 @@ h5
 		border-radius: 1px
 		&:hover
 			background: $hover_2
+	&__04
+		+w1450
+			background-position: top
+	&__catalog
+		&-link
+			+w992
+				width: 100%
 
 
 // Media Queries

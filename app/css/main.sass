@@ -5191,7 +5191,7 @@ h5
 			box-shadow: 1.286px 1.532px 6.58px 0.42px rgba(0,0,0,.13)
 			+w1450
 				margin-bottom: 87px
-				margin-right: -10px
+				margin-right: 0px
 			+w1346
 				margin-right: 0
 			+w992
@@ -5358,7 +5358,9 @@ h5
 			padding: 45px 36px 45px 29px
 			padding: 45px 36px 67px 29px
 			+w1840
-				padding-top: 14px
+
+				padding-top: 38px
+				padding-bottom: 31px
 			+w1450
 				padding-right: 28px
 			+w753
@@ -5831,12 +5833,25 @@ h5
 			flex-direction: column
 			height: 529px
 			flex-wrap: wrap
+			+w1450
+				height: 100%
+				flex-direction: row
+				margin-bottom: 86px
+	&__schedule_pay
+		+w1450
+			display: flex
+			flex-direction: column
+			width: 54%
+
 
 	&__steps
 		margin-bottom: 122px
 		width: 63.3%
 		padding-right: 10px
 		padding-top: 58px
+		+w1450
+			width: 100%
+			margin-bottom: 90px
 		&-item
 			font-size: 16px
 			position: relative
@@ -5860,6 +5875,10 @@ h5
 		padding-left: 37px
 		width: 63.3%
 		padding-right: 10px
+		+w1450
+			width: 39%
+			margin-right: 7%
+			margin-top: 14px
 		&-title
 			color: $grey
 			font-size: 17px
@@ -5867,6 +5886,8 @@ h5
 			position: relative
 			margin-bottom: 30px
 			text-transform: uppercase
+			+w1450
+				margin-bottom: 40px
 			&-icon
 				position: absolute
 				left: -37px
@@ -5880,11 +5901,17 @@ h5
 			font-size: 16px
 			margin-bottom: 45px
 			letter-spacing: .018em
+			+w1450
+				line-height: 24px
 		&-row
 			display: flex
+			+w1450
+				flex-direction: column
 		&-item
 			position: relative
 			margin-right: 55px
+			+w1450
+				margin-bottom: 39px
 			&:nth-child(1)
 				padding-left: 25px
 				& #{$this}-digit
@@ -5921,6 +5948,8 @@ h5
 		box-shadow: 1.286px 1.532px 6.58px 0.42px rgba(0,0,0,.13)
 		margin-bottom: 14px
 		width: 36.7%
+		+w1450
+			width: 100%
 		&-title
 			background: $light-grey
 			padding: 13px 29px 14px 49px
@@ -5961,6 +5990,8 @@ h5
 	&__pay
 		box-shadow: 1.286px 1.532px 6.58px 0.42px rgba(0,0,0,.13)
 		width: 36.7%
+		+w1450
+			width: 100%
 		&-title
 			color: #6d6d6d
 			text-transform: uppercase

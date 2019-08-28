@@ -4806,6 +4806,9 @@ h5
 
 		&-right
 			flex: 1 1 auto
+			+w1450
+				width: calc(100% - 240px)
+
 			+w992
 				width: 100%
 	&__menu-group
@@ -4817,6 +4820,8 @@ h5
 		font-size: 14px
 		line-height: 15px
 		position: relative
+		+w1840
+			padding-left: 0
 		+w1450
 			padding-left: 0
 		&_large
@@ -4832,6 +4837,8 @@ h5
 			z-index: -1
 	&__menu-list
 		padding: 20px 10px 24px 61px
+		+w1840
+			padding-left: 0
 		+w1450
 			padding-left: 0
 	&__menu-item
@@ -6014,6 +6021,8 @@ h5
 			margin-bottom: 80px
 		.products-wrap
 			width: 25%
+		.products-title
+			margin-bottom: 5px
 	&__catalog-link
 		display: table
 		margin: 0 auto
@@ -6030,6 +6039,7 @@ h5
 		border-radius: 1px
 		&:hover
 			background: $hover_2
+
 
 // Media Queries
 @import ../css/media-queries/media.sass

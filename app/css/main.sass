@@ -4816,10 +4816,20 @@ h5
 		text-transform: uppercase
 		font-size: 14px
 		line-height: 15px
+		position: relative
 		+w1450
 			padding-left: 0
 		&_large
 			font-size: 14px
+		&::before
+			content: ''
+			background-color:  $light-grey
+			position: absolute
+			height: 100%
+			width: 1000px
+			top: 0
+			right: 0
+			z-index: -1
 	&__menu-list
 		padding: 20px 10px 24px 61px
 		+w1450
@@ -5167,6 +5177,7 @@ h5
 		&__wrap
 			margin-bottom: 80px
 			overflow-x: hidden
+			box-shadow: 1.286px 1.532px 6.58px 0.42px rgba(0,0,0,.13)
 			+w1450
 				margin-bottom: 87px
 				margin-right: -10px
@@ -5177,8 +5188,6 @@ h5
 			+w753
 				margin-bottom: 68px
 		&__block
-			border: 1px solid #f8f8f8
-			box-shadow: 2px 2px 5px 0 #f4f4f4
 			+w753
 				margin-top: 43px
 		&__controls
@@ -5210,8 +5219,12 @@ h5
 				justify-content: center
 				+w753
 					width: 50%
-				&:first-child
+				&_map
 					width: 222px
+					+w753
+						width: 50%
+				&_plan
+					width: 295px
 					+w753
 						width: 50%
 				&:not(:last-child)
@@ -5792,6 +5805,231 @@ h5
 		margin: 0!important
 		padding-right: 0
 		padding-left: 0
+
+
+.gsb
+	&__title
+		font-size: 22px
+		text-transform: uppercase
+		font-weight: 700
+		margin-bottom: 47px
+		letter-spacing: -.005em
+	&-info
+		&__cols
+			display: flex
+			margin-bottom: 91px
+			&-left
+				flex: 1 1 955px
+				padding-right: 30px
+				padding-top: 58px
+			&-right
+				flex: 1 1 calc(100% - 955px)
+	&__steps
+		margin-bottom: 122px
+		&-item
+			font-size: 16px
+			position: relative
+			padding-left: 28px
+			margin-bottom: 17px
+			&::before
+				content: ''
+				width: 6px
+				height: 6px
+				background: $black
+				position: absolute
+				top: 50%
+				left: 0
+				transform: rotate(45deg) translate(0, -50%)
+		&-tel
+			font-weight: 700
+			color: $hover-1
+			font-size: 18px
+	&__benefits
+		$this: &
+		padding-left: 37px
+		&-title
+			color: $grey
+			font-size: 17px
+			font-weight: 700
+			position: relative
+			margin-bottom: 30px
+			text-transform: uppercase
+			&-icon
+				position: absolute
+				left: -37px
+				top: -4px
+				color: #931431
+				display: block
+				width: 20px
+				height: 25px
+		&-address
+			font-weight: bold
+			font-size: 16px
+			margin-bottom: 45px
+			letter-spacing: .018em
+		&-row
+			display: flex
+		&-item
+			position: relative
+			margin-right: 55px
+			&:nth-child(1)
+				padding-left: 25px
+				& #{$this}-digit
+					width: 18px
+					height: 35px
+			&:nth-child(2)
+				padding-left: 35px
+				& #{$this}-digit
+					width: 30px
+					height: 37px
+			&:nth-child(3)
+				padding-left: 60px
+				& #{$this}-digit
+					width: 54px
+					height: 36px
+			&:last-child
+				margin-right: 0
+		&-digit
+			display: block
+			position: absolute
+			left: -1px
+			top: -1px
+			fill: $pink-flare
+		&-units
+			color: $pink-flare
+			font-size: 16px
+			margin-bottom: 4px
+		&-label
+			text-transform: uppercase
+			font-size: 14px
+			font-weight: 700
+			color: $grey
+	&__schedule
+		box-shadow: 1.286px 1.532px 6.58px 0.42px rgba(0,0,0,.13)
+		margin-bottom: 14px
+		&-title
+			background: $light-grey
+			padding: 13px 29px 14px 49px
+			&-icon
+				font-size: 24px
+				color: $hover-1
+				vertical-align: middle
+				margin-right: 8px
+			&-label
+				display: inline-block
+				vertical-align: middle
+				text-transform: uppercase
+				color: $grey
+				font-size: 17px
+				font-weight: 700
+		&-content
+			padding: 29px 29px 29px 49px
+		&-row
+			display: flex
+			padding: 10px 0
+			align-items: center
+			min-height: 67px
+			border-bottom: 1px solid $gainsboro
+			&-group
+				border-top: 1px solid $gainsboro
+			&-label
+				font-size: 14px
+				text-transform: uppercase
+				font-weight: 700
+				flex: 1 1 290px
+			&-value
+				font-size: 15px
+				text-transform: uppercase
+				font-weight: 700
+				color: $hover-1
+				flex: 1 1 calc(100% - 290px)
+				letter-spacing: .04em
+	&__pay
+		box-shadow: 1.286px 1.532px 6.58px 0.42px rgba(0,0,0,.13)
+		&-title
+			color: #6d6d6d
+			text-transform: uppercase
+			font-size: 16px
+			background: #f9f9f9
+			padding-top: 17px
+			padding-left: 49px
+			padding-bottom: 15px
+			font-weight: 700
+			letter-spacing: .05em
+		&-icons
+			display: flex
+			padding-left: 49px
+			height: 63px
+			align-items: center
+		&-img
+			margin-right: 58px
+			display: block
+	&__gallery
+		position: relative
+		overflow: hidden
+		margin: 110px 0 83px
+		&-block
+			margin: 0 -14px
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+		&-item
+			max-width: 33.33%
+			flex: 0 0 33.33%
+			margin-bottom: 27px
+			position: relative
+			&::before
+				content: ''
+				display: block
+				padding-top: 48.804%
+			&_x2
+				max-width: 66.66%
+				flex: 0 0 66.66%
+				&::before
+					content: ''
+					display: block
+					padding-top: 34.552%
+		&-content
+			position: absolute
+			left: 14px
+			top: 0
+			right: 14px
+			bottom: 0
+			background-size: cover
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			display: flex
+			align-items: center
+			justify-content: center
+		&-label
+			font-size: 17px
+			color: $grey
+			text-transform: uppercase
+			text-align: center
+			font-weight: 700
+			line-height: 1.6
+	&__products
+		&-wrap
+			border-top: 1px solid $white_smoke
+			margin-bottom: 80px
+		.products-wrap
+			width: 25%
+	&__catalog-link
+		display: table
+		margin: 0 auto
+		color: $white
+		background: $hover_1
+		cursor: pointer
+		font-size: 16px
+		line-height: 20px
+		padding: 20px 10px
+		font-weight: bold
+		text-transform: uppercase
+		text-align: center
+		width: 329px
+		border-radius: 1px
+		&:hover
+			background: $hover_2
 
 // Media Queries
 @import ../css/media-queries/media.sass

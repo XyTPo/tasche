@@ -5824,15 +5824,14 @@ h5
 	&-info
 		&__cols
 			display: flex
-			margin-bottom: 91px
-			&-left
-				flex: 1 1 955px
-				padding-right: 30px
-				padding-top: 58px
-			&-right
-				flex: 1 1 calc(100% - 955px)
+			flex-direction: column
+			height: 529px
+			flex-wrap: wrap
 	&__steps
 		margin-bottom: 122px
+		width: 63.3%
+		padding-right: 10px
+		padding-top: 58px
 		&-item
 			font-size: 16px
 			position: relative
@@ -5854,6 +5853,8 @@ h5
 	&__benefits
 		$this: &
 		padding-left: 37px
+		width: 63.3%
+		padding-right: 10px
 		&-title
 			color: $grey
 			font-size: 17px
@@ -5914,6 +5915,7 @@ h5
 	&__schedule
 		box-shadow: 1.286px 1.532px 6.58px 0.42px rgba(0,0,0,.13)
 		margin-bottom: 14px
+		width: 36.7%
 		&-title
 			background: $light-grey
 			padding: 13px 29px 14px 49px
@@ -5953,6 +5955,7 @@ h5
 				letter-spacing: .04em
 	&__pay
 		box-shadow: 1.286px 1.532px 6.58px 0.42px rgba(0,0,0,.13)
+		width: 36.7%
 		&-title
 			color: #6d6d6d
 			text-transform: uppercase

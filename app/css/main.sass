@@ -6104,6 +6104,8 @@ h5
 			margin: 92px 0 60px
 		+w992
 			margin: 92px 0 76px
+		+w753
+			margin: 0px 0 76px
 		&-block
 			margin: 0 -14px
 			display: flex
@@ -6135,6 +6137,9 @@ h5
 					order: 3
 				+w753
 					order: -1
+				&:before
+					+w753
+						padding-top: 26.8%
 			&:nth-child(5)
 				+w1450
 					order: 5
@@ -6147,6 +6152,8 @@ h5
 					padding-top: 73.804%
 				+w992
 					padding-top: 67.8%
+				+w753
+					padding-top: 65.2%
 			&_x2
 				max-width: 66.66%
 				flex: 0 0 66.66%
@@ -6183,6 +6190,8 @@ h5
 			text-align: center
 			font-weight: 700
 			line-height: 1.6
+			+w753
+				font-size: 15px
 	&__products
 		&-wrap
 			border-top: 1px solid $white_smoke
@@ -6199,6 +6208,9 @@ h5
 			+w753
 				margin-left: -5%
 				margin-right: -5%
+		.products-icons__list
+			+w753
+				display: none
 
 
 
@@ -6234,6 +6246,8 @@ h5
 		text-align: center
 		width: 329px
 		border-radius: 1px
+		+w753
+			font-size: 12px
 		&:hover
 			background: $hover_2
 	&__04

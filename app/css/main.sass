@@ -5910,6 +5910,7 @@ h5
 			order: 5
 		+w753
 			padding-left: 21px
+			padding-right: 0
 		&-title
 			color: $grey
 			font-size: 17px
@@ -5965,6 +5966,8 @@ h5
 			margin-right: 55px
 			+w1840
 				margin-bottom: 39px
+			+w753
+				font-size: 12px
 			&:nth-child(1)
 				padding-left: 25px
 				& #{$this}-digit
@@ -5997,6 +6000,8 @@ h5
 			font-size: 14px
 			font-weight: 700
 			color: $grey
+			+w753
+				font-size: 12px
 	&__schedule
 		box-shadow: 1.286px 1.532px 6.58px 0.42px rgba(0,0,0,.13)
 		margin-bottom: 14px
@@ -6113,6 +6118,9 @@ h5
 				flex: 0 0 50%
 				max-width: 50%
 				margin-bottom: 22px
+			+w753
+				flex: 0 0 100%
+				max-width: 100%
 			&:nth-child(1)
 				+w1450
 					order: 1
@@ -6125,9 +6133,12 @@ h5
 			&:nth-child(4)
 				+w1450
 					order: 3
+				+w753
+					order: -1
 			&:nth-child(5)
 				+w1450
 					order: 5
+
 			&::before
 				content: ''
 				display: block
@@ -6185,6 +6196,9 @@ h5
 				border-left: none
 			+w992
 				margin-left: 0
+			+w753
+				margin-left: -5%
+				margin-right: -5%
 
 
 

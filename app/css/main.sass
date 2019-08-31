@@ -1746,6 +1746,12 @@ h5
 
 .pp
 	font-size: 14px
+	.products-shortcuts
+		+w753
+			left: -9px
+	.psg__wrap .products-icons
+		+w753
+			margin-right: -5px
 
 .pid
 	&__wrap
@@ -4881,6 +4887,7 @@ h5
 			padding: 0
 			padding-top: 31px
 			padding-bottom: 105px
+			max-width: 100%
 		+w753
 			padding-top: 25px
 			padding-bottom: 113px
@@ -4913,7 +4920,7 @@ h5
 			+w1346
 				max-width: 656px
 			+w992
-				max-width: 713px
+				max-width: 100%
 			+w753
 				flex-direction: column
 				margin-bottom: 25px
@@ -5111,6 +5118,7 @@ h5
 				padding-right: 3px
 			+w992
 				padding-right: 58px
+				max-width: 100%
 			+w753
 				flex-direction: column
 				padding-top: 24px
@@ -5187,8 +5195,9 @@ h5
 	&-map
 		&__wrap
 			margin-bottom: 80px
-			overflow-x: hidden
-			box-shadow: 1.286px 1.532px 6.58px 0.42px rgba(0,0,0,.13)
+			//overflow-x: hidden
+			//box-shadow: 1.286px 1.532px 6.58px 0.42px rgba(0,0,0,.13)
+
 			+w1450
 				margin-bottom: 87px
 				margin-right: 0px
@@ -5198,7 +5207,31 @@ h5
 				margin-bottom: 83px
 			+w753
 				margin-bottom: 68px
+		&__plan
+			background-image: url('../img/plan.jpg')
+			background-size: contain
+			background-position: center
+			background-repeat: no-repeat
+			+w1840
+				background-image: url('../img/plan_1.jpg')
+			+w1346
+				background-image: url('../img/plan_2.jpg')
+			+w992
+				background-image: url('../img/plan_3.jpg')
+			+w753
+				background-image: url('../img/plan_3.jpg')
+			@media (max-width: 600px)
+				background-image: url('../img/plan_3.jpg')
+				background-size: contain
+			@media (max-width: 400px)
+				background-size: contain
+				background-image: url('../img/plan_4.jpg')
+
+
+
 		&__block
+			border: 1px solid #f8f8f8
+			box-shadow: 1.286px 1.532px 6.58px 0.42px rgba(0,0,0,.13)
 			+w753
 				margin-top: 43px
 		&__controls
@@ -5358,9 +5391,9 @@ h5
 			padding: 45px 36px 45px 29px
 			padding: 45px 36px 67px 29px
 			+w1840
+				padding-top: 14px
 
-				padding-top: 38px
-				padding-bottom: 31px
+
 			+w1450
 				padding-right: 28px
 			+w753
@@ -5830,7 +5863,7 @@ h5
 		+w753
 			font-size: 15px
 			line-height: 20px
-			margin-bottom: 43px
+			margin-bottom: 41px
 	&-info
 		&__cols
 			display: flex
@@ -5843,6 +5876,8 @@ h5
 				margin-bottom: 86px
 			+w1346
 				margin-bottom: 33px
+			+w753
+				margin-bottom: 26px
 	&__schedule_pay
 		+w1840
 			display: flex
@@ -5868,7 +5903,7 @@ h5
 			padding-top: 4px
 		+w753
 			padding-right: 14px
-			margin-bottom: 43px
+			margin-bottom: 39px
 		&-item
 			font-size: 16px
 			position: relative
@@ -5878,6 +5913,7 @@ h5
 				font-size: 14px
 				padding-left: 21px
 				line-height: 19px
+				margin-bottom: 19px
 			&::before
 				content: ''
 				width: 6px
@@ -5995,6 +6031,8 @@ h5
 			color: $pink-flare
 			font-size: 16px
 			margin-bottom: 4px
+			+w753
+				margin-bottom: 2px
 		&-label
 			text-transform: uppercase
 			font-size: 14px
@@ -6101,16 +6139,21 @@ h5
 		overflow: hidden
 		margin: 110px 0 83px
 		+w1346
-			margin: 92px 0 60px
+			margin: 90px 0 60px
 		+w992
 			margin: 92px 0 76px
 		+w753
-			margin: 0px 0 76px
+			margin: 0px 0 62px
 		&-block
 			margin: 0 -14px
 			display: flex
 			flex-wrap: wrap
 			justify-content: space-between
+			@media (max-width: 753px) and (min-width: 500px)
+				max-width: 500px
+				width: 100%
+				margin-left: auto
+				margin-right: auto
 		&-item
 			max-width: 33.33%
 			flex: 0 0 33.33%
@@ -6149,7 +6192,7 @@ h5
 				display: block
 				padding-top: 48.804%
 				+w1346
-					padding-top: 73.804%
+					padding-top: 73%
 				+w992
 					padding-top: 67.8%
 				+w753
@@ -6168,9 +6211,11 @@ h5
 					+w1450
 						padding-top: 24%
 					+w1346
-						padding-top: 38%
+						padding-top: 36%
 					+w992
 						padding-top: 33.5%
+					+w753
+						padding-top: 65.5%
 		&-content
 			position: absolute
 			left: 14px
@@ -6195,9 +6240,16 @@ h5
 	&__products
 		&-wrap
 			border-top: 1px solid $white_smoke
+			border-left: 1px solid $white_smoke
 			margin-bottom: 80px
 			+w1450
 				margin-bottom: 73px
+			+w1346
+				border-left: none
+			+w992
+				border-left: 1px solid $white_smoke
+			+w753
+				margin-bottom: 39px
 
 		.main-content-border
 			+w1346
@@ -6208,6 +6260,8 @@ h5
 			+w753
 				margin-left: -5%
 				margin-right: -5%
+				border: none
+				border-top: 1px solid $white_smoke
 		.products-icons__list
 			+w753
 				display: none
@@ -6232,6 +6286,8 @@ h5
 			margin-bottom: 5px
 			+w1450
 				margin-bottom: 10px
+			+w753
+				margin-bottom: 5px
 	&__catalog-link
 		display: table
 		margin: 0 auto
@@ -6257,19 +6313,88 @@ h5
 		&-link
 			+w992
 				width: 100%
+			+w753
+				width: 90%
+				padding: 15px 10px
 	&__products-wrap
 			.colors-wrap
 				display: none
 
 .p_shop
+	.main-content-border
+		border: none
+	.products-wrapper
+
+		+w992
+			border-right: none
+	.current-price
+		+w753
+			font-size: 11px
+			margin-right: 9px
+	.old-price
+		+w753
+			font-size: 10px
+
 	.gdb
 		&__content
 			+w1840
 				padding: 36px 0px 123px 55px
 			+w1346
 				padding: 31px 0px 123px 0px
+				padding-left: 52px
+				padding-top: 38px
+			+w992
+				padding-left: 0
+				padding-top: 32px
 			+w753
-				padding: 25px 0 123px 0
+				padding: 25px 0 110px 0
+
+
+	.gdb-map
+		&__content
+			padding: 45px 36px 25px 29px
+			+w1840
+				padding: 45px 36px 45px 29px
+			+w1346
+				padding: 37px 29px 35px 29px
+			+w992
+				padding: 37px 29px 36px 29px
+			+w753
+				padding: 20px 20px 20px 20px
+			&-item	div
+				height: 400px
+				+w1346
+					height: 355px
+				+w992
+					height: 337px
+				+w753
+
+				@media (max-width: 690px)
+
+					height: 295px
+				@media (max-width: 600px)
+					height: 198px
+				@media (max-width: 400px)
+					height: 155px
+			&-item #shop-map-1
+				+w753
+					height: 387px
+
+
+		&__block
+			+w753
+				margin-top: 27px
+		&__type-switch-item
+			+w753
+				height: 21px
+		&__jsmap:after
+			+w753
+				width: 100%
+	.gdb-map__jsmap
+		+w1346
+			padding: 8px 0
+		+w753
+			border-bottom: 1px solid $gainsboro
 
 
 

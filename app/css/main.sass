@@ -2433,7 +2433,8 @@ h5
 			justify-content: flex-end
 	fieldset,
 	input,
-	textarea
+	textarea,
+	button
 		outline: none
 		color: inherit
 		-webkit-appearance: none
@@ -2477,7 +2478,9 @@ h5
 	input::-ms-clear
 		display: none
 
-	input:not([type="submit"])
+	input[type="text"],
+	input[type="password"],
+	input[type="email"]
 		width: 100%
 		height: 42px
 		padding: 0 21px
@@ -6397,10 +6400,220 @@ h5
 		+w753
 			border-bottom: 1px solid $gainsboro
 
-
-
-
-
+.upp
+	padding-top: 80px
+	padding-bottom: 100px
+	+w753
+		padding-top: 65px
+		padding-bottom: 80px
+	&__title
+		font-size: 22px
+		text-transform: uppercase
+		font-weight: 700
+		margin-bottom: 47px
+		letter-spacing: -.005em
+		+w753
+			font-size: 15px
+			margin-bottom: 32px
+	&__cols
+		display: flex
+		+w992
+			display: block
+		&-right
+			padding-left: 60px
+			+w992
+				padding-left: 0
+				padding-top: 50px
+	&__link
+		color: $grey
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+	&__target
+		&-block
+			margin-bottom: 30px
+		&-label
+			font-weight: bold
+			font-size: 17px
+			margin-bottom: 10px
+		&-content
+			font-size: 14px
+.uforms
+	$this: &
+	$checkbox-input: ''
+	display: block
+	max-width: 1024px
+	+w753
+		max-width: 500px
+	&__error-text
+		margin-bottom: 15px
+		margin-top: -15px
+		line-height: 1.4
+		font-size: 13px
+		color: red
+	&__general-info
+		font-size: 14px
+		line-height: 1.3
+		margin-bottom: 25px
+		color: $grey
+		max-width: 670px
+	&__required-mark
+		color: $hover-1
+		font-weight: 700
+	&__row
+		margin-bottom: 18px
+		position: relative
+		display: flex
+		align-items: center
+		+w992
+			align-items: flex-start
+		+w753
+			display: block
+			margin-bottom: 22px
+	&__row-title
+		font-size: 16px
+		#{$this}_registration &
+			width: 260px
+		#{$this}_login &,
+		#{$this}_remind-password &
+			width: 200px
+		+w992
+			padding-top: 10px
+		+w753
+			padding-top: 0
+			margin-bottom: 5px
+			font-size: 14px
+			width: auto
+	&__content
+		position: relative
+		flex: 1 1 auto
+		display: flex
+		align-items: center
+		+w992
+			display: block
+	&__input-block
+		#{$this}_registration &
+			width: 450px
+			+w753
+				width: auto
+		#{$this}_login &,
+		#{$this}_remind-password &
+			width: 400px
+			+w753
+				width: auto
+		&_captcha
+			display: flex
+	&__user-tip
+		font-size: 13px
+		color: $grey
+		padding-left: 10px
+		max-width: 400px
+		+w992
+			padding-left: 0
+			padding-top: 5px
+	&__submit
+		width: 100%
+		height: 50px
+		font-size: 130%
+		line-height: 1
+		background: #efefef
+		text-align: center
+		border: 1px solid #8d8d8d
+	&__captch-img
+		display: block
+		width: 182px
+		height: 42px
+		flex: 0 0 180px
+		margin-right: 10px
+		border: 1px solid $gainsboro
+	&__submit-area
+		padding-left: 260px
+		padding-top: 10px
+		#{$this}_registration &
+			padding-left: 260px
+		#{$this}_login &,
+		#{$this}_remind-password &
+			padding-left: 200px
+		+w753
+			padding-left: 0!important
+	&__required-label
+		font-size: 15px
+		color: $grey
+		margin-bottom: 18px
+		+w753
+			font-size: 14px
+	&__checkbox-row
+		margin-bottom: 18px
+		display: flex
+		align-items: center
+		font-size: 15px
+		+w753
+			display: block
+			position: relative
+			padding-left: 30px
+			padding-top: 2px
+			font-size: 14px
+	&__checkbox-block
+		display: inline-flex
+		align-items: center
+		margin-right: 7px
+		cursor: pointer
+		+w753
+			display: block
+			margin-right: 0
+			margin-bottom: 2px
+			font-weight: bold
+	&__checkbox-input
+		$checkbox-input: &
+		display: none
+	&__checkbox-icon
+		border: 1px solid $gainsboro
+		background: $white
+		width: 30px
+		height: 30px
+		position: relative
+		cursor: pointer
+		margin-right: 18px
+		+w753
+			height: 20px
+			width: 20px
+			position: absolute
+			left: 0
+			top: 0
+			margin-right: 0
+		#{$checkbox-input}:checked ~ &
+			border: 1px solid $hover-1
+		#{$checkbox-input}:checked ~ &::before
+			content: ''
+			position: absolute
+			width: 5px
+			height: 11px
+			border-right: 2px solid #6c6c6c
+			border-bottom: 2px solid #6c6c6c
+			top: 6px
+			left: 10px
+			transform: rotate(45deg)
+			+w753
+				left: 0
+				right: 0
+				top: -2px
+				bottom: 0
+				margin: auto
+				width: 4px
+				height: 9px
+	&__submit-block
+		padding-top: 15px
+		button[type="submit"]
+			color: $white
+			background: $hover-1
+			font-size: 16px
+			font-weight: 700
+			text-transform: uppercase
+			height: 50px
+			padding: 0 40px
+			cursor: pointer
+			&:hover
+				background: $hover-2
 
 // Media Queries
 @import ../css/media-queries/media.sass

@@ -6419,6 +6419,9 @@ h5
 		font-size: 20px
 		margin-bottom: 35px
 		letter-spacing: -.005em
+		font-weight: 500
+		+w753
+			font-size: 16px
 	&__cols
 		display: flex
 		+w992
@@ -6449,13 +6452,12 @@ h5
 		display: flex
 		margin: 0 -15px 40px
 		+w768
-			margin: 0 -7px 35px
+			margin: 0 -7px 30px
 		&-item
 			display: block
 			padding: 7px 15px 8px
 			line-height: 22px
 			font-size: 18px
-			text-decoration: underline
 			color: #931431
 			margin-right: 10px
 			border-radius: 2px
@@ -6466,11 +6468,16 @@ h5
 				color: $white
 				background: $hover-1
 			+w768
-				padding: 7px 7px 8px
-				font-size: 12px
+				font-size: 13px
+				padding: 6px 10px 6px
 				margin-right: 0
 			@media (max-width: 350px)
 				font-size: 10px
+			a
+				border-bottom: 1px solid $hover-2
+				text-decoration: none
+				&:hover
+					border-bottom: 1px solid transparent
 
 	.fa-skype
 		color: #3498d8
@@ -6680,29 +6687,6 @@ h5
 		padding-top: 40px
 		&__title
 			margin-bottom: 25px
-		&__hmenu
-			margin: 0 -10px 40px
-			+w753
-				margin: 0 -7px 30px
-		&__subtitle
-			font-weight: 500
-			+w753
-				font-size: 16px
-		&__link
-			color: $hover-1
-		&__hmenu-item
-			text-decoration: none
-			+w768
-				font-size: 18px
-				padding: 7px 15px 8px
-			+w753
-				font-size: 13px
-				padding: 6px 10px 6px
-			a
-				border-bottom: 1px solid $hover-2
-				&:hover
-					border-bottom: 1px solid transparent
-
 
 
 

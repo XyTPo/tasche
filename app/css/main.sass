@@ -6419,6 +6419,9 @@ h5
 		font-size: 20px
 		margin-bottom: 35px
 		letter-spacing: -.005em
+		font-weight: 500
+		+w753
+			font-size: 16px
 	&__cols
 		display: flex
 		+w992
@@ -6449,13 +6452,12 @@ h5
 		display: flex
 		margin: 0 -15px 40px
 		+w768
-			margin: 0 -7px 35px
+			margin: 0 -7px 30px
 		&-item
 			display: block
 			padding: 7px 15px 8px
 			line-height: 22px
 			font-size: 18px
-			text-decoration: underline
 			color: #931431
 			margin-right: 10px
 			border-radius: 2px
@@ -6466,11 +6468,16 @@ h5
 				color: $white
 				background: $hover-1
 			+w768
-				padding: 7px 7px 8px
-				font-size: 12px
+				font-size: 13px
+				padding: 6px 10px 6px
 				margin-right: 0
 			@media (max-width: 350px)
 				font-size: 10px
+			a
+				border-bottom: 1px solid $hover-2
+				text-decoration: none
+				&:hover
+					border-bottom: 1px solid transparent
 
 	.fa-skype
 		color: #3498d8
@@ -6664,6 +6671,28 @@ h5
 	input[type=password],
 	input[type=text]
 		height: 40px
+
+.p_user_ac
+	&.content-wrapper .container
+		+w753
+			width: 90%
+	.uforms__row
+		&.messages
+			+w753
+				display: flex
+			.uforms__row-title
+				+w753
+					margin-right: 10px
+	.upp
+		padding-top: 40px
+		&__title
+			margin-bottom: 25px
+
+
+
+
+
+
 
 // Media Queries
 @import ../css/media-queries/media.sass

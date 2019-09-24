@@ -369,4 +369,28 @@ $(function(){
         }
         e.preventDefault();
     });
+    $('.uoi-paysystem__choice').each(function(){
+        var openSelect = function(selector){
+            var element = selector[0], worked = false;
+            if (document.createEvent) { // all browsers
+                var e = document.createEvent("MouseEvents");
+                e.initMouseEvent("mousedown", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+                worked = element.dispatchEvent(e);
+            } else if (element.fireEvent) { // ie
+                worked = element.fireEvent("onmousedown");
+            }
+            console.log(element, worked)
+        }
+        var choiceParent = $(this),
+            choiceTrigger = choiceParent.find('.uoi-paysystem__trigger'),
+            choiceSelect = choiceParent.find('.uoi-paysystem__select');
+        choiceTrigger.click(function(){
+            choiceParent.addClass('active');
+            openSelect(choiceSelect);
+        });
+        choiceSelect.change(function(){
+            choiceTrigger.html($(this).find('option:selected').text());
+            choiceParent.removeClass('active');
+        });
+    });
 });

@@ -6421,7 +6421,7 @@ h5
 		letter-spacing: -.005em
 		font-weight: 500
 		+w753
-			font-size: 16px
+			font-size: 14px
 	&__cols
 		display: flex
 		+w992
@@ -6433,6 +6433,8 @@ h5
 			+w992
 				padding-left: 0
 				padding-top: 70px
+			+w753
+				padding-top: 40px
 	&__link
 		color: $grey
 		text-decoration: underline
@@ -6447,6 +6449,8 @@ h5
 			font-weight: bold
 			font-size: 17px
 			margin-bottom: 10px
+			+w753
+				font-size: 15px
 		&-content
 			font-size: 13px
 			line-height: 1.5
@@ -6455,7 +6459,7 @@ h5
 		display: flex
 		margin: 0 -15px 40px
 		+w768
-			margin: 0 -7px 30px
+			margin: 0 -10px 30px
 		&-item
 			$hmenuLink: &
 			display: block
@@ -6475,6 +6479,8 @@ h5
 				font-size: 13px
 				padding: 6px 10px 6px
 				margin-right: 0
+			@media (max-width: 390px)
+				font-size: 11px
 			@media (max-width: 350px)
 				font-size: 10px
 		&-link
@@ -6519,10 +6525,12 @@ h5
 		display: flex
 		align-items: center
 		+w1346
-			align-items: flex-start
+			//align-items: flex-start
+			align-items: center
 		+w753
 			display: block
 			margin-bottom: 22px
+			align-items: flex-start
 	&__row-title
 		font-size: 16px
 		flex-shrink: 0
@@ -6535,12 +6543,13 @@ h5
 		#{$this}_account &
 			width: 280px
 		+w1346
-			padding-top: 10px
+			//padding-top: 10px
+			padding-top: 0
 		+w753
 			padding-right: 0
 			padding-top: 0
 			margin-bottom: 5px
-			font-size: 14px
+			font-size: 13px
 			width: auto!important
 	&__content
 		position: relative
@@ -6689,6 +6698,8 @@ h5
 			.uforms__row-title
 				+w753
 					margin-right: 10px
+					width: 230px!important
+
 	.upp
 		padding-top: 40px
 		&__title
@@ -6700,10 +6711,17 @@ h5
 		margin-bottom: 30px
 		display: flex
 		align-items: flex-end
+		+w753
+			margin-bottom: 20px
+			flex-direction: column
+			align-items: flex-start
 		&__label
 			font-size: 22px
 			letter-spacing: -.005em
 			margin-right: 20px
+			+w753
+				font-size: 15px
+				margin-bottom: 9px
 			b, strong
 				font-weight: 500
 		&__link
@@ -6712,15 +6730,22 @@ h5
 			font-size: 15px
 			margin-bottom: 2px
 			font-weight: 500
+			+w753
+				font-size: 13px
+				margin-bottom: 1px
 			&:hover
 				text-decoration: none
 	&-status
 		margin-bottom: 40px
 		display: flex
 		align-items: center
+		+w753
+			margin-bottom: 20px
 		&__label
 			font-size: 16px
 			margin-right: 20px
+			+w753
+				font-size: 14px
 		&__cancel
 			color: #fff
 			background: $hover-1
@@ -6731,24 +6756,48 @@ h5
 			padding: 0 10px
 			border-radius: 2px
 			cursor: pointer
+			+w753
+				font-size: 13px
 			&:hover
 				background: $hover-2
 	&-cols
 		display: flex
 		max-width: 1300px
 		margin-bottom: 40px
+		+w1346
+			flex-wrap: wrap
+		+w753
+			flex-direction: column
+			margin-bottom: 0px
 		&__item
 			flex-grow: 1
 			padding-right: 20px
 			flex: 1 1 auto
+			+w992
+				width: 50%
+			+w753
+				margin-bottom: 15px
+				width: 100%
+				padding-right: 0
+			&:first-child
+				+w1346
+					width: 100%
+					margin-bottom: 20px
+				+w753
+					margin-bottom: 15px
 		&__title
 			font-size: 18px
 			letter-spacing: -.005em
 			margin-bottom: 20px
 			font-weight: 500
+			+w753
+				font-size: 14px
+				margin-bottom: 10px
 		&__content
 			font-size: 14px
 			line-height: 1.4
+			+w753
+				font-size: 12px
 			&-row
 				margin-bottom: 5px
 	&-paysystem
@@ -6763,6 +6812,9 @@ h5
 			display: table
 			font-size: 15px
 			padding: 2px 0 5px
+			+w753
+				font-size: 12px
+				padding-bottom: 0
 			&:hover
 				text-decoration: none
 			#{$choiceParent}.active &
@@ -6775,6 +6827,9 @@ h5
 			font-size: 14px
 			border: 1px solid $gainsboro
 			display: none
+			+w753
+				font-size: 12px
+				margin-top: 4px
 			#{$choiceParent}.active &
 				display: block
 
@@ -6785,6 +6840,9 @@ h5
 			letter-spacing: -.005em
 			margin-bottom: 20px
 			font-weight: 500
+			+w753
+				font-size: 14px
+
 		&__block
 			box-shadow: 2px 2px 5px 0 #f4f4f4
 			margin-bottom: 40px
@@ -6794,14 +6852,17 @@ h5
 			&-1
 				flex: 1 1 auto
 				display: flex
+				+w753
+					flex-direction: column
 			&-2
-				width: 15%
-				flex: 0 0 15%
-				text-align: right
+				width: 120px
+				flex: 0 0 120px
+				text-align: center
+				margin-right: 15px
 			&-3
-				width: 15%
-				flex: 0 0 15%
-				text-align: right
+				width: 108px
+				flex: 0 0 108px
+				text-align: center
 		&__toprow
 			background: #f9f9f9
 			padding: 16px 60px 16px 30px
@@ -6811,8 +6872,17 @@ h5
 			color: #6d6d6d
 			text-transform: uppercase
 			display: flex
+			&-label.visible-w753
+				justify-content: center
+			+w753
+				font-size: 12px
+				padding: 6px 20px 6px 20px
+
 		&__content
 			padding: 45px 60px 34px 30px
+			+w753
+				padding: 25px 20px 25px 20px
+
 	&-item
 		border-top: 1px solid $gainsboro
 		border-bottom: 1px solid $gainsboro
@@ -6823,14 +6893,18 @@ h5
 		#{$tableCol}-2, #{$tableCol}-3
 			padding-top: 29px
 		&__image
-			width: 150px
-			max-width: 150px
-			height: 150px
+			width: 200px
+			max-width: 200px
+			height: 169px
 			display: flex
 			align-items: center
 			justify-content: center
 			flex-grow: 0
 			margin-right: 20px
+			+w753
+				width: 100px
+				max-width: 100px
+				height: 106px
 			img
 				display: block
 				max-width: 100%
@@ -6839,6 +6913,8 @@ h5
 				width: auto
 		&__info
 			padding-top: 29px
+			+w753
+				padding-top: 9px
 		&__title
 			font-size: 15px
 			font-weight: 700
@@ -6848,28 +6924,52 @@ h5
 			letter-spacing: 0
 		&__amount
 			font-size: 18px
+			+w753
+				font-size: 14px
 		&__price-total
 			font-size: 19px
 			color: $hover-1
+			+w753
+				font-size: 14px
+		.gob-item__descr-row
+			font-size: 11px
+		.gob-item__title
+			+w753
+				font-size: 11px
+				max-width: 200px
+
+
 	&-total
 		display: flex
 		justify-content: flex-end
 		padding: 30px 0 0 0
+		+w753
+			padding: 20px 0 0 0
 		&__info
 			display: flex
 			align-items: center
 			justify-content: flex-end
 			margin-bottom: 8px
+			+w753
+				margin-bottom: 0px
 			&-label
 				font-size: 16px
 				line-height: 19px
 				text-transform: uppercase
+				+w1346
+					font-size: 14px
+				+w753
+					font-size: 12px
 			&-value
 				font-size: 19px
 				line-height: 22px
 				font-weight: bold
 				width: 117px
 				text-align: right
+				+w1346
+					font-size: 18px
+				+w753
+					font-size: 14px
 		&__price
 			display: flex
 			align-items: center
@@ -6879,6 +6979,10 @@ h5
 				line-height: 19px
 				font-weight: bold
 				text-transform: uppercase
+				+w1346
+					font-size: 15px
+				+w753
+					font-size: 13px
 			&-value
 				font-size: 19px
 				line-height: 22px
@@ -6886,6 +6990,10 @@ h5
 				font-weight: bold
 				width: 117px
 				text-align: right
+				+w1346
+					font-size: 18px
+				+w753
+					font-size: 14px
 	&-backtolist
 		text-decoration: underline
 		font-size: 15px
@@ -6893,16 +7001,24 @@ h5
 		font-weight: 500
 		color: $hover-1
 		display: table
+		+w753
+			font-size: 13px
 		&:hover
 			text-decoration: none
 	&-warning
 		color: $red
 		font-size: 17px
 		margin-bottom: 30px
+		+w753
+			font-size: 14px
+			margin-bottom: 10px
 	&-cancellation
 		&__info
 			font-size: 15px
 			margin-bottom: 15px
+			+w753
+				font-size: 13px
+				margin-bottom: 10px
 		&__textarea
 			max-width: 500px
 			height: 125px
@@ -6917,22 +7033,37 @@ h5
 			padding: 0 10px
 			border-radius: 2px
 			cursor: pointer
+			+w753
+				font-size: 13px
 			&:hover
 				background: $hover-2
 	&-orderlist
 		min-height: 300px
+		+w753
+			min-height: 0
 		&__item
 			margin-bottom: 25px
 			display: flex
 			align-items: center
+			+w753
+				align-items: flex-start
+				flex-direction: column
 			&-label
 				font-size: 16px
 				letter-spacing: -.005em
 				margin-right: 20px
 				color: #242424
+				+w753
+					line-height: 22px
+					font-size: 13px
+				&-link:hover
+					color: $hover-2
+
 			&-menu
 				display: flex
 				align-items: center
+				+w753
+					margin-top: 20px
 			&-button
 				color: #fff
 				background: $hover-1
@@ -6944,6 +7075,10 @@ h5
 				border-radius: 2px
 				cursor: pointer
 				margin-right: 20px
+				+w753
+					font-size: 12px
+				@media (max-width: 350px)
+					font-size: 10px
 				&:hover
 					background: $hover-2
 			&-link
@@ -6954,6 +7089,8 @@ h5
 				cursor: pointer
 				margin-right: 20px
 				text-decoration: underline
+				+w753
+					font-size: 12px
 				&:hover
 					text-decoration: none
 // Media Queries

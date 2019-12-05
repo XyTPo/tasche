@@ -393,4 +393,8 @@ $(function(){
             choiceParent.removeClass('active');
         });
     });
+    $('.pid__order .btn-to-one-click').click(function(e){
+        $('.pid__phone-form-wrap').slideToggle();
+        e.preventDefault()
+    });
 });

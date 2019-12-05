@@ -2181,8 +2181,24 @@
                                     <a href="" class="btn-to-one-click">заказать в один клик </a>
                                     <a href="#" class="btn-to-curt">в корзину <i class="fas fa-shopping-cart"></i></a>
                                 </div>
-
-
+                                <div class="pid__phone-form-wrap">
+                                    <form class="pid__phone-form" id="quick_buy-form" action="#" method="post">
+                                        <input type="hidden" value="#" name="ELM_ID">
+                                        <input type="hidden" value="#" name="ELM_NAME">
+                                        <input type="hidden" value="#" name="ELM_PAGE_URL">
+                                        <div class="pid__phone-form-title">Заказать через телефон</div>
+                                        <div class="pid__phone-form-subtitle">Оставьте свой номер, мы все сделаем за вас</div>
+                                        <div class="pid__phone-form-flexrow">
+                                            <div class="pid__phone-form-input-wrap">
+                                                <input type="tel" name="tel" placeholder="+7(___)___-____" class="pid__phone-form-input b-product-phoneblock__input" maxlength="16">
+                                            </div>
+                                            <button class="pid__phone-form-button" type="submit" onclick="new_quick_buy($('.p-card__phone-form').serializeArray());return false;">
+                                                Отправить
+                                            </button>
+                                        </div>
+                                        <div class="pid__phone-form-err quickbuy_err"></div>
+                                    </form>
+                                </div>
                             </div>
 
                             <div class="pid__desc">
@@ -2804,6 +2820,76 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="pcs__feedback-wrap">
+                            <div class="pcs__feedback-list">
+                                <div class="pcs__feedback-item">
+                                    <div class="pcs__feedback-header">
+                                        <div class="pcs__feedback-name_rate">
+                                            <div class="pcs__feedback-name">Александра</div>
+
+                                            <div class="pcs__total-rate ranking-stars" data-rating="4">
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                            </div>
+                                        </div>
+                                        <div class="pcs__feedback-date">
+                                            27 Декабря 2019 14:53
+                                        </div>
+                                    </div>
+
+                                    <div class="pcs__feedback-desc">
+                                        Качественный товар, быстрая доставка!
+                                    </div>
+                                </div>
+                                <div class="pcs__feedback-item">
+                                    <div class="pcs__feedback-header">
+                                        <div class="pcs__feedback-name_rate">
+                                            <div class="pcs__feedback-name">Lorem Ipsum</div>
+
+                                            <div class="pcs__total-rate ranking-stars" data-rating="2">
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                            </div>
+                                        </div>
+                                        <div class="pcs__feedback-date">
+                                            12 Декабря 2019 9:14
+                                        </div>
+                                    </div>
+
+                                    <div class="pcs__feedback-desc">
+                                        Nam eget felis vel tortor tempus aliquet. Donec nec placerat augue. Phasellus venenatis mi id euismod pulvinar. Donec eu tortor eget neque ultrices venenatis. Aliquam feugiat arcu ut metus ornare, a volutpat elit ultricies. Suspendisse eu finibus eros, sed cursus quam. Curabitur lobortis fermentum fermentum. Sed vehicula vitae erat at malesuada.
+                                    </div>
+                                </div>
+                                <div class="pcs__feedback-item">
+                                    <div class="pcs__feedback-header">
+                                        <div class="pcs__feedback-name_rate">
+                                            <div class="pcs__feedback-name">Morbi Ligula</div>
+
+                                            <div class="pcs__total-rate ranking-stars" data-rating="5">
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                            </div>
+                                        </div>
+                                        <div class="pcs__feedback-date">
+                                            05 Декабря 2019 13:25
+                                        </div>
+                                    </div>
+
+                                    <div class="pcs__feedback-desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo dapibus nisi, eu posuere justo imperdiet in. Nullam consectetur lacinia lorem eu ultrices. Aenean ut lectus aliquam, porttitor velit vel, fermentum ligula. Morbi id leo quam. Quisque lorem mauris, fringilla in erat sed, eleifend rhoncus quam. Sed id lacinia velit.<br/> Ut ultricies, mi at facilisis eleifend, metus nisi sagittis nibh, at aliquam ex lacus ut dolor. Morbi ligula odio, fermentum ut venenatis sit amet, ultricies non eros.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="pcs__col">
                         <div class="pcs__grey-text">
@@ -2825,6 +2911,78 @@
                                 </div>
                                 <div class="styled-forms__row styled-forms__row_submit">
                                     <button class="type2" type="submit">Задать вопрос</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pcs__feedback-wrap">
+                            <div class="pcs__feedback-list">
+                                <div class="pcs__feedback-item">
+                                    <div class="pcs__feedback-header">
+                                        <div class="pcs__feedback-name_rate">
+                                            <div class="pcs__feedback-name">Lorem Ipsum</div>
+
+                                            <div class="pcs__total-rate ranking-stars" data-rating="2">
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                            </div>
+                                        </div>
+                                        <div class="pcs__feedback-date">
+                                            12 Декабря 2019 9:14
+                                        </div>
+                                    </div>
+
+                                    <div class="pcs__feedback-desc">
+                                        Nam eget felis vel tortor tempus aliquet. Donec nec placerat augue. Phasellus venenatis mi id euismod pulvinar. Donec eu tortor eget neque ultrices venenatis. Aliquam feugiat arcu ut metus ornare, a volutpat elit ultricies. Suspendisse eu finibus eros, sed cursus quam. Curabitur lobortis fermentum fermentum. Sed vehicula vitae erat at malesuada.
+                                    </div>
+                                </div>
+                                <div class="pcs__feedback-item">
+                                    <div class="pcs__feedback-header">
+                                        <div class="pcs__feedback-name_rate">
+                                            <div class="pcs__feedback-name">Morbi Ligula</div>
+
+                                            <div class="pcs__total-rate ranking-stars" data-rating="5">
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                            </div>
+                                        </div>
+                                        <div class="pcs__feedback-date">
+                                            05 Декабря 2019 13:25
+                                        </div>
+                                    </div>
+
+                                    <div class="pcs__feedback-desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo dapibus nisi, eu posuere justo imperdiet in. Nullam consectetur lacinia lorem eu ultrices. Aenean ut lectus aliquam, porttitor velit vel, fermentum ligula. Morbi id leo quam. Quisque lorem mauris, fringilla in erat sed, eleifend rhoncus quam. Sed id lacinia velit.<br/> Ut ultricies, mi at facilisis eleifend, metus nisi sagittis nibh, at aliquam ex lacus ut dolor. Morbi ligula odio, fermentum ut venenatis sit amet, ultricies non eros.
+                                    </div>
+                                </div>
+
+                                <div class="pcs__feedback-item">
+                                    <div class="pcs__feedback-header">
+                                        <div class="pcs__feedback-name_rate">
+                                            <div class="pcs__feedback-name">Александра</div>
+
+                                            <div class="pcs__total-rate ranking-stars" data-rating="4">
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                                <div class="ranking-stars__icon far fa-star"></div>
+                                            </div>
+                                        </div>
+                                        <div class="pcs__feedback-date">
+                                            27 Декабря 2019 14:53
+                                        </div>
+                                    </div>
+
+                                    <div class="pcs__feedback-desc">
+                                        Качественный товар, быстрая доставка!
+                                    </div>
                                 </div>
                             </div>
                         </div>

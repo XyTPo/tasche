@@ -1,6 +1,6 @@
 $(function () { 
 
-    function openPhotoSwipe(items,index) {
+    function openPhotoSwipe(items,index,toCartBtnId,buyPrice,buyPriceOld) {
 
         var pswpDom = '<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">'+
             '<div class="pswp__bg"></div>'+
@@ -89,15 +89,16 @@ $(function () {
                 }
                 //Формируем превью
 				var buy_block = $('<div class="pswp_basket" />'),
-					buy_price = $('.pid__price_new').html(),
-					buy_price_old = $('.pid__price_old').html(),
+					buy_price = buyPrice || '',
+					buy_price_old = buyPriceOld || '',
 					buy_price_block = $('<div class="pswp_price_wrapper"><div class="pswp_price_old">'+buy_price_old+'</div><div class="pswp_price">'+buy_price+'</div></div>'),
-					buy_id_btn = $('.pid__order .btn-to-curt').attr('id'),
+					buy_id_btn = toCartBtnId,
 					buy_btn = $('<button class="btn-basket purchase-basket"/>');
 					buy_btn.append('Положить в корзину');
 					buy_btn.click(
 					 function(buy_id_btn) {
 						return function() {
+								gallery.destroy();
 								$('#'+buy_id_btn).trigger( 'click' );
 							}
 						}.call(this, buy_id_btn)
@@ -198,7 +199,10 @@ $(function () {
     $('body').on('click','.pid__slider-item', function (e) {
         var $slider = $(this).parents('.pid__main-image-block'),
             items = new Array(),
-            startIndex = $(this).find('img').data('slide-index');
+            startIndex = $(this).find('img').data('slide-index'),
+			toCartBtnId = $('.pid__order .btn-to-curt').attr('id'),
+			buyPrice = $('.pid__price_new').html(),
+			buyPriceOld = $('.pid__price_old').html();
 
         $slider.find('img').each(function (index) {
             var image = $(this).data('zoomimage'),
@@ -207,8 +211,18 @@ $(function () {
                 thumb = $(this).attr('src');
 
             items.push({src:image, w:2000,h:2000, title:title, thumb:thumb, index:index});
-        });	
-        openPhotoSwipe(items,startIndex);
+        });
+        openPhotoSwipe(items,startIndex,toCartBtnId,buyPrice,buyPriceOld);
+		e.preventDefault();
+    });
+
+    $('body').on('click','.products-info .slider-link a', function (e) {
+		var $catalogItem = $(this).parents('.products-wrap'),
+            items = JSON.parse($catalogItem.find('.products-catalog-gallery-json').val());
+			toCartBtnId = $catalogItem.find('.btn-to-curt').attr('id'),
+			buyPrice = $catalogItem.find('.current-price').html(),
+			buyPriceOld = $catalogItem.find('.old-price').html();
+        openPhotoSwipe(items,0,toCartBtnId,buyPrice,buyPriceOld);
 		e.preventDefault();
     });
 });

@@ -239,32 +239,6 @@ h5
 
 // Header-Info Styles End
 
-// Catalog-List    Styles
-.catalog-list
-	background-color: $black
-	color: $white
-	text-transform: uppercase
-	font-size: 13px
-	.container
-		display: flex
-
-.catalog-list__wrap
-	display: flex
-	height: 100%
-	align-items: center
-	.catalog-list__items
-		position: relative
-		line-height: 50px
-		cursor: pointer
-		padding-right: 50px
-		&:nth-last-child(1)
-			padding-right: 0
-		.catalog-list__item
-			padding-bottom: 4px
-		&:hover
-			.catalog-list__item
-				border-bottom: 1px solid $white
-
 .sale-links
 	display: flex
 	margin-left: auto
@@ -1569,123 +1543,6 @@ h5
 	z-index: 20
 	opacity: 1
 	transition: opacity 0.6s ease
-
-// Всплывающие меню
-.catalog-list__hidden-menu
-	top: 50px
-	left: -20px
-	position: absolute
-	padding: 16px 16px 20px 30px
-	background: $location-color
-	font-size: 13px
-	display: flex
-	z-index: -1
-	color: $black
-	box-shadow: 2px 0 8px 1px rgba(0, 0, 0, 0.13)
-	opacity: 0
-	visibility: hidden
-	transition: opacity 0.5s ease
-	white-space: nowrap
-	li
-		line-height: 17px
-		padding: 0
-
-.general-catalog-wrap
-	display: flex
-	margin-top: 20px
-	a
-		padding-bottom: 3px
-	a:hover
-		border-bottom: 1px solid $black
-
-.general-catalog
-	font-weight: 700
-	text-transform: uppercase
-	margin-bottom: 20px
-	&:nth-last-child(1)
-		margin-bottom: 0
-	ul
-		font-size: 14px
-		font-weight: 400
-		text-transform: none
-		color: $grey-2
-		li
-			margin-top: 8px
-
-.hidden-product-card-wrap
-	margin-left: 50px
-	padding-top: 10px
-	padding-bottom: 10px
-
-.hidden-product-card
-	background: $white
-	box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.13)
-	padding: 30px
-	line-height: 19px
-	letter-spacing: 0
-	min-width: 270px
-	img
-		width: 200px
-		height: 200px
-		margin: 0 auto
-		display: block
-		margin-bottom: 12px
-	.products-shortcuts
-		padding: 0
-		position: static
-	h6
-		text-transform: uppercase
-		color: $grey-2
-		font-weight: 400
-		font-size: 13px
-		margin-bottom: 2px
-	.vendor-code
-		margin-bottom: 11px
-		color: $grey-2
-		display: inline-block
-	.hidden-product-card-price
-		display: flex
-		align-items: center
-	.new-price, .old-price
-		letter-spacing: 0.04em
-	.new-price
-		font-size: 15px
-		color: $hover-1
-		font-weight: 700
-		.ruble
-			font-weight: 400
-			font-size: 14px
-	.old-price
-		text-decoration: line-through
-		font-weight: 400
-		font-size: 13px
-		margin-left: 11px
-		.ruble
-			font-weight: 400
-			font-size: 12px
-	.price-btn
-		display: inline-block
-		margin-left: auto
-		font-size: 10px
-		background: $hover-1
-		border-radius: 2px
-		color: $white
-		padding: 5px 13px
-
-.general-catalog-wrap
-	margin-left: auto
-	li
-		margin-right: 0
-	ul
-		margin-right: 70px
-		&:nth-last-child(1)
-			margin-right: 0
-
-.active-hidden-menu
-	opacity: 1
-	visibility: visible
-	transition: opacity 0.5s ease
-	z-index: 30
 
 .mobile-phones-hidden
 	text-align: center
@@ -7235,6 +7092,293 @@ h5
 		line-height: 20px
 		color: #6d6d6d
 
+// Main menu 
+@media screen and (min-width: 992px) 	
+	
+	// Catalog-List    Styles
+	.catalog-list
+		background-color: $black
+		color: $white
+		text-transform: uppercase
+		font-size: 13px
+		.container
+			display: flex
+
+	.catalog-list__wrap
+		display: flex
+		height: 100%
+		align-items: center
+		.catalog-list__items
+			position: relative
+			line-height: 50px
+			cursor: pointer
+			padding-right: 50px
+			&:nth-last-child(1)
+				padding-right: 0
+			.catalog-list__item
+				padding-bottom: 4px
+			&:hover
+				.catalog-list__item
+					border-bottom: 1px solid $white
+	// Всплывающие меню
+	.catalog-list__hidden-menu
+		top: 50px
+		left: -20px
+		position: absolute
+		padding: 16px 16px 20px 30px
+		background: $location-color
+		font-size: 13px
+		display: flex
+		z-index: -1
+		color: $black
+		box-shadow: 2px 0 8px 1px rgba(0, 0, 0, 0.13)
+		opacity: 0
+		visibility: hidden
+		transition: opacity 0.5s ease
+		white-space: nowrap
+		li
+			line-height: 17px
+			padding: 0
+
+	.general-catalog-wrap
+		display: flex
+		margin-top: 20px
+		a
+			padding-bottom: 3px
+		a:hover
+			border-bottom: 1px solid $black
+
+	.general-catalog
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 20px
+		&:nth-last-child(1)
+			margin-bottom: 0
+		ul
+			font-size: 14px
+			font-weight: 400
+			text-transform: none
+			color: $grey-2
+			li
+				margin-top: 8px
+
+	.hidden-product-card-wrap
+		margin-left: 50px
+		padding-top: 10px
+		padding-bottom: 10px
+
+	.hidden-product-card
+		background: $white
+		box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.13)
+		padding: 30px
+		line-height: 19px
+		letter-spacing: 0
+		min-width: 270px
+		img
+			width: 200px
+			height: 200px
+			margin: 0 auto
+			display: block
+			margin-bottom: 12px
+		.products-shortcuts
+			padding: 0
+			position: static
+		h6
+			text-transform: uppercase
+			color: $grey-2
+			font-weight: 400
+			font-size: 13px
+			margin-bottom: 2px
+		.vendor-code
+			margin-bottom: 11px
+			color: $grey-2
+			display: inline-block
+		.hidden-product-card-price
+			display: flex
+			align-items: center
+		.new-price, .old-price
+			letter-spacing: 0.04em
+		.new-price
+			font-size: 15px
+			color: $hover-1
+			font-weight: 700
+			.ruble
+				font-weight: 400
+				font-size: 14px
+		.old-price
+			text-decoration: line-through
+			font-weight: 400
+			font-size: 13px
+			margin-left: 11px
+			.ruble
+				font-weight: 400
+				font-size: 12px
+		.price-btn
+			display: inline-block
+			margin-left: auto
+			font-size: 10px
+			background: $hover-1
+			border-radius: 2px
+			color: $white
+			padding: 5px 13px
+
+	.general-catalog-wrap
+		margin-left: auto
+		li
+			margin-right: 0
+		ul
+			margin-right: 70px
+			&:nth-last-child(1)
+				margin-right: 0
+
+	.active-hidden-menu
+		opacity: 1
+		visibility: visible
+		transition: opacity 0.5s ease
+		z-index: 30
+
+	.catalog-list__title-mobile
+		display: none
+
+	.catalog-list__mibile-open-list 
+		display: none
+
+@media screen and (max-width: 1450px) and (min-width: 992px) 
+	.catalog-list__wrap
+		.catalog-list__items
+			padding-right: 40px
+
+@media screen and (max-width: 1345px) and (min-width: 992px) 	
+	.catalog-list__wrap
+		width: 100%
+		justify-content: space-between
+		.catalog-list__items
+			padding-right: 0	
+
+	.brands-hidden-menu
+		left: -720px
+
+	.school-hidden-menu
+		left: -670px
+
+	.travels-hidden-menu
+		left: -510px
+
+	.backpacks-hidden-menu
+		left: -400px
+
+	.sports-hidden-menu
+		left: -210px
+
+	.womans-hidden-menu
+		left: -60px
+
+	.mans-hidden-menu
+		left: 0	
+
+@media screen and (max-width: 992px) 	
+	.hidden-product-card
+		display: none
+
+	.catalog-list 
+		top: 0
+		left: 0
+		padding-left: 30px
+		padding-right: 20px
+		width: 269px
+		position: fixed
+		transition: .5s
+		transform: translateX(-200%)
+		z-index: 50
+		background-color: #fff
+		overflow-y: auto
+		height: 100%
+		box-shadow: 2px 2px 7px 1px rgba(0,0,0,.13)
+		&.catalog-list-visible-mobile
+			transform: translateX(0)
+		.container 
+			width: auto
+
+	.catalog-list__title-mobile
+		padding: 15px 20px 15px 30px
+		background-color: #f9f9f9
+		margin: 0 -20px 15px -30px
+		position: relative
+	
+	.catalog-list__title-mobile-label
+		font-size: 14px
+		color: #000
+		text-transform: uppercase
+		font-weight: 400
+	
+	.catalog-list__title-mobile-close
+		display: block
+		position: absolute
+		font-size: 16px
+		top: 50%
+		right: 20px
+		color: #000
+		z-index: 2
+		transform: translate(0, -50%)
+		cursor: pointer
+
+	.catalog-list__items
+		padding-left: 20px
+		margin-bottom: 15px
+		position: relative
+
+	.catalog-list__item
+		display: table;
+		color: #000
+		text-transform: uppercase
+		font-size: 13px
+		font-weight: 700
+		margin-bottom: 10px
+
+	.general-catalog
+		padding-left: 20px
+		margin-bottom: 10px
+		position: relative
+
+	.general-catalog > a 
+		display: table
+		font-size: 14px
+		color: #000
+		margin-bottom: 7px
+
+	.general-catalog ul a 
+		color: #6d6d6d;
+		font-size: 14px
+		margin-bottom: 3px
+
+	.catalog-list__mibile-open-list
+		color: #931431
+		font-size: 16px
+		font-weight: 400
+		position: absolute
+		left: 0
+		top: 0px
+		cursor: pointer
+
+	.general-catalog .catalog-list__mibile-open-list
+		font-size: 14px
+		top: 2px
+
+	.general-catalog > ul 
+		display: none
+
+	.mobile-list-visible.general-catalog > ul 
+		display: block
+
+	.mobile-list-visible > .catalog-list__mibile-open-list::before
+		content: "\f146"
+
+	.catalog-list__hidden-menu
+		display: none 
+
+	.mobile-list-visible .catalog-list__hidden-menu
+		display: block 
+	
 
 // Media Queries
 @import ../css/media-queries/media.sass

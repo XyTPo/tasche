@@ -123,21 +123,21 @@ $(function(){
 	// Появление и закрытие бокового меню
 	$('.burger-menu-btn').on('click', function(e){
 		e.preventDefault;
-		$('.main-sidebar').toggleClass('active-sidebar');
+		$('.catalog-list').toggleClass('catalog-list-visible-mobile');
 		$('body').addClass('no-scroll');
 	});
 
-	$('.fa-times').on('click', function(e){
+	$('.catalog-list__title-mobile-close').on('click', function(e){
 		e.preventDefault;
-		$('.main-sidebar').toggleClass('active-sidebar');
+		$('.catalog-list').toggleClass('catalog-list-visible-mobile');
 		$('body').removeClass('no-scroll');
 	});
 
 	$('main').on('click', function (e){ // событие клика по веб-документу
-		var div = $(".main-sidebar"); // тут указываем ID элемента
+		var div = $(".catalog-list"); // тут указываем ID элемента
 		if (!div.is(e.target) // если клик был не по нашему блоку
 		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
-			div.removeClass('active-sidebar'); // скрываем его
+			div.removeClass('catalog-list-visible-mobile'); // скрываем его
 			$('body').removeClass('no-scroll');
 		}
 	});
@@ -397,4 +397,11 @@ $(function(){
         $('.pid__phone-form-wrap').slideToggle();
         e.preventDefault()
     });
+
+	$('.catalog-list__mibile-open-list').click(function(e){
+		console.log('ok')
+		$(this).parent().toggleClass('mobile-list-visible');
+		e.preventDefault();
+	});
+
 });

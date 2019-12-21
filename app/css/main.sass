@@ -6924,6 +6924,7 @@ h5
 				width: 100px
 				max-width: 100px
 				height: 106px
+
 			img
 				display: block
 				max-width: 100%
@@ -7237,3 +7238,748 @@ h5
 
 // Media Queries
 @import ../css/media-queries/media.sass
+
+
+
+
+/*home page*/
+.hpm
+	&__about
+		background-color: $light-grey
+		+flexbox()
+		justify-content: space-between
+		margin-top: 33px
+		margin-bottom: 152px
+		+w1450
+			margin-bottom: 100px
+		+w992
+			margin-top: 0px
+			flex-direction: column-reverse
+			margin-bottom: 75px
+
+		&_part1
+			+flexbox()
+			flex-direction: column
+			justify-content: left
+			align-items: baseline
+			width: 46.4%
+			padding-top: 5%
+			padding-left: 5%
+			+w1840
+				padding-left: 2%
+			+w1346
+				width: 42%
+			+w992
+				width: 100%
+				padding-bottom: 40px
+			+w753
+				padding-bottom: 30px
+
+			img
+				width: 159px
+				+w1346
+					width: 137px
+				+w753
+					width: 110px
+		&_title
+			font-size: 36px
+			font-weight: 400
+			margin-top: 12px
+			letter-spacing: 0.4px
+			margin-bottom: 42px
+			+w1450
+				font-size: 33px
+				margin-bottom: 34px
+			+w1346
+				font-size: 22px
+				margin-bottom: 22px
+			+w753
+				font-size: 18px
+				margin-bottom: 22px
+			+w340
+				font-size: 17px
+				letter-spacing: -0.1px
+		&_items
+			font-size: 23px
+			margin-bottom: 43px
+			+w1450
+				font-size: 21px
+			+w1346
+				font-size: 17px
+			+w753
+				font-size: 15px
+				margin-bottom: 20px
+			+w340
+				font-size: 14px
+			li
+				position: relative
+				padding-left: 36px
+				line-height: 30px
+				margin-bottom: 4px
+				+w1450
+					padding-left: 30px
+				+w1346
+					padding-left: 20px
+				+w753
+					padding-left: 15px
+				&:before
+					content: ""
+					position: absolute
+					left: 0
+					top: 3px
+					bottom: 0
+					margin: auto
+					width: 15px
+					height: 15px
+					border-radius: 50%
+					+w1450
+						width: 12px
+						height: 12px
+						top: 0
+					+w1346
+						width: 10px
+						height: 10px
+					+w753
+						width: 7px
+						height: 7px
+
+				&:nth-child(1):before
+					background-color: #a06a77
+				&:nth-child(2):before
+					background-color: #708cdf
+				&:nth-child(3):before
+					background-color: #8dd1d4
+
+		&_part2
+			+flexbox()
+			width: 53.5%
+			+w1346
+				width: 58%
+			+w992
+				width: 100%
+			+w753
+				flex-wrap: wrap
+			> div
+				width: 33%
+				padding-top: 83px
+				padding-left: 26px
+				height: 530px
+				+w1840
+					height: 460px
+				+w1346
+					height: 425px
+					padding-top: 70px
+					padding-left: 9px
+				+w753
+					width: 100%
+					height: 260px
+					padding-top: 19px
+					padding-left: 14px
+					margin: 0
+		&_img
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			+w753
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 100%
+				max-width: 160px
+			&_item1
+				background-color: #a06a77
+				position: relative
+			&_item2
+				background-color: #718cdb
+				position: relative
+				width: 33%
+				margin: 0 0.5%
+			&_item3
+				background-color: #8fced3
+				position: relative
+			&_text1
+				font-weight: 700
+				font-size: 95px
+				color: #ffffff
+				opacity: 0.5
+				+w1840
+					font-size: 65px
+				+w1346
+					font-size: 55px
+			&_text2
+				font-weight: 400
+				font-size: 35px
+				text-transform: uppercase
+				color: #ffffff
+				+w1840
+					font-size: 27px
+			&_text3
+				font-size: 20px
+				color: #ffffff
+				position: relative
+				margin-top: 13px
+				width: 247px
+				line-height: 25px
+				+w1840
+					font-size: 13px
+					width: 100%
+				+w1346
+					font-size: 14px
+					line-height: 20px
+					width: 100%
+			&_text4
+				font-size: 13px
+				color: #ffffff
+				position: relative
+				cursor: pointer
+				margin-top: 18px
+				display: block
+				+w1840
+					font-size: 11px
+					margin-top: 7px
+
+				.fa-long-arrow-alt-right
+					padding-right: 10px
+		.gsb__catalog-link
+			margin-left: 0
+	&__cat
+		margin-bottom: 153px
+		+w1450
+			margin-bottom: 100px
+		+w992
+			margin-bottom: 75px
+		+w753
+			margin-bottom: 62px
+
+		&_title1
+			font-size: 30px
+			text-transform: uppercase
+			font-weight: 700
+			margin-bottom: 63px
+			letter-spacing: -.005em
+		&_items
+			+flexbox()
+			border-bottom: 2px solid #f1f1f1
+			border-top: 2px solid #f1f1f1
+			border-right: 2px solid #f1f1f1
+			+w1346
+				flex-wrap: wrap
+		&_item
+			border-left: 2px solid #f1f1f1
+
+			width: 17%
+			+flexbox
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			padding-bottom: 31px
+			+w1346
+				width: 33.3%
+			+w753
+				width: 50%
+			&:hover
+				.hpm__cat_title
+					color: $hover-2
+					&:before
+						background-color: $hover-2
+		&_img
+			height: 100%
+			margin-bottom: 15px
+			img
+				height: 100%
+				display: block
+				margin: 0 auto
+				width: 100%
+
+		&_title
+			font-size: 19px
+			color: #000
+			position: relative
+			cursor: pointer
+			display: inline-block
+			text-transform: uppercase
+			text-align: center
+			font-weight: 700
+			+w1600
+				font-size: 15px
+			+w753
+				font-size: 13px
+			+w340
+				margin: 0 10px
+
+			&:before
+				content: ""
+				position: absolute
+				left: 0
+				right: 0
+				bottom: -8px
+				margin: auto
+				width: 100%
+				height: 1px
+				background-color: #000
+	&__delivery
+		background-color: #f9f9f9
+		padding: 6.5% 4%
+		margin-bottom: 150px
+		+w1840
+			padding: 6.5% 30px
+		+w1450
+			margin-bottom: 100px
+		+w992
+			margin-bottom: 75px
+		+w753
+			margin-bottom: 62px
+			padding: 6.5% 15px
+
+
+		&_wrapper
+			+flexbox()
+			justify-content: space-between
+			+w1346
+				flex-direction: column
+				align-items: center
+		&_title
+			font-size: 30px
+			text-transform: uppercase
+			font-weight: 700
+			margin-bottom: 68px
+			letter-spacing: -.005em
+			a
+				text-decoration: none
+				position: relative
+				display: inline-block
+				+w340
+					word-break: break-all
+				&:before
+					content: ""
+					position: absolute
+					left: 0
+					right: 0
+					bottom: -8px
+					margin: auto
+					width: 100%
+					height: 1px
+					background-color: #000
+				&:hover
+					color: $hover-2
+					&:before
+						background-color: $hover-2
+		&_item
+			border: 1px solid #e0e0e0
+			width: 32.5%
+			+flexbox()
+			align-items: flex-start
+			padding-top: 0px
+			padding-left: 25px
+			height: 200px
+			background: #fff
+			+w1346
+				width: 500px
+				margin-bottom: 30px
+				padding-top: 0
+			+w753
+				width: 100%
+				padding-left: 15px
+				flex-direction: column
+				height: auto
+
+			.gdb-info__content-price
+				max-width: 100%
+				font-size: 17px
+				+w753
+					font-size: 16px
+				.units
+					font-size: 16px
+			.hpm__delivery_item_list_1
+				color: $hover-2
+				padding-left: 4px
+				&:before
+					display: none
+				i
+					padding-right: 6px
+			&_time
+				font-size: 20px
+				color: #000
+				font-weight: 700
+				margin-bottom: 16px
+				+w753
+					font-size: 15px
+
+				span
+					font-size: 15px
+					display: block
+					+w753
+						display: inline-block
+						padding-left: 4px
+
+			&_img
+				padding-top: 34px
+				padding-right: 46px
+				+w1600
+					padding-right: 14px
+				+w753
+					padding-right: 14px
+					display: block
+
+					width: 80px
+					height: auto
+					padding: 0
+					padding-top: 20px
+			&_info
+				width: 253px
+				margin-top: 21px
+				+w753
+					width: 100%
+			&_title
+				font-size: 20px
+				font-weight: 700
+				line-height: 24px
+				margin-bottom: 23px
+				padding-right: 10px
+				+w753
+					font-size: 15px
+					margin-bottom: 14px
+					br
+						display: none
+
+			&_list
+				li
+					font-size: 12px
+					position: relative
+					padding-left: 18px
+					line-height: 15px
+					margin-bottom: 6px
+					color: #6d6d6d
+					padding-right: 4px
+					&:before
+						content: ''
+						position: absolute
+						width: 6px
+						height: 6px
+						background: #000
+						-webkit-transform: rotate(45deg)
+						-moz-transform: rotate(45deg)
+						-ms-transform: rotate(45deg)
+						-o-transform: rotate(45deg)
+						transform: rotate(45deg)
+						top: 4px
+						left: 4px
+				&_s1
+					width: 180px
+					+w753
+						width: 100%
+			&_gen
+
+				border-left: 1px solid #e0e0e0
+				color: #000
+				+flexbox()
+				width: 113px
+				text-align: center
+				padding-top: 49px
+				flex-direction: column
+				height: 200px
+				+w753
+					border-left: none
+					height: auto
+					padding-top: 9px
+					width: 100%
+					flex-direction: row
+					align-items: baseline
+					padding-left: 6px
+	&__reviews
+		margin-top: 155px
+		height: 630px
+
+	&__gallery_t
+		+flexbox()
+		+w1840
+			align-items: center
+		+w1346
+			align-items: flex-start
+			margin-bottom: 10px
+		+w992
+			flex-direction: column
+			margin-bottom: 30px
+		.gsb__gallery
+			width: 66%
+			margin: 0
+			+w1346
+				width: 56%
+			+w992
+				width: 100%
+		.gsb__gallery-item
+			flex: 0 0 42%
+			max-width: 42%
+			+w753
+				flex: 0 0 100%
+				max-width: 100%
+
+		.gsb__gallery-item_x2
+			max-width: 58%
+			flex: 0 0 58%
+			+w753
+				flex: 0 0 100%
+				max-width: 100%
+		&_wrapper
+			width: 33%
+			padding-left: 3.5%
+			padding-top: 5%
+			+w1840
+				padding-top: 0
+			+w1346
+				width: 44%
+			+w992
+				padding: 0
+				width: 100%
+
+			.gsb__catalog-link
+
+
+
+			.gsb__catalog-link
+				margin-left: 32px
+				margin-top: 94px
+				+w1840
+					margin-top: 20px
+				+w1346
+					margin: 0
+					max-width: 100%
+					width: 100%
+
+			.gsb__benefits-title-icon
+				left: 0
+				top: -3px
+			.gsb__benefits-title-label
+				padding-left: 31px
+			.gsb__benefits-address
+				font-weight: 700
+				font-size: 18px
+				margin-bottom: 45px
+				letter-spacing: .018em
+				padding-left: 30px
+				max-width: 403px
+				line-height: 23px
+				+w1346
+					margin-bottom: 39px
+				+w753
+					font-size: 16px
+
+			.gsb__benefits-title
+				+w1346
+					margin-top: 8px
+			.gsb__benefits-title-label1
+				color: #6d6d6d
+				font-size: 17px
+				font-weight: 700
+				position: relative
+				margin-bottom: 30px
+				text-transform: uppercase
+	&__gallery_work_time
+		font-weight: 700
+		font-size: 17px
+		margin-top: 26px
+		margin-left: 30px
+		+w753
+			font-size: 14px
+
+		&_item
+			+flexbox()
+			padding-bottom: 19px
+		&_label
+			width: 226px
+			+w753
+				width: 193px
+			+w340
+				width: 171px
+				letter-spacing: -0.1px
+
+.hmp
+	&__wrap
+		margin-bottom: 211px
+		+w1450
+			margin-bottom: 140px
+		+w992
+			margin-bottom: 70px
+		&_title
+			text-transform: uppercase
+			font-weight: 700
+			margin-bottom: 63px
+			letter-spacing: -.005em
+			font-size: 30px
+			+w992
+				font-size: 22px
+				margin-bottom: 47px
+				line-height: 33px
+		&_img
+			+flexbox()
+			height: 111px
+			align-items: center
+			justify-content: center
+			+w992
+				height: 77px
+		.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev
+			-moz-osx-font-smoothing: grayscale
+			-webkit-font-smoothing: antialiased
+			display: inline-block
+			font-style: normal
+			font-variant: normal
+			text-rendering: auto
+			line-height: 1
+			font-family: "Font Awesome 5 Free"
+			font-weight: 900
+			width: 52px
+			height: 111px
+
+			color: #dedede
+			border-radius: 2px
+			position: absolute
+			top: 46%
+			-webkit-transform: translate(0,-50%)
+			-moz-transform: translate(0,-50%)
+			-ms-transform: translate(0,-50%)
+			-o-transform: translate(0,-50%)
+			transform: translate(0,-50%)
+			outline: 0
+			font-size: 23px
+			&:hover
+				color: #000
+		.owl-carousel .owl-nav button.owl-next
+			right: -71px
+			&:before
+				content: "\f105"
+
+		.owl-carousel .owl-nav button.owl-prev
+			left: -71px
+			&:before
+				content: "\f104"
+		.owl-carousel .owl-stage-outer
+			border-bottom: 1px solid #f1f1f1
+			border-top: 1px solid #f1f1f1
+			border-right: 1px solid #f1f1f1
+		.owl-carousel .owl-item::after
+			content: ''
+			position: absolute
+			right: -1px
+			top: 0
+			bottom: 0
+			border-right: 1px solid #f1f1f1
+		.owl-carousel .owl-item
+			position: relative
+
+	&__slider
+		&-wrap
+			max-width: 1735px
+			position: relative
+			margin: 0 auto
+		&-block
+			padding: 0 67px
+
+
+
+
+
+
+
+
+.p_home
+	.gdb-map__content-item #shop-map-1
+		height: 505px
+		+w1346
+			height: 400px
+		+w992
+			height: 330px
+		+w753
+			height: 300px
+
+	.gdb-map__wrap
+		margin-bottom: 150px
+		+w1450
+			margin-bottom: 100px
+		+w992
+			margin-bottom: 75px
+		+w753
+			margin-bottom: 62px
+
+
+	.gsb__gallery-item.gsb__gallery-item_x2:nth-child(4):before
+		padding-top: 50.552%
+		+w753
+			padding-top: 65.2%
+	.gsb__gallery-item:nth-child(3)
+		//background-color: #f9f9f9
+		&:before
+			padding-top: 50.552%
+			+w753
+				padding-top: 26.8%
+	.psg__main-title
+		font-size: 30px
+	.psg__slider-wrap
+		padding: 0
+		margin-bottom: 70px
+	.psg__slider-block
+
+	.psg__wrap
+		margin-bottom: 158px
+		+w1450
+			margin-bottom: 100px
+		+w992
+			margin-bottom: 75px
+		+w753
+			margin-bottom: 62px
+	.gsb__gallery-item:nth-child(3)
+		+w1450
+			order: 3
+		+w753
+			order: -1
+	.gsb__gallery-content
+		+w1346
+			left: 13px
+			right: -4px
+		+w753
+			left: 14px
+			right: 14px
+	.gsb__gallery-label
+		+w1346
+			font-size: 15px
+	.hpm__gallery_t_wrapper .gsb__benefits-title
+		+w753
+			font-size: 17px
+			padding: 0
+	.psg__slider-block
+		+w1840
+			padding: 0 25px
+		+w1600
+			padding: 0 65px
+		+w992
+			padding: 0
+	.psg__slider-wrap
+		padding-right: 29px
+		padding-left: 32px
+
+
+
+.hpm__cat_item
+	border: none
+	position: relative
+	box-sizing: border-box
+	border-right: 1px solid #eaeaea
+	border-bottom: 1px solid #eaeaea
+.hpm__cat_items
+	border-top: 1px solid #f1f1f1
+	border-left: 1px solid #f1f1f1
+	border-right: 0
+	border-bottom: 0
+
+
+
+
+
+
+
+
+
+
+
+
+

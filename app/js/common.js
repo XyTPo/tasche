@@ -123,6 +123,7 @@ $(function(){
 	// Появление и закрытие бокового меню
 	$('.burger-menu-btn').on('click', function(e){
 		e.preventDefault;
+		$('.smart-filter').removeClass('smart-filter-visible-mobile');
 		$('.catalog-list').toggleClass('catalog-list-visible-mobile');
 		$('body').addClass('no-scroll');
 	});
@@ -133,11 +134,35 @@ $(function(){
 		$('body').removeClass('no-scroll');
 	});
 
+	// hide_show catalog filters
+	$('.products-filter__trigger').on('click', function(e){
+		e.preventDefault;
+		$('.catalog-list').removeClass('catalog-list-visible-mobile');
+		$('.smart-filter').toggleClass('smart-filter-visible-mobile');
+		$('body').toggleClass('no-scroll');
+	});
+
+	$('.smart-filter__mobile-close').on('click', function(e){
+		e.preventDefault;
+		$('.smart-filter').removeClass('smart-filter-visible-mobile');
+		$('body').removeClass('no-scroll');
+	});
+
 	$('main').on('click', function (e){ // событие клика по веб-документу
-		var div = $(".catalog-list"); // тут указываем ID элемента
-		if (!div.is(e.target) // если клик был не по нашему блоку
+        var sideBarVisible = false;
+        if ($('.catalog-list-visible-mobile').length ) {
+            var div = $(".catalog-list"),
+                targetActiveClass = 'catalog-list-visible-mobile';
+            sideBarVisible = true;
+        } else if ($('.smart-filter-visible-mobile').length ) {
+            var div = $(".smart-filter"),
+                targetActiveClass = 'smart-filter-visible-mobile';
+            sideBarVisible = true;
+        }
+		if (sideBarVisible 
+            && !div.is(e.target) // если клик был не по нашему блоку
 		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
-			div.removeClass('catalog-list-visible-mobile'); // скрываем его
+			div.removeClass(targetActiveClass); // скрываем его
 			$('body').removeClass('no-scroll');
 		}
 	});

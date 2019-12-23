@@ -7380,5 +7380,77 @@ h5
 		display: block 
 	
 
+.products-filter__trigger
+	display: none
+	+w992
+		position: fixed
+		right: 0
+		top: auto
+		background-color: #931431
+		text-transform: uppercase
+		color: #fff
+		font-size: 13px
+		height: 100px
+		width: 34px
+		text-align: center
+		margin-left: auto
+		border-radius: 2px 0 0 2px
+		font-weight: 500
+		display: flex
+		align-items: flex-end
+		letter-spacing: .08em
+		cursor: pointer
+		box-shadow: 0 0 0 1px #fff
+		z-index: 49
+		margin-top: 5px
+	&-label
+		transform: rotate(-90deg)
+		transform-origin: 0 0
+		width: 100px
+		flex: 0 0 auto
+		position: relative
+		line-height: 32px
+		bottom: -32px
+	.fa-align-left 
+		font-size: 80%
+	
+.smart-filter
+	+w992 
+		top: 0
+		left: 0
+		padding-left: 30px
+		padding-right: 20px
+		width: 269px
+		position: fixed
+		transition: .5s
+		transform: translateX(-200%)
+		z-index: 50
+		background-color: #fff
+		overflow-y: auto
+		height: 100%
+		box-shadow: 2px 2px 7px 1px rgba(0,0,0,.13)
+		&.smart-filter-visible-mobile
+			transform: translateX(0)
+		&__pc-content
+			display: none
+		.filter__background 
+			display: none
+		.filter__title 
+			padding: 15px 20px 15px 30px
+			background-color: #f9f9f9
+			margin: 0 -20px 15px -30px
+			position: relative;
+		&__mobile-close 
+			display: block
+			position: absolute
+			font-size: 16px
+			top: 50%
+			right: 20px
+			color: #000
+			z-index: 2
+			transform: translate(0, -50%)
+			cursor: pointer
+		
+
 // Media Queries
 @import ../css/media-queries/media.sass

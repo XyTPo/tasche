@@ -14835,8 +14835,8 @@ h5 {
   .catalog-list {
     top: 0;
     left: 0;
-    padding-left: 30px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 300px;
     position: fixed;
     -webkit-transition: .5s;
@@ -14901,7 +14901,7 @@ h5 {
     display: table;
     color: #000;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 700;
     margin-bottom: 10px;
   }
@@ -14912,14 +14912,15 @@ h5 {
   }
   .general-catalog > a {
     display: table;
-    font-size: 14px;
+    font-size: 16px;
     color: #000;
     margin-bottom: 7px;
   }
   .general-catalog ul a {
     color: #6d6d6d;
-    font-size: 13px;
+    font-size: 15px;
     margin-bottom: 3px;
+    line-height: 23px;
   }
   .catalog-list__mibile-open-list {
     color: #931431;

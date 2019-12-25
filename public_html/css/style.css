@@ -1303,6 +1303,10 @@ h5 {
   display: inline-block;
 }
 
+.color-picker[style*="#ffffff"] {
+  box-shadow: inset 0 0 0 1px #e0e0e0;
+}
+
 .custom-checkbox {
   margin-top: 10px;
   cursor: pointer;
@@ -2477,6 +2481,10 @@ h5 {
   width: 100%;
   height: 100%;
   display: block;
+}
+
+.colors-pic span[style*="#ffffff"] {
+  box-shadow: inset 0 0 0 1px #e0e0e0;
 }
 
 .colors-pic-active {
@@ -3968,6 +3976,10 @@ h5 {
   width: 100%;
   height: 100%;
   display: block;
+}
+
+.pid__desc_info_color span[style*="#ffffff"] {
+  box-shadow: inset 0 0 0 1px #e0e0e0;
 }
 
 .pid__desc_info_color:hover {
@@ -16595,8 +16607,4 @@ h5 {
   .comparison {
     display: inline-block;
   }
-}
-
-body {
-  font-size: 11px;
 }

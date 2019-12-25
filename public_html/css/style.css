@@ -1117,11 +1117,11 @@ h5 {
 }
 
 .level-1__link {
-  font-size: 13px;
+  font-size: 15px;
   color: #6d6d6d;
   text-transform: uppercase;
   position: relative;
-  padding-left: 16px;
+  padding-left: 0px;
   display: block;
   -webkit-transition: color .3s ease;
   -moz-transition: color .3s ease;
@@ -1138,7 +1138,7 @@ h5 {
 }
 
 .level-1__link:hover:before {
-  border-color: transparent transparent transparent #931431;
+  background: #931431;
   -webkit-transition: color .3s ease;
   -moz-transition: color .3s ease;
   -o-transition: color .3s ease;
@@ -1148,25 +1148,26 @@ h5 {
 .level-1__link:before {
   content: "";
   position: absolute;
+  left: -10px;
   top: 3px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 5px 0 5px 6px;
-  border-color: transparent transparent transparent #6d6d6d;
+  width: 5px;
+  height: 24px;
+  background: #f3f3f3;
   -webkit-transition: color .3s ease;
   -moz-transition: color .3s ease;
   -o-transition: color .3s ease;
   transition: color .3s ease;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .level-1__link-active, .level-2__link-active {
-  color: #931431;
+  /*color: #931431*/
 }
 
 .level-1__link-active:before, .level-2__link-active:before {
-  border-color: transparent transparent transparent #931431;
+  background: #931431;
 }
 
 .level-1-item {
@@ -1191,13 +1192,36 @@ h5 {
 
 .level-2__link,
 .level-3__link {
-  font-size: 14px;
+  font-size: 16px;
   color: #6d6d6d;
   -webkit-transition: color .3s ease;
   -moz-transition: color .3s ease;
   -o-transition: color .3s ease;
   transition: color .3s ease;
   text-transform: lowercase;
+  position: relative;
+}
+
+.level-2__link:before,
+.level-3__link:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: -16px;
+  top: 4px;
+  bottom: 0;
+  margin: auto;
+  background: #f3f3f3;
+}
+
+.level-2__link:hover:before,
+.level-3__link:hover:before {
+  background: #931431;
+}
+
+.level-2__link-active:before, .level-3__link-active:before {
+  background: #931431;
 }
 
 .level-2__link:hover,
@@ -1376,6 +1400,10 @@ h5 {
   border-left: 1px solid #f1f1f1;
   border-bottom: 1px solid #f1f1f1;
   padding: 30px 0 16px 52px;
+}
+
+.color-colored {
+  background: linear-gradient(to bottom right, #1e9600, #fff200, red);
 }
 
 .bread-crumbs {
@@ -14979,7 +15007,7 @@ h5 {
   .smart-filter {
     top: 0;
     left: 0;
-    padding-left: 30px;
+    padding-left: 12px;
     padding-right: 20px;
     padding-bottom: 20px;
     width: 269px;
@@ -16533,6 +16561,7 @@ h5 {
   overflow: hidden;
   text-overflow: ellipsis;
   display: inline-block;
+  color: #931431;
 }
 
 .logo, header-phones {
@@ -16551,6 +16580,10 @@ h5 {
   }
   .form-search-head {
     margin-left: 0px;
+  }
+  .region__city {
+    max-width: 213px;
+    width: 100%;
   }
 }
 

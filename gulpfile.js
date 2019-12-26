@@ -28,7 +28,7 @@ var path = {
 			sass: '_dev/sass/*.sass',
 			cyCss: '_dev/sass/*.css',
 			img: '_dev/img/**/*.*',
-			js: 'app/js/**/*.js'
+			js: '_dev/js/*.js'
 	}
 };
 

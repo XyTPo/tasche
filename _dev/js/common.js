@@ -365,6 +365,25 @@ $(function(){
 		console.log('ok')
 		$(this).parent().toggleClass('mobile-list-visible');
 		e.preventDefault();
-	});
-
+    });
+    function calcHiddenMenuOffsets(){
+        var windowWidth = $(window).width();
+        console.log(windowWidth);
+        $('.catalog-list__wrap .catalog-list__items').each(function(e){
+            var menuItemOffsetLeft = $(this).offset().left,
+                hiddenDropdown = $(this).find('.catalog-list__hidden-menu'),
+                itemWidth = hiddenDropdown.outerWidth(),
+                itemOffsetRight = menuItemOffsetLeft + itemWidth
+                itemRightGap = windowWidth - itemOffsetRight;
+            if (itemRightGap <= 0) {
+                $(this).addClass('catalog-list__items_to-right');
+            } else {
+                $(this).removeClass('catalog-list__items_to-right');
+            }
+        });
+    }
+    calcHiddenMenuOffsets();
+    $(window).resize(function(){
+        calcHiddenMenuOffsets();
+    });
 });

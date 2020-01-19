@@ -15,6 +15,11 @@ body {
   padding: 0;
 }
 
+.g-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -1198,7 +1203,6 @@ h5 {
   -moz-transition: color .3s ease;
   -o-transition: color .3s ease;
   transition: color .3s ease;
-  text-transform: lowercase;
   position: relative;
 }
 
@@ -14582,6 +14586,7 @@ h5 {
     color: #fff;
     text-transform: uppercase;
     font-size: 13px;
+    position: relative;
   }
   .catalog-list .container {
     display: -webkit-box;
@@ -14609,6 +14614,9 @@ h5 {
     cursor: pointer;
     padding-right: 50px;
   }
+  .catalog-list__wrap .catalog-list__items.catalog-list__items_to-right {
+    position: static;
+  }
   .catalog-list__wrap .catalog-list__items:nth-last-child(1) {
     padding-right: 0;
   }
@@ -14619,7 +14627,6 @@ h5 {
     border-bottom: 1px solid #fff;
   }
   .catalog-list__hidden-menu {
-    top: 50px;
     left: -20px;
     position: absolute;
     padding: 16px 16px 20px 30px;
@@ -14641,6 +14648,10 @@ h5 {
     -o-transition: opacity .5s ease;
     transition: opacity .5s ease;
     white-space: nowrap;
+  }
+  .catalog-list__items_to-right .catalog-list__hidden-menu {
+    left: auto;
+    right: 0;
   }
   .catalog-list__hidden-menu li {
     line-height: 17px;
@@ -14804,27 +14815,6 @@ h5 {
   }
   .catalog-list__wrap .catalog-list__items {
     padding-right: 0;
-  }
-  .brands-hidden-menu {
-    left: -720px;
-  }
-  .school-hidden-menu {
-    left: -670px;
-  }
-  .travels-hidden-menu {
-    left: -510px;
-  }
-  .backpacks-hidden-menu {
-    left: -400px;
-  }
-  .sports-hidden-menu {
-    left: -210px;
-  }
-  .womans-hidden-menu {
-    left: -60px;
-  }
-  .mans-hidden-menu {
-    left: 0;
   }
 }
 

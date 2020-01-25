@@ -1,1 +1,153 @@
+@import vars/colors
+@import vars/mixin.sass
 @import 'cy51321'
+
++w753
+	.p_compare.content-wrapper .container
+		width: 90%
+.compare
+	padding-top: 80px
+	padding-bottom: 100px
+	+w992
+		padding-top: 50px
+		padding-bottom: 70px
+	&.dif-only .same
+		display: none
+	&__title-row
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+	&__title
+		text-transform: uppercase
+		font-weight: 700
+		margin-bottom: 63px
+		letter-spacing: -.005em
+		font-size: 30px
+		+w596
+			font-size: 15px
+			margin-bottom: 30px
+			line-height: 30px
+		&_subtext
+			font-size: 90%
+			font-weight: 500
+			color: #6d6d6d
+			text-transform: none
+	&__clear
+		color: #931431
+		border: 1px solid #931431
+		padding: 10px 13px
+		text-transform: uppercase
+		font-size: 12px
+		display: block
+		width: 160px
+		cursor: pointer
+		background: none
+		margin-left: 20px
+		+w596
+			padding: 9px 5px
+			font-size: 10px
+			width: 120px
+			margin-left: 10px
+	&__option
+		color: #931431
+		border: 1px solid #931431
+		padding: 10px 13px
+		text-transform: uppercase
+		font-size: 12px
+		display: block
+		width: 100%
+		cursor: pointer
+		background: none
+		margin-bottom: 20px
+		height: 40px
+		margin-left: -10px
+		+w596
+			padding: 0px 5px
+			height: 35px
+			font-size: 10px
+		&.active
+			background-color: #931431
+			text-transform: uppercase
+			color: #fff
+	&__block
+		display: block
+		width: 100%
+		overflow-x: auto
+		-webkit-overflow-scrolling: touch
+	&__table
+		border-collapse: collapse
+		width: auto
+		font-size: 14px
+		+w596
+			font-size: 12px
+
+		tr:last-child td
+			border-bottom: 1px solid #dee2e6
+
+		tbody tr:nth-of-type(odd)
+			background-color: #f8f8f8
+
+		tbody tr:hover
+			color: #444
+			background-color: rgba(0,0,0,0.075)
+
+		th, td
+			padding: 12px
+			vertical-align: top
+
+		thead th
+			vertical-align: bottom
+			border-bottom: 2px solid #dee2e6
+
+	&__cell
+		min-width: 260px
+		+w596
+			min-width: 170px
+		&_inner
+			position: relative
+			max-width: 300px
+			+w596
+				max-width: 170px
+
+	.products-wrap
+		width: 306px
+		padding: 0 0 20px
+		box-shadow: none
+		border: none
+		+w596
+			max-width: 170px
+
+	.products-wrap__heading
+		height: 30px
+		+w596
+			height: 16px
+
+	.products-shortcuts
+		top: 0
+
+	.products-icons
+		margin-top: 5px
+		+w596
+			margin-top: 5px
+
+	.products-footer
+		+w596
+			flex-wrap: wrap
+
+	.current-price
+		+w596
+			width: 50%
+			margin: 0
+
+	.old-price
+		+w596
+			width: 50%
+
+	.btn-to-curt
+		+w596
+			margin: 15px 0 0
+			display: block
+			width: 100%
+
+	.slider-link
+		display: block

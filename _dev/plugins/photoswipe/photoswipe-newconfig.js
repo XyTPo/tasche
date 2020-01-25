@@ -216,7 +216,7 @@ $(function () {
 		e.preventDefault();
     });
 
-    $('body').on('click','.products-info .slider-link a', function (e) {
+    $('body').on('click','.products-info .slider-link a, .compare__cell .slider-link a', function (e) {
 		var $catalogItem = $(this).parents('.products-wrap'),
             items = JSON.parse($catalogItem.find('.products-catalog-gallery-json').val());
 			toCartBtnId = $catalogItem.find('.btn-to-curt').attr('id'),

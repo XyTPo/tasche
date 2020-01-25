@@ -688,6 +688,10 @@ body {
     overflow: hidden;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 .overley {
     position: fixed;
     top: 0;

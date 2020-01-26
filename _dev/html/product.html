@@ -398,7 +398,7 @@
 
                                     </div>
                                     <div class="method__desc">
-                                        <p class="uppercase">
+                                        <p class="uppercase gdb-map-popup__trigger">
                                             Смотреть на карте
                                         </p>
 
@@ -547,7 +547,7 @@
 
                             </div>
                             <div class="method__desc">
-                                <p class="uppercase">
+                                <p class="uppercase gdb-map-popup__trigger">
                                     Смотреть на карте
                                 </p>
 
@@ -1764,6 +1764,275 @@
             </div>
         </div>
 
+        <div class="gdb-map-popup__wrap">
+            <div class="gdb-map-popup__close">
+                +
+            </div>
+            <div class="gdb-map-popup__block">
+                <div class="gdb-map__block">
+                <div class="gdb-map__controls">
+                    <div class="gdb-map__type-switch">
+                        <div class="gdb-map__type-switch-item gdb-map__type-switch-item_map">
+                            <div class="gdb-map__type-switch-trigger active">
+                                Карта
+                            </div>
+                        </div>
+                        <div class="gdb-map__type-switch-item">
+                            <div class="gdb-map__type-switch-trigger">
+                                Список
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gdb-map__check-list">
+                        <div class="gdb-map__check-item gdb-map__check-item_icon active" data-type="sdec">
+                            <span class="gdb-map__check-box"></span>
+                            <span class="gdb-map__check-label">СДЭК</span>
+                            <img class="gdb-map__check-icon" src="img/del-icon-sdek.png">
+                        </div>
+                        <div class="gdb-map__check-item gdb-map__check-item_icon active" data-type="boxberry">
+                            <span class="gdb-map__check-box"></span>
+                            <span class="gdb-map__check-label">Boxberry</span>
+                            <img class="gdb-map__check-icon" src="img/del-icon-boxberry.png">
+                        </div>
+                        <div class="gdb-map__check-item" data-type="returnOption">
+                            <span class="gdb-map__check-box"></span>
+                            <span class="gdb-map__check-label">Возврат от получателя</span>
+                        </div>
+                        <div class="gdb-map__check-item" data-type="cardPayment">
+                            <span class="gdb-map__check-box"></span>
+                            <span class="gdb-map__check-label">Оплата картой</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gdb-map__content">
+                    <div class="gdb-map__content-item gdb-map__jsmap active">
+                        <div class="gdb-map__jsmap-init" id="map"></div>
+                    </div>
+                    <div class="gdb-map__content-item gdb-table">
+                        <div class="gdb-table__toprow hidden-w753">
+                            <div class="gdb-table__col gdb-table__col-1">
+                                <div class="gdb-table__toprow-label">Адрес и проезд</div>
+                            </div>
+                            <div class="gdb-table__col gdb-table__col-2">
+                                <div class="gdb-table__toprow-label ">Режим работы</div>
+                            </div>
+                            <div class="gdb-table__col gdb-table__col-3">
+                                <div class="gdb-table__toprow-label ">Срок доставки</div>
+                            </div>
+                            <div class="gdb-table__col gdb-table__col-4">
+                                <div class="gdb-table__toprow-label">Стоимость доставки</div>
+                            </div>
+                            <div class="gdb-table__col gdb-table__col-5">
+                                <div class="gdb-table__toprow-label">Преимущества</div>
+                            </div>
+                        </div>
+                        <div class="gdb-table__content">
+                            <div class="gdb-table__row" data-boxberry="false" data-sdec="true" data-cardpayment="true" data-returnoption="true">
+                                <div class="gdb-table__col gdb-table__col-1">
+                                    <div class="gdb-table__info">
+                                        <div class="gdb-table__info-title">
+                                            <img class="gdb-table__info-title-icon" src="img/del-icon-sdek.png">
+                                            <span>Москва Можайское_77701_С</span>
+                                        </div>
+                                        <div class="gdb-table__info-address">
+                                            Москва г, Можайское ш, д.30
+                                        </div>
+                                        <div class="gdb-table__info-location">
+                                            М. Славянский бульвар.
+                                        </div>
+                                        <div class="gdb-table__info-descr">
+                                            Примерное расстояние от остановки до Отделения - 50 м.
+                                            11-тиэтажный дом. Расположение входа в отделение -
+                                            Вход со двора, под вывеской СДЭК. Этаж - цоколь.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdb-table__col gdb-table__col-2">
+                                    <div class="gdb-table__time">
+                                        <div class="gdb-table__toprow-label visible-w753">Режим работы</div>
+                                        Пн-Пт: 10.00-20.00<br>
+                                        Сб: 10.00-15.00
+                                    </div>
+                                </div>
+                                <div class="gdb-table__col gdb-table__col-3">
+                                    <div class="gdb-table__term">
+                                        <div class="gdb-table__toprow-label visible-w753">Срок доставки</div>
+                                        2-3 р.дня
+                                    </div>
+                                </div>
+                                <div class="gdb-table__col gdb-table__col-4">
+                                    <div class="gdb-table__price">
+                                        <span class="gdb-table__toprow-label visible-w1346">Стоимость доставки</span>
+                                        <span class="digits">0</span>
+                                        <span class="units">₽</span>
+                                    </div>
+                                </div>
+                                <div class="gdb-table__col gdb-table__col-5">
+                                    <div class="gdb-table__benefits">
+                                        <div class="gdb-table__benefits-item">
+                                            <img class="gdb-table__benefits-icon" src="img/del-icon-benefits1.png">
+                                            <span class="gdb-table__benefits-label">Возврат от получателя</span>
+                                        </div>
+                                        <div class="gdb-table__benefits-item">
+                                            <img class="gdb-table__benefits-icon" src="img/del-icon-benefits2.png">
+                                            <span class="gdb-table__benefits-label">Оплата картой</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gdb-table__row" data-boxberry="true" data-sdec="false" data-cardpayment="false" data-returnoption="true">
+                                <div class="gdb-table__col gdb-table__col-1">
+                                    <div class="gdb-table__info">
+                                        <div class="gdb-table__info-title">
+                                            <img class="gdb-table__info-title-icon" src="img/del-icon-boxberry.png">
+                                            <span>Москва Можайское_77701_С</span>
+                                        </div>
+                                        <div class="gdb-table__info-address">
+                                            Москва г, Можайское ш, д.30
+                                        </div>
+                                        <div class="gdb-table__info-location">
+                                            М. Славянский бульвар.
+                                        </div>
+                                        <div class="gdb-table__info-descr">
+                                            Примерное расстояние от остановки до Отделения - 50 м.
+                                            11-тиэтажный дом. Расположение входа в отделение -
+                                            Вход со двора, под вывеской СДЭК. Этаж - цоколь.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdb-table__col gdb-table__col-2">
+                                    <div class="gdb-table__time">
+                                        <div class="gdb-table__toprow-label visible-w753">Режим работы</div>
+                                        Пн-Пт: 10.00-20.00<br>
+                                        Сб: 10.00-15.00
+                                    </div>
+                                </div>
+                                <div class="gdb-table__col gdb-table__col-3">
+                                    <div class="gdb-table__term">
+                                        <div class="gdb-table__toprow-label visible-w753">Срок доставки</div>
+                                        2-3 р.дня
+                                    </div>
+                                </div>
+                                <div class="gdb-table__col gdb-table__col-4">
+                                    <div class="gdb-table__price">
+                                        <span class="gdb-table__toprow-label visible-w1346">Стоимость доставки</span>
+                                        <span class="digits">0</span>
+                                        <span class="units">₽</span>
+                                    </div>
+                                </div>
+                                <div class="gdb-table__col gdb-table__col-5">
+                                    <div class="gdb-table__benefits">
+                                        <div class="gdb-table__benefits-item">
+                                            <img class="gdb-table__benefits-icon" src="img/del-icon-benefits1.png">
+                                            <span class="gdb-table__benefits-label">Возврат от получателя</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div >
+                            <div class="gdb-table__row"  data-boxberry="true" data-sdec="false" data-cardpayment="false" data-returnoption="true">
+                                <div class="gdb-table__col gdb-table__col-1">
+                                    <div class="gdb-table__info">
+                                        <div class="gdb-table__info-title">
+                                            <img class="gdb-table__info-title-icon" src="img/del-icon-boxberry.png">
+                                            <span>Москва Можайское_77701_С</span>
+                                        </div>
+                                        <div class="gdb-table__info-address">
+                                            Москва г, Можайское ш, д.30
+                                        </div>
+                                        <div class="gdb-table__info-location">
+                                            М. Славянский бульвар.
+                                        </div>
+                                        <div class="gdb-table__info-descr">
+                                            Примерное расстояние от остановки до Отделения - 50 м.
+                                            11-тиэтажный дом. Расположение входа в отделение -
+                                            Вход со двора, под вывеской СДЭК. Этаж - цоколь.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdb-table__col gdb-table__col-2">
+                                    <div class="gdb-table__time">
+                                        <div class="gdb-table__toprow-label visible-w753">Режим работы</div>
+                                        Пн-Пт: 10.00-20.00<br>
+                                        Сб: 10.00-15.00
+                                    </div>
+                                </div>
+                                <div class="gdb-table__col gdb-table__col-3">
+                                    <div class="gdb-table__term">
+                                        <div class="gdb-table__toprow-label visible-w753">Срок доставки</div>
+                                        2-3 р.дня
+                                    </div>
+                                </div>
+                                <div class="gdb-table__col gdb-table__col-4">
+                                    <div class="gdb-table__price">
+                                        <span class="gdb-table__toprow-label visible-w1346">Стоимость доставки</span>
+                                        <span class="digits">0</span>
+                                        <span class="units">₽</span>
+                                    </div>
+                                </div>
+                                <div class="gdb-table__col gdb-table__col-5">
+                                    <div class="gdb-table__benefits">
+                                        <div class="gdb-table__benefits-item">
+                                            <img class="gdb-table__benefits-icon" src="img/del-icon-benefits1.png">
+                                            <span class="gdb-table__benefits-label">Возврат от получателя</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gdb-table__row"  data-boxberry="false" data-sdec="true" data-cardpayment="true" data-returnoption="false">
+                                <div class="gdb-table__col gdb-table__col-1">
+                                    <div class="gdb-table__info">
+                                        <div class="gdb-table__info-title">
+                                            <img class="gdb-table__info-title-icon"  src="img/del-icon-sdek.png">
+                                            <span>Москва Можайское_77701_С</span>
+                                        </div>
+                                        <div class="gdb-table__info-address">
+                                            Москва г, Можайское ш, д.30
+                                        </div>
+                                        <div class="gdb-table__info-location">
+                                            М. Славянский бульвар.
+                                        </div>
+                                        <div class="gdb-table__info-descr">
+                                            Примерное расстояние от остановки до Отделения - 50 м.
+                                            11-тиэтажный дом. Расположение входа в отделение -
+                                            Вход со двора, под вывеской СДЭК. Этаж - цоколь.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gdb-table__col gdb-table__col-2">
+                                    <div class="gdb-table__time">
+                                        <div class="gdb-table__toprow-label visible-w753">Режим работы</div>
+                                        Пн-Пт: 10.00-20.00<br>
+                                        Сб: 10.00-15.00
+                                    </div>
+                                </div>
+                                <div class="gdb-table__col gdb-table__col-3">
+                                    <div class="gdb-table__term">
+                                        <div class="gdb-table__toprow-label visible-w753">Срок доставки</div>
+                                        2-3 р.дня
+                                    </div>
+                                </div>
+                                <div class="gdb-table__col gdb-table__col-4">
+                                    <div class="gdb-table__price">
+                                        <span class="gdb-table__toprow-label visible-w1346">Стоимость доставки</span>
+                                        <span class="digits">0</span>
+                                        <span class="units">₽</span>
+                                    </div>
+                                </div>
+                                <div class="gdb-table__col gdb-table__col-5">
+                                    <div class="gdb-table__benefits">
+                                        <div class="gdb-table__benefits-item">
+                                            <img class="gdb-table__benefits-icon" src="img/del-icon-benefits2.png">
+                                            <span class="gdb-table__benefits-label">Оплата картой</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
 
     </div>
     <div class="second-exellence">
@@ -1828,5 +2097,122 @@
 </div>
 
 //= includes/footer.html
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=en_RU" type="text/javascript"></script>
+<script src="./js/ymap.data.js" type="text/javascript"></script>
+<script>
+
+
+    var gdbMapPopup = (function () {
+        function ymapsProductPageInit() {
+            var myMap = new ymaps.Map('map', {
+                    center: [55.76, 37.64],
+                    zoom: 10,
+                    controls: ['zoomControl', 'fullscreenControl', 'searchControl']
+                }, {
+                    searchControlProvider: 'yandex#search',
+                    balloonPanelMaxMapArea: Infinity
+                }),
+                objectManager = new ymaps.ObjectManager({
+                    clusterize: true
+                });
+
+
+            objectManager.add(ymapData);
+            myMap.geoObjects.add(objectManager);
+            $('.gdb-map__check-item').click(function(e){
+                $(this).toggleClass('active');
+                /*if($(this).hasClass('soloactive')) {
+                    $(this).siblings('.soloactive').removeClass('active');
+                }*/
+                var activeBoxes = $(this).parent().find('.active');
+                if (activeBoxes.length ){
+                    objectManager.setFilter(function (object) {
+                        var showItem = false;
+                        activeBoxes.each(function(){
+                            var activeType = $(this).data('type');
+                            if ( activeType == "sdec" && object.sdec == true) {
+                                showItem = true;
+                            }
+
+                            if ( activeType == "boxberry" && object.boxberry == true) {
+                                showItem = true;
+                            }
+
+                            if ( activeType == "returnOption" && object.returnOption != true) {
+                                showItem = false;
+                            }
+
+                            if ( activeType == "cardPayment" && object.cardPayment != true) {
+                                showItem = false;
+                            }
+
+
+
+                        });
+
+                        return showItem;
+                    });
+                } else {
+                    objectManager.setFilter(function (object) {
+                        return false;
+                    });
+                }
+
+                /* List Scripts */
+                var listRow = $('.gdb-table__row');
+                if (activeBoxes.length ){
+                    listRow.each(function(){
+                        var currentRow = $(this);
+                        var showItem = false;
+                        activeBoxes.each(function(){
+                            var activeType = $(this).data('type');
+                            if ( activeType == "sdec" && currentRow.data('sdec') == true) {
+                                showItem = true;
+                            }
+                            if ( activeType == "boxberry" && currentRow.data('boxberry') == true) {
+                                showItem = true;
+                            }
+                            if ( activeType == "returnOption" && currentRow.data('returnoption') != true) {
+                                showItem = false;
+                            }
+                            if ( activeType == "cardPayment" && currentRow.data('cardpayment') != true) {
+                                showItem = false;
+                            }
+                        });
+                        if (!showItem) {
+                            currentRow.hide();
+                        } else {
+                            currentRow.show();
+                        }
+                    });
+                } else {
+                    listRow.hide();
+                }
+
+                e.preventDefault();
+            });
+        }
+        var isInited = false;
+        $('.gdb-map-popup__close').click(function(){
+            gdbMapPopup.hide();
+        });
+        $('.gdb-map-popup__trigger').click(function(){
+            gdbMapPopup.show();
+        });
+        return {
+            show: function(){
+                if (!isInited) {
+                    ymaps.ready(ymapsProductPageInit);
+                    isInited = true
+                }
+                $('body').addClass('gdb-map-popup-visible');
+            },
+            hide: function(){
+                $('body').removeClass('gdb-map-popup-visible');
+            }
+        }
+    }());
+</script>
 </body>
 </html>

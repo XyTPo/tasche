@@ -16836,3 +16836,55 @@ h5 {
 .compare .slider-link {
   display: block;
 }
+
+.gdb-map-popup-visible .gdb-map-popup__wrap {
+  display: block;
+}
+
+.gdb-map-popup__wrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 101;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.95);
+  display: none;
+}
+
+.gdb-map-popup__wrap .gdb-map__block {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.gdb-map-popup__block {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  background: #fff;
+  overflow-y: auto;
+  -webkit-box-shadow: 1.286px 1.532px 6.58px 0.42px rgba(0, 0, 0, 0.13);
+  box-shadow: 1.286px 1.532px 6.58px 0.42px rgba(0, 0, 0, 0.13);
+}
+
+.gdb-map-popup__close {
+  color: #6d6d6d;
+  font-size: 36px;
+  transform: rotate(45deg);
+  transform-origin: 50% 50%;
+  position: absolute;
+  top: 5px;
+  right: 9px;
+  width: 35px;
+  height: 35px;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.gdb-map-popup__close:hover {
+  color: #000;
+}

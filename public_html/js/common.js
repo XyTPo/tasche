@@ -362,8 +362,17 @@ $(function(){
 	/* tel mask ..end; */
 	
 	$('.catalog-list__mibile-open-list').click(function(e){
-		console.log('ok')
 		$(this).parent().toggleClass('mobile-list-visible');
+		e.preventDefault();
+	});
+
+	$('.compare__option').click(function(e){
+		$(this).addClass('active').siblings().removeClass('active');
+		if ($(this).hasClass('show-dif')) {
+		    $(this).parents('.compare').addClass('dif-only');
+        } else {
+            $(this).parents('.compare').removeClass('dif-only');
+        }
 		e.preventDefault();
 	});
 

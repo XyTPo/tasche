@@ -16744,13 +16744,22 @@ h5 {
   border-bottom: 2px solid #dee2e6;
 }
 
+.compare__table thead, .compare__table tbody {
+  display: block;
+}
+
+.compare__table tbody {
+  overflow-x: auto;
+  height: 400px;
+}
+
 .compare__cell {
-  min-width: 260px;
+  min-width: 324px;
 }
 
 @media screen and (max-width: 596px) {
   .compare__cell {
-    min-width: 170px;
+    min-width: 184px;
   }
 }
 

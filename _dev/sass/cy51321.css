@@ -1097,6 +1097,7 @@ h5 {
 
 .main-sidebar {
     padding-left: 2px;
+    padding-bottom: 15px;
     position: relative;
 }
 
@@ -1704,6 +1705,13 @@ h5 {
     align-items: center;
 }
 
+.products-footer .btn-off-stock {
+    width: 100%;
+    text-align: center;
+    margin-top: 1px;
+    padding: 9px 13px;
+}
+
 .current-price {
     font-size: 18px;
     font-weight: 700;
@@ -1732,6 +1740,17 @@ h5 {
 
 .btn-to-curt:hover {
     background-color: #6e0e24;
+}
+
+.btn-off-stock {
+    padding: 10px 13px;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: inline-block;
+    cursor: default;
+    background: #f9f9f9;
+    border: 1px solid #f1f1f1;
+    color: #6d6d6d;
 }
 
 .btn-to-curt i {
@@ -4097,6 +4116,9 @@ h5 {
     .pid__order .btn-to-one-click {
         font-size: 10px;
     }
+    .pid__order .btn-off-stock {
+        font-size: 11px;
+    }
 }
 
 .pid__price_wrapper {
@@ -5274,6 +5296,18 @@ h5 {
     color: #6e0e24;
 }
 
+.pml__off-stock {
+    color: #6d6d6d;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+}
+@media screen and (max-width: 767px) {
+    .pml__off-stock {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
 .ranking-stars {
     display: inline-block;
     vertical-align: middle;
@@ -13960,7 +13994,10 @@ h5 {
         font-size: 11px;
     }
     .mobile-delivery .shop-Moscow {
-        margin-left: 14px;
+        margin-left: 10px;
+        font-weight: bold;
+        color: #4173ff;
+        font-size: 12px;
     }
     .header-info__list {
         display: none;
@@ -13976,6 +14013,8 @@ h5 {
         -ms-flex-pack: justify;
         justify-content: space-between;
         position: static;
+        width: 100%;
+        padding-left: 15px;
     }
     .account-section,
     .shop-cart {
@@ -14582,6 +14621,27 @@ h5 {
 .pcs__feedback-desc {
     line-height: 20px;
     color: #6d6d6d;
+}
+
+.pcs__feedback-answer {
+    color: #6d6d6d;
+    background: #f9f9f9;
+    padding: 12px 15px;
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.pcs__feedback-answer-img {
+    height: auto;
+    max-width: 65px;
+    display: block;
+    margin-right: 15px;
+}
+.pcs__feedback-answer-text {
+    line-height: 20px;
+    color: #6d6d6d;
+    padding-top: 4px;
 }
 
 @media screen and (min-width: 992px) {
@@ -16545,6 +16605,7 @@ h5 {
 .header-info__list li:first-child a {
     font-weight: bold;
     text-transform: uppercase;
+    color: #4173ff;
 }
 
 .header-info__list li span {
@@ -16594,6 +16655,7 @@ h5 {
     .region {
         flex-direction: column;
         align-items: flex-end;
+        margin-left: 0;
     }
     .comparison {
         display: inline-block;

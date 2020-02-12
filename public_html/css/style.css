@@ -1127,8 +1127,8 @@ h5 {
 }
 
 .level-1__link {
-  font-size: 15px;
-  color: #6d6d6d;
+  font-size: 14px;
+  color: #000;
   text-transform: uppercase;
   position: relative;
   padding-left: 0px;
@@ -1202,7 +1202,7 @@ h5 {
 
 .level-2__link,
 .level-3__link {
-  font-size: 16px;
+  font-size: 14px;
   color: #6d6d6d;
   -webkit-transition: color .3s ease;
   -moz-transition: color .3s ease;
@@ -4357,6 +4357,20 @@ h5 {
     width: 100%;
     max-width: 100%;
   }
+}
+
+.pid__delivery_method .method__desc-n-link {
+  display: table;
+  cursor: pointer;
+  color: #931431;
+}
+
+.pid__delivery_method .method__desc-n-link:hover {
+  color: #6e0e24;
+}
+
+.pid__delivery_method .method__desc-highlight {
+  color: #4173ff;
 }
 
 .pid__delivery_method .method__price {
@@ -14939,7 +14953,7 @@ h5 {
     position: absolute;
     font-size: 16px;
     top: 50%;
-    right: 20px;
+    right: 22px;
     color: #000;
     z-index: 2;
     -webkit-transform: translate(0, -50%);
@@ -14950,7 +14964,6 @@ h5 {
     cursor: pointer;
   }
   .catalog-list__items {
-    padding-left: 20px;
     margin-bottom: 15px;
     position: relative;
   }
@@ -14961,6 +14974,7 @@ h5 {
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 10px;
+    padding-right: 15px;
   }
   .general-catalog {
     padding-left: 20px;
@@ -14980,17 +14994,24 @@ h5 {
     line-height: 23px;
   }
   .catalog-list__mibile-open-list {
-    color: #931431;
-    font-size: 16px;
-    font-weight: 400;
+    color: #000;
+    width: 17px;
+    height: 17px;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
     cursor: pointer;
+    text-align: center;
   }
-  .general-catalog .catalog-list__mibile-open-list {
-    font-size: 14px;
-    top: 2px;
+  .catalog-list__mibile-open-list::before {
+    content: "+";
+    font-size: 26px;
+    line-height: 17px;
+    font-weight: bold;
+  }
+  .general-catalog .catalog-list__mibile-open-list::before {
+    font-size: 21px;
+    line-height: 14px;
   }
   .general-catalog > ul {
     display: none;
@@ -14999,7 +15020,17 @@ h5 {
     display: block;
   }
   .mobile-list-visible > .catalog-list__mibile-open-list::before {
-    content: "\f146";
+    content: '';
+    width: 13px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin: -1px auto 0;
+    border-top: 1px solid #000;
+  }
+  .general-catalog.mobile-list-visible > .catalog-list__mibile-open-list::before {
+    width: 11px;
   }
   .catalog-list__hidden-menu {
     display: none;

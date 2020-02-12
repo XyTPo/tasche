@@ -25,4 +25,42 @@ $(function(){
             e.preventDefault();
         });
     }
+    if($('.hmp__brand__slider').length){
+        $('.hmp__brand__slider').owlCarousel({
+            loop:true,
+            nav:true,
+            margin:0,
+            responsiveClass:true,
+            navText: ['',''],
+            responsive:{
+                0:{
+                    items:1
+                },
+                500:{
+                    items:2
+                },
+                680:{
+                    items:3
+
+                },
+                992:{
+                    items:5
+
+                },
+                1346:{
+                    items:6
+
+                },
+                1451:{
+                    items:7
+
+                },
+                1600:{
+                    items:8
+
+                }
+
+            }
+        })
+    }
 });

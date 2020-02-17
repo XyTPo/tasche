@@ -201,7 +201,7 @@ $(function(){
     });
     if($('.psg__slider').length){
         $('.psg__slider').owlCarousel({
-            loop:true,
+            loop:false,
             nav:true,
             margin:0,
             responsiveClass:true,
@@ -221,7 +221,7 @@ $(function(){
     }
     if($('.prv__slider').length){
         $('.prv__slider').owlCarousel({
-            loop:true,
+            loop:false,
             nav:true,
             margin:0,
             responsiveClass:true,
@@ -249,44 +249,6 @@ $(function(){
             }
         })
     }	
-	if($('.hmp__brand__slider').length){
-        $('.hmp__brand__slider').owlCarousel({
-            loop:true,
-            nav:true,
-            margin:0,
-            responsiveClass:true,
-            navText: ['',''],
-            responsive:{
-                0:{
-                    items:1
-                },
-                500:{
-                    items:2
-                },
-                680:{
-                    items:3
-
-                },
-                992:{
-                    items:5
-
-                },
-                1346:{
-                    items:6
-
-                },
-                1451:{
-                    items:7
-
-                },
-                1600:{
-                    items:8
-
-                }
-
-            }
-        })
-    }
 
     function addGapToNumber(num){
         if (num % 1 != 0) {
@@ -364,8 +326,26 @@ $(function(){
 	$('.catalog-list__mibile-open-list').click(function(e){
 		$(this).parent().toggleClass('mobile-list-visible');
 		e.preventDefault();
-	});
-
+	});	
+    function calcHiddenMenuOffsets(){
+        var windowWidth = $(window).width();
+        $('.catalog-list__wrap .catalog-list__items').each(function(e){
+            var menuItemOffsetLeft = $(this).offset().left,
+                hiddenDropdown = $(this).find('.catalog-list__hidden-menu'),
+                itemWidth = hiddenDropdown.outerWidth(),
+                itemOffsetRight = menuItemOffsetLeft + itemWidth
+                itemRightGap = windowWidth - itemOffsetRight;
+            if (itemRightGap <= 0) {
+                $(this).addClass('catalog-list__items_to-right');
+            } else {
+                $(this).removeClass('catalog-list__items_to-right');
+            }
+        });
+    }
+    calcHiddenMenuOffsets();
+    $(window).resize(function(){
+        calcHiddenMenuOffsets();
+    });	
 	$('.compare__option').click(function(e){
 		$(this).addClass('active').siblings().removeClass('active');
 		if ($(this).hasClass('show-dif')) {
@@ -375,5 +355,4 @@ $(function(){
         }
 		e.preventDefault();
 	});
-
 });

@@ -4360,7 +4360,6 @@ h5 {
 }
 
 .pid__delivery_method .method__desc-n-link {
-  display: table;
   cursor: pointer;
   color: #931431;
 }
